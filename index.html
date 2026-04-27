@@ -17,7 +17,31 @@
         </nav>
     </header>
     <main>
-        
+        <div>
+            <h1>Populära dejter</h1>
+            <img src="cook.jpg" alt="">
+            <img src="cook.jpg" alt="">
+            <img src="cook.jpg" alt="">
+        </div>
+        <div>
+            <form>
+                <label for="place">Plats</label>
+                <select name="place" id="place">
+                    <option value="alla">Alla</option>
+                    <option value="utomhus">Utomhus</option>
+                    <option value="inomhus">Inomhus</option>
+                    <option value="hemma">Hemma</option>
+                </select>
+                <label for="price">Max pris</label>
+                <input type="range" name="price" id="price" min="0" max="1000">
+                <label for="time">Tid</label>
+                <select name="time" id="time">
+                    <option value="hour">En timme</option>
+                    <option value="halvdag">Halvdag</option>
+                    <option value="heldag">Heldag</option>
+                </select>
+            </form>
+        </div>
     </main>
 </body>
 </html>
