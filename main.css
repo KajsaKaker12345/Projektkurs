@@ -4,4 +4,47 @@
 
 img{
     width: 140px;
+    border-radius: 6px;
+}
+
+.kort-bild{
+    width: 100px;
+    margin: 6px;
+}
+#card{
+    display:inline-flex;
+    margin-top: 30px;
+    border: solid black 1px;
+    width:340px;
+    border-radius: 8px;
+}
+
+#card-besk{
+    margin-left: 20px;
+}
+form{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+header{
+    background-color: rgb(182, 181, 181);
+    height: 25px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+}
+#price{
+    width: 100px;
+}
+.field{
+    display: flex;
+    flex-direction: column;
 }

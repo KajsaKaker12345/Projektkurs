@@ -23,12 +23,14 @@
     </header>
     <main>
         <div>
-            <h1>Populära dejter</h1>
+            <h2>Populära dejter</h1>
             <img src="cook.jpg" alt="">
             <img src="cook.jpg" alt="">
         </div>
+        <hr>
         <div>
             <form>
+                <div class="field">
                 <label for="place">Plats</label>
                 <select name="place" id="place">
                     <option value="alla">Alla</option>
@@ -36,15 +38,28 @@
                     <option value="inomhus">Inomhus</option>
                     <option value="hemma">Hemma</option>
                 </select>
+                </div>
+                <div class="field">
                 <label for="price">Max pris</label>
                 <input type="range" name="price" id="price" min="0" max="1000">
+                </div>
+                <div class="field">
                 <label for="time">Tid</label>
                 <select name="time" id="time">
+                    <option value="alla">Alla</option>
                     <option value="hour">En timme</option>
                     <option value="halvdag">Halvdag</option>
                     <option value="heldag">Heldag</option>
                 </select>
+                </div>
             </form>
+        </div>
+        <div id="card">
+            <img class="kort-bild" src="cook.jpg" alt="">
+            <div id="card-besk">
+            <h3>Tre rätters</h2>
+            <p>Kort beskrivning</p>
+            </div>
         </div>
     </main>
     <footer>
