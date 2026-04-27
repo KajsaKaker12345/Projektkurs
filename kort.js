@@ -1,8 +1,4 @@
 
 //Hämta smapi 
 
-export function createCard() {
-    for(let kort of korten){
-
-    }
-}
+//skapa en loop till korten
