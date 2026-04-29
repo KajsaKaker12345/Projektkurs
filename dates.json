@@ -1,0 +1,139 @@
+{
+    "id": 1,
+    "name": "Vandring",
+    "in": "utomhus",
+    "description": "En romantisk vandring i solnedgången, hand i hand, där ni kan njuta av naturens skönhet och varandras sällskap.",
+    "image": "walk.jpg"
+},
+{
+    "id": 2,
+    "name": "Camping",
+    "in": "utomhus",
+    "description": "En mysig campingupplevelse under stjärnorna, där ni kan tända en lägereld, grilla marshmallows och dela historier i den friska luften.",
+    "image": "camping.jpg"
+},
+{
+    "id": 3,
+    "name": "Picknick",
+    "in": "utomhus",
+    "description": "En romantisk picknick i en vacker park, där ni kan njuta av god mat, varandras sällskap och den lugna atmosfären.",
+    "image": "picknick.jpg"
+},
+{
+   "id": 4,
+   "name": "Älgsafari",
+   "in": "utomhus",
+   "description": "En spännande älgsafari i skogen, där ni kan upptäcka vilda älgar i deras naturliga miljö och njuta av en unik naturupplevelse tillsammans.",
+   "image": "algsafari.jpg"
+},
+{
+    "id": 5,
+    "name": "Grillkväll",
+    "in": "utomhus",
+    "description": "En romantisk grillkväll i trädgården, där ni kan laga mat tillsammans, njuta av goda smaker och skapa minnen under stjärnorna.",
+    "image": "grillkvall.jpg"
+},
+{
+    "id": 6,
+    "name": "Sjärnskådning",
+    "in": "utomhus",
+    "description": "En magisk kväll med stjärnskådning, där ni kan ligga på en filt och titta upp på stjärnorna, dela drömmar och känna er små i det stora universumet tillsammans.",
+    "image": "stjarnskadning.jpg"
+},
+{
+    "id": 7,
+    "name": "Restaurang",
+    "in": "inomhus",
+    "description": "En romantisk middag på en mysig restaurang, där ni kan njuta av god mat, varandras sällskap och en intim atmosfär.",
+    "image": "restaurang.jpg"
+},
+{
+    "id": 8,
+    "name": "Bio",
+    "in": "inomhus",
+    "description": "En klassisk dejt på bio, där ni kan dela en filmupplevelse tillsammans med goda snacks och dricka.",
+    "image": "bio.jpg"
+}, {
+    "id": 9,
+    "name": "Bar",
+    "in": "inomhus",
+    "description": "En avslappnad dejt på en bar, där ni kan njuta av goda drinkar, musik och varandras sällskap i en livlig atmosfär.",
+    "image": "bar.jpg"
+},
+{
+    "id": 10,
+    "name": "Spelkväll",
+    "in": "hemma",
+    "description": "En rolig spelkväll hemma, där ni kan spela brädspel, kortspel eller videospel tillsammans och skapa en avslappnad och underhållande atmosfär.",
+    "image": "spelkvall.jpg"
+},
+{
+    "id": 11,
+    "name": "TV-Spel",
+    "in": "hemma",
+    "description": "En avslappnad dejt där ni kan spela TV-spel tillsammans, skratta och ha kul i en bekväm hemmiljö.",
+    "image": "tvspel.jpg"
+},
+{
+    "id": 12,
+    "name": "Spa",
+    "in": "inomhus",
+    "description": "En avkopplande dejt på ett spa, där ni kan njuta av massage, bastu och andra avkopplande behandlingar tillsammans för att skapa en romantisk och lugn atmosfär.",
+    "image": "spa.jpg"
+}, 
+{
+    "id": 13,
+    "name": "Pyssel",
+    "in": "hemma",
+    "description": "En kreativ dejt där ni kan pyssla tillsammans, skapa konstverk eller göra DIY-projekt i en avslappnad hemmiljö, vilket ger er möjlighet att lära känna varandra på ett roligt och personligt sätt.",
+    "image": "pyssel.jpg"
+},
+{
+    "id": 14,
+    "name": "Dreja",
+    "in": "inomhus",
+    "description": "En unik dejt där ni kan prova på drejning tillsammans, skapa vackra keramikföremål och ha kul i en kreativ och avslappnad miljö, vilket ger er möjlighet att lära känna varandra på ett nytt och spännande sätt.",
+    "image": "dreja.jpg"
+},
+{
+    "id": 15,
+    "name": "Matlagningskväll",
+    "in": "hemma",
+    "description": "En romantisk matlagningskväll hemma, där ni kan laga en måltid tillsammans, njuta av goda smaker och skapa en intim och mysig atmosfär i köket, vilket ger er möjlighet att samarbeta och ha kul tillsammans.",
+    "image": "matlagning.jpg"
+},
+{
+    "id": 16,
+    "name": "Sip and paint",
+    "in": "hemma",
+    "description": "En kreativ dejt där ni kan delta i en 'sip and paint'-kväll, där ni kan måla tillsammans medan ni njuter av goda drinkar och har kul i en avslappnad och social miljö, vilket ger er möjlighet att lära känna varandra på ett roligt och personligt sätt.",
+    "image": "sipandpaint.jpg"
+},
+{
+    "id": 17,
+    "name": "Padel",
+    "in": "utomhus",
+    "description": "En aktiv dejt där ni kan spela padel tillsammans, ha kul och njuta av en sportig och energisk atmosfär, vilket ger er möjlighet att lära känna varandra på ett roligt och fysiskt sätt.",
+    "image": "padel.jpg"
+},
+{
+    "id": 18,
+    "name": "Cykelutflykt",
+    "in": "utomhus",
+    "description": "En romantisk cykelutflykt tillsammans, där ni kan utforska vackra platser, njuta av frisk luft och varandras sällskap, vilket ger er möjlighet att lära känna varandra på ett avslappnat och äventyrligt sätt.",
+    "image": "cykelutflykt.jpg"
+},
+{
+    "id": 19,
+    "name": "Bowling",
+    "in": "inomhus",
+    "description": "En rolig dejt på en bowlinghall, där ni kan tävla mot varandra, skratta och ha kul i en avslappnad och social miljö, vilket ger er möjlighet att lära känna varandra på ett lekfullt och underhållande sätt.",
+    "image": "bowling.jpg"
+},
+{
+    "id": 20,
+    "name": "Minigolf",
+    "in": "utomhus",
+    "description": "En livlig dejt med minigolf, där ni kan tävla mot varandra, skratta och ha kul i en avslappnad och social miljö, vilket ger er möjlighet att lära känna varandra på ett lekfullt och underhållande sätt.",
+    "image": "minigolf.jpg"
+},
