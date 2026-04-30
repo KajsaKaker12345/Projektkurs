@@ -1,10 +1,31 @@
-.hidden-nav{
+
+#hidden-nav{
     display: none;
+}
+#hidden-nav.show{
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    background-color: rgb(177, 213, 240);
+    
 }
 
 img{
     width: 140px;
     border-radius: 6px;
+}
+
+#menu-icon, #sök-icon{
+    width: 35px;
+    height: 35px;
+}
+#spara-icon{
+    width: 30px;
+    height: 30px;
+}
+h2{
+    margin-left: 40px;
 }
 
 .kort-bild{
@@ -30,12 +51,17 @@ form{
 
 h1{
     font-size: 20px;
-    text-align: center;
+    margin: 0;
 }
 
 header{
     background-color: rgb(78, 223, 245);
-    height: 25px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: relative;
 }
 footer{
     position: fixed;
