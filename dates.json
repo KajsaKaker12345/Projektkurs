@@ -27,7 +27,7 @@
     "in": "utomhus",
     "description": "En romantisk picknick i en vacker park, där ni kan njuta av god mat, varandras sällskap och den lugna atmosfären.",
     "type": "local",
-    "file": "picknick.json",
+    "file": "picknick.json", 
     "image": "image/picknick.jpg"
 },
 {
@@ -192,6 +192,8 @@
     "name": "Minigolf",
     "in": "utomhus",
     "description": "En livlig dejt med minigolf, där ni kan tävla mot varandra, skratta och ha kul i en avslappnad och social miljö, vilket ger er möjlighet att lära känna varandra på ett lekfullt och underhållande sätt.",
+    "type": "local",
+    "file": "minigolf.json",
     "image": "image/minigolf.jpg"
 }
 ]
