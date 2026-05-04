@@ -41,7 +41,7 @@
     "filter": {
         "descriptions": "älgsafari"
     },
-   "image": "image/algsafari.jpg"
+   "image": "image/algsafari.png"
 },
 {
     "id": 5,
@@ -86,7 +86,7 @@
     "filter": {
         "descriptions": "biograf"
     },
-    "image": "image/bio.jpg"
+    "image": "image/bio.png"
 }, {
     "id": 9,
     "name": "Bar",
@@ -107,7 +107,7 @@
     "description": "En rolig spelkväll hemma, där ni kan spela brädspel, kortspel eller videospel tillsammans och skapa en avslappnad och underhållande atmosfär.",
     "type": "local",
     "file": "spelkvall.json",
-    "image": "image/spelkvall.jpg"
+    "image": "image/spelkvall.png"
 },
 {
     "id": 11,
@@ -147,7 +147,7 @@
     "description": "En unik dejt där ni kan prova på drejning tillsammans, skapa vackra keramikföremål och ha kul i en kreativ och avslappnad miljö, vilket ger er möjlighet att lära känna varandra på ett nytt och spännande sätt.",
     "type": "local",
     "file": "dreja.json",
-    "image": "image/dreja.jpg"
+    "image": "image/dreja.png"
 },
 {
     "id": 15,
