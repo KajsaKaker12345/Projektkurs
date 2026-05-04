@@ -8,10 +8,10 @@ img{
 }
 
 .kort-bild{
-    width: 100px;
+    width: 160px;
     margin: 6px;
 }
-#card{
+.card{
     display:inline-flex;
     margin-top: 30px;
     border: solid black 1px;
