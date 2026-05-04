@@ -48,7 +48,7 @@
     "in": "utomhus",
     "description": "En romantisk grillkväll i trädgården, där ni kan laga mat tillsammans, njuta av goda smaker och skapa minnen under stjärnorna.",
     "type": "local",
-    "file": "grillkvall.json",
+    "filename": "grillkvall.json",
     "image": "image/grillkvall.jpg"
 },
 {
@@ -121,7 +121,7 @@
     "in": "inomhus",
     "description": "En avkopplande dejt på ett spa, där ni kan njuta av massage, bastu och andra avkopplande behandlingar tillsammans för att skapa en romantisk och lugn atmosfär.",
     "type": "api",
-    "controller": "accommondation",
+    "controller": "accommodation",
     "method": "getall",
     "filter": {
         "spa": "Y"
@@ -134,7 +134,7 @@
     "in": "hemma",
     "description": "En kreativ dejt där ni kan pyssla tillsammans, skapa konstverk eller göra DIY-projekt i en avslappnad hemmiljö, vilket ger er möjlighet att lära känna varandra på ett roligt och personligt sätt.",
     "type": "own",
-    "image": "image/pyssel.jpg"
+    "image": "image/dreja.png"
 },
 {
     "id": 14,
@@ -142,7 +142,7 @@
     "in": "inomhus",
     "description": "En unik dejt där ni kan prova på drejning tillsammans, skapa vackra keramikföremål och ha kul i en kreativ och avslappnad miljö, vilket ger er möjlighet att lära känna varandra på ett nytt och spännande sätt.",
     "type": "local",
-    "file": "dreja.json",
+    "filename": "dreja.json",
     "image": "image/dreja.png"
 },
 {
@@ -167,7 +167,7 @@
     "in": "utomhus",
     "description": "En aktiv dejt där ni kan spela padel tillsammans, ha kul och njuta av en sportig och energisk atmosfär, vilket ger er möjlighet att lära känna varandra på ett roligt och fysiskt sätt.",
     "type": "local",
-    "file": "padel.json",
+    "filename": "padel.json",
     "image": "image/padel.jpg"
 },
 {
@@ -197,7 +197,7 @@
     "in": "utomhus",
     "description": "En livlig dejt med minigolf, där ni kan tävla mot varandra, skratta och ha kul i en avslappnad och social miljö, vilket ger er möjlighet att lära känna varandra på ett lekfullt och underhållande sätt.",
     "type": "local",
-    "file": "minigolf.json",
+    "filename": "minigolf.json",
     "image": "image/minigolf.jpg"
 }
 ]
