@@ -96,7 +96,8 @@
     "controller": "activity",
     "method": "getall",
     "filter": {
-        "descriptions": "bar"
+        "alcohol_licence": "Y",
+        "child_menu": "N"
     },
     "image": "image/bar.jpg"
 },

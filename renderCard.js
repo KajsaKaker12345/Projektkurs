@@ -24,7 +24,7 @@ function createCards(establishments) {
         `;
         cardDiv.addEventListener("click", () => {
             makeClick(d);
-            console.log("text");
+            window.location.href = `details.html?id=${d.id}`;
         });
         
         cardContainer.append(cardDiv);
