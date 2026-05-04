@@ -14,7 +14,7 @@
     "in": "utomhus",
     "description": "En mysig campingupplevelse under stjärnorna, där ni kan tända en lägereld, grilla marshmallows och dela historier i den friska luften.",
     "type": "api",
-    "controller": "activity",
+    "controller": "establishment",
     "method": "getall",
     "filter": {
         "descriptions": "camping"

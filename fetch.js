@@ -1,7 +1,3 @@
-const response = await fetch("dates.json");
-const categories = await response.json();
-
-makeClick(categories[0]);
 export async function getFetch(category = {}) {
 
     const params = new URLSearchParams();
@@ -21,13 +17,6 @@ export async function getFetch(category = {}) {
             params.append(value, category.filter[value]);
         }
     } 
-    /*if (category.type === "local") {
-        const response = await fetch(category.filename);
-        const data = await response.json();
-        console.log(data);
-    }
-    */
-
     const response = await fetch(`https://smapi.lnu.se/api/?${params.toString()}`);
     
     const data = await response.json();
@@ -38,5 +27,5 @@ export async function getFetch(category = {}) {
 
 export async function makeClick(category) {
     const data = await getFetch(category);
-    //console.log(data);
+    return data;
  }
