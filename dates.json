@@ -26,8 +26,7 @@
     "name": "Picknick",
     "in": "utomhus",
     "description": "En romantisk picknick i en vacker park, där ni kan njuta av god mat, varandras sällskap och den lugna atmosfären.",
-    "type": "local",
-    "file": "picknick.json", 
+    "type": "own",
     "image": "image/picknick.jpg"
 },
 {
@@ -57,8 +56,7 @@
     "name": "Sjärnskådning",
     "in": "utomhus",
     "description": "En magisk kväll med stjärnskådning, där ni kan ligga på en filt och titta upp på stjärnorna, dela drömmar och känna er små i det stora universumet tillsammans.",
-    "type": "local",
-    "file": "stjarnskadning.json",
+    "type": "own",
     "image": "image/stjarnskadning.jpg"
 },
 {
@@ -106,8 +104,7 @@
     "name": "Spelkväll",
     "in": "hemma",
     "description": "En rolig spelkväll hemma, där ni kan spela brädspel, kortspel eller videospel tillsammans och skapa en avslappnad och underhållande atmosfär.",
-    "type": "local",
-    "file": "spelkvall.json",
+    "type": "own",
     "image": "image/spelkvall.png"
 },
 {
@@ -115,8 +112,7 @@
     "name": "TV-Spel",
     "in": "hemma",
     "description": "En avslappnad dejt där ni kan spela TV-spel tillsammans, skratta och ha kul i en bekväm hemmiljö.",
-    "type": "local",
-    "file": "tvspel.json",
+    "type": "own",
     "image": "image/wii.jpg"
 },
 {
@@ -137,8 +133,7 @@
     "name": "Pyssel",
     "in": "hemma",
     "description": "En kreativ dejt där ni kan pyssla tillsammans, skapa konstverk eller göra DIY-projekt i en avslappnad hemmiljö, vilket ger er möjlighet att lära känna varandra på ett roligt och personligt sätt.",
-    "type": "local",
-    "file": "pyssel.json",
+    "type": "own",
     "image": "image/pyssel.jpg"
 },
 {
@@ -155,6 +150,7 @@
     "name": "Matlagningskväll",
     "in": "hemma",
     "description": "En romantisk matlagningskväll hemma, där ni kan laga en måltid tillsammans, njuta av goda smaker och skapa en intim och mysig atmosfär i köket, vilket ger er möjlighet att samarbeta och ha kul tillsammans.",
+    "type": "own",
     "image": "image/cook.jpg"
 },
 {
@@ -162,6 +158,7 @@
     "name": "Sip and paint",
     "in": "hemma",
     "description": "En kreativ dejt där ni kan delta i en 'sip and paint'-kväll, där ni kan måla tillsammans medan ni njuter av goda drinkar och har kul i en avslappnad och social miljö, vilket ger er möjlighet att lära känna varandra på ett roligt och personligt sätt.",
+    "type": "own",
     "image": "image/sipandpaint.jpg"
 },
 {
@@ -178,6 +175,7 @@
     "name": "Cykelutflykt",
     "in": "utomhus",
     "description": "En romantisk cykelutflykt tillsammans, där ni kan utforska vackra platser, njuta av frisk luft och varandras sällskap, vilket ger er möjlighet att lära känna varandra på ett avslappnat och äventyrligt sätt.",
+    "type": "own",
     "image": "image/cykelutflykt.jpg"
 },
 {
@@ -185,7 +183,12 @@
     "name": "Bowling",
     "in": "inomhus",
     "description": "En rolig dejt på en bowlinghall, där ni kan tävla mot varandra, skratta och ha kul i en avslappnad och social miljö, vilket ger er möjlighet att lära känna varandra på ett lekfullt och underhållande sätt.",
-
+    "type": "api",
+    "controller": "activity",
+    "method": "getall",
+    "filter": {
+        "descriptions": "Bowlinghall"
+    },
     "image": "image/bowling.jpg"
 },
 {
