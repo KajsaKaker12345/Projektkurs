@@ -198,6 +198,6 @@
     "description": "En livlig dejt med minigolf, där ni kan tävla mot varandra, skratta och ha kul i en avslappnad och social miljö, vilket ger er möjlighet att lära känna varandra på ett lekfullt och underhållande sätt.",
     "type": "local",
     "filename": "minigolf.json",
-    "image": "image/minigolf.jpg"
+    "image": "image/minigolf.svg"
 }
 ]
