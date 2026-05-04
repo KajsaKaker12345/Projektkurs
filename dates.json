@@ -4,6 +4,8 @@
     "name": "Vandring",
     "in": "utomhus",
     "description": "En romantisk vandring i solnedgången, hand i hand, där ni kan njuta av naturens skönhet och varandras sällskap.",
+    "type": "local",
+    "filename": "vandring.json",
     "image": "image/walk.jpg"
 },
 {
@@ -11,6 +13,12 @@
     "name": "Camping",
     "in": "utomhus",
     "description": "En mysig campingupplevelse under stjärnorna, där ni kan tända en lägereld, grilla marshmallows och dela historier i den friska luften.",
+    "type": "api",
+    "controller": "activity",
+    "method": "getall",
+    "filter": {
+        "descriptions": "camping"
+    },
     "image": "image/camping.jpg"
 },
 {
@@ -18,6 +26,8 @@
     "name": "Picknick",
     "in": "utomhus",
     "description": "En romantisk picknick i en vacker park, där ni kan njuta av god mat, varandras sällskap och den lugna atmosfären.",
+    "type": "local",
+    "file": "picknick.json",
     "image": "image/picknick.jpg"
 },
 {
@@ -25,6 +35,12 @@
    "name": "Älgsafari",
    "in": "utomhus",
    "description": "En spännande älgsafari i skogen, där ni kan upptäcka vilda älgar i deras naturliga miljö och njuta av en unik naturupplevelse tillsammans.",
+   "type": "api",
+    "controller": "activity",
+    "method": "getall",
+    "filter": {
+        "descriptions": "älgsafari"
+    },
    "image": "image/algsafari.jpg"
 },
 {
@@ -32,6 +48,8 @@
     "name": "Grillkväll",
     "in": "utomhus",
     "description": "En romantisk grillkväll i trädgården, där ni kan laga mat tillsammans, njuta av goda smaker och skapa minnen under stjärnorna.",
+    "type": "local",
+    "file": "grillkvall.json",
     "image": "image/grillkvall.jpg"
 },
 {
@@ -39,6 +57,8 @@
     "name": "Sjärnskådning",
     "in": "utomhus",
     "description": "En magisk kväll med stjärnskådning, där ni kan ligga på en filt och titta upp på stjärnorna, dela drömmar och känna er små i det stora universumet tillsammans.",
+    "type": "local",
+    "file": "stjarnskadning.json",
     "image": "image/stjarnskadning.jpg"
 },
 {
@@ -46,6 +66,13 @@
     "name": "Restaurang",
     "in": "inomhus",
     "description": "En romantisk middag på en mysig restaurang, där ni kan njuta av god mat, varandras sällskap och en intim atmosfär.",
+    "type": "api",
+    "controller": "food",
+    "method": "getall",
+    "filter": {
+        "settings": "RESTAURANT",
+        "types": "FINE_DINING"
+    },
     "image": "image/dinner.jpg"
 },
 {
@@ -53,12 +80,24 @@
     "name": "Bio",
     "in": "inomhus",
     "description": "En klassisk dejt på bio, där ni kan dela en filmupplevelse tillsammans med goda snacks och dricka.",
+    "type": "api",
+    "controller": "activity",
+    "method": "getall",
+    "filter": {
+        "descriptions": "biograf"
+    },
     "image": "image/bio.jpg"
 }, {
     "id": 9,
     "name": "Bar",
     "in": "inomhus",
     "description": "En avslappnad dejt på en bar, där ni kan njuta av goda drinkar, musik och varandras sällskap i en livlig atmosfär.",
+    "type": "api",
+    "controller": "activity",
+    "method": "getall",
+    "filter": {
+        "descriptions": "bar"
+    },
     "image": "image/bar.jpg"
 },
 {
@@ -66,6 +105,8 @@
     "name": "Spelkväll",
     "in": "hemma",
     "description": "En rolig spelkväll hemma, där ni kan spela brädspel, kortspel eller videospel tillsammans och skapa en avslappnad och underhållande atmosfär.",
+    "type": "local",
+    "file": "spelkvall.json",
     "image": "image/spelkvall.jpg"
 },
 {
@@ -73,6 +114,8 @@
     "name": "TV-Spel",
     "in": "hemma",
     "description": "En avslappnad dejt där ni kan spela TV-spel tillsammans, skratta och ha kul i en bekväm hemmiljö.",
+    "type": "local",
+    "file": "tvspel.json",
     "image": "image/wii.jpg"
 },
 {
@@ -80,6 +123,12 @@
     "name": "Spa",
     "in": "inomhus",
     "description": "En avkopplande dejt på ett spa, där ni kan njuta av massage, bastu och andra avkopplande behandlingar tillsammans för att skapa en romantisk och lugn atmosfär.",
+    "type": "api",
+    "controller": "accommondation",
+    "method": "getall",
+    "filter": {
+        "spa": "Y"
+    },
     "image": "image/spa.jpg"
 }, 
 {
@@ -87,6 +136,8 @@
     "name": "Pyssel",
     "in": "hemma",
     "description": "En kreativ dejt där ni kan pyssla tillsammans, skapa konstverk eller göra DIY-projekt i en avslappnad hemmiljö, vilket ger er möjlighet att lära känna varandra på ett roligt och personligt sätt.",
+    "type": "local",
+    "file": "pyssel.json",
     "image": "image/pyssel.jpg"
 },
 {
@@ -94,6 +145,8 @@
     "name": "Dreja",
     "in": "inomhus",
     "description": "En unik dejt där ni kan prova på drejning tillsammans, skapa vackra keramikföremål och ha kul i en kreativ och avslappnad miljö, vilket ger er möjlighet att lära känna varandra på ett nytt och spännande sätt.",
+    "type": "local",
+    "file": "dreja.json",
     "image": "image/dreja.jpg"
 },
 {
@@ -115,6 +168,8 @@
     "name": "Padel",
     "in": "utomhus",
     "description": "En aktiv dejt där ni kan spela padel tillsammans, ha kul och njuta av en sportig och energisk atmosfär, vilket ger er möjlighet att lära känna varandra på ett roligt och fysiskt sätt.",
+    "type": "local",
+    "file": "padel.json",
     "image": "image/padel.jpg"
 },
 {
@@ -129,6 +184,7 @@
     "name": "Bowling",
     "in": "inomhus",
     "description": "En rolig dejt på en bowlinghall, där ni kan tävla mot varandra, skratta och ha kul i en avslappnad och social miljö, vilket ger er möjlighet att lära känna varandra på ett lekfullt och underhållande sätt.",
+
     "image": "image/bowling.jpg"
 },
 {
