@@ -1,0 +1,82 @@
+[
+{
+    "id": 21,
+    "name": "Södra Climate Arena",
+    "in": "inomhus",
+    "description": "",
+    "type": "local",
+    "lat": 56.86115,
+    "lng": 14.81980,
+    "price": ""
+},
+{
+    "id": 22,
+    "name": "Campus Padel Växjö",
+    "in": "inomhus",
+    "description": "",
+    "type": "local",
+    "lat": 56.85570,
+    "lng": 14.85814,
+    "price": 300
+},
+{
+    "id": 23,
+    "name": "Padelhouse by BSR",
+    "in": "inomhus",
+    "description": "",
+    "type": "local",
+    "lat": 56.90600,
+    "lng": 14.83240,
+    "price": 300
+},
+{
+    "id": 24,
+    "name": "Padel One Alvesta",
+    "in": "inomhus",
+    "description": "Padel hall med fokus på grym spelmiljö, stora ytor och skönt häng.",
+    "type": "local",
+    "lat": 56.90886,
+    "lng": 14.56022,
+    "price": ""
+},
+{
+    "id": 25,
+    "name": "Färjestads Padel",
+    "in": "utomhus",
+    "description": "Spela på Ölands finaste banor, vi erbjuder naturnära padelbanor.",
+    "type": "local",
+    "lat": 56.65471,
+    "lng": 16.53846,
+    "price": ""
+},
+{
+    "id": 26,
+    "name": "Lundegård Padel",
+    "in": "inomhus",
+    "description": "Lundagård Camping erbjuder första inomhus-padeltennishallen på Öland 2020!.",
+    "type": "local",
+    "lat": 56.91227,
+    "lng": 16.73251,
+    "price": 320
+},
+{
+    "id": 27,
+    "name": "Padel Arena Borgholm",
+    "in": "utomhus",
+    "description": "Padel Arena är centralt belägen i Borgholm och har 10 banor.",
+    "type": "local",
+    "lat": 56.88291,
+    "lng": 16.66050,
+    "price": ""
+},
+{
+    "id": 28,
+    "name": "JS Padel Färjestaden",
+    "in": "inomhus",
+    "description": "4 st inomhus banor i dubbel, 2 st utomhis banor i dubbel damt 1st singel. Det finns em liten shop och lounge tillgänglig.",
+    "type": "local",
+    "lat": 56.65834,
+    "lng": 16.49097,
+    "price": ""
+}
+]
