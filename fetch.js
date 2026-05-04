@@ -1,18 +1,43 @@
-export async function getFetch(controller, method, extrainput = {}) {
-    
-    const params = new URLSearchParams({
-        controller: controller,
-        method: method,
-        api_key: window.apiKey,
-    });
+const response = await fetch("dates.json");
+const categories = await response.json();
 
-    for (const value in extrainput) {
-        params.append(value, extrainput[value]);
+makeClick(categories[0]);
+
+export async function getFetch(category = {}) {
+    
+    const params = new URLSearchParams();
+
+
+
+    params.append("api_key", window.apiKey);
+
+    if (category.controller) {
+        params.append("controller", category.controller);
+    }
+    if (category.method) {
+        params.append("method", category.method);
+    }
+
+
+    if (category.filter) {
+        for (const value in category.filter) {
+            params.append(value, category.filter[value]);
+        }
+    } 
+    if (category.type === "local") {
+        const response = await fetch(category.filename);
+        const data = await response.json();
+        console.log(data);
     }
 
     const response = await fetch(`https://smapi.lnu.se/api/?${params.toString()}`);
     const data = await response.json();
-    console.log(response);
     return data;
  }
- getFetch("establishment", "getall");
+
+
+
+export async function makeClick(category) {
+    const data = await getFetch(category);
+    //console.log(data);
+ }
