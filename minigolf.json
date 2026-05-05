@@ -34,5 +34,14 @@
         "lat": 56.68059,
         "lng": 16.36031,
         "price": 200
+    },
+    {
+        "id": 5,
+        "name": "Eriksöre Camping",
+        "in": "utomhus",
+        "description": "Klart man vill spela minigolf på semesterna! Dra ihop hela familjen eller kompisgänget och anorda turnering på vår minigolfbana.",
+        "lat": 56.66296,
+        "lng": 16.35468,
+        "price": ""
     }
 ]
