@@ -74,3 +74,13 @@ footer{
     display: flex;
     flex-direction: column;
 }
+
+#search-input{
+    display: none;
+    margin-left:10px;
+    padding: 5px;
+}
+
+#search-input.active{
+    display: inline-block;
+}
