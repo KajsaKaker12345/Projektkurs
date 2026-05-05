@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Kalmar Parkgolf",
+        "in": "utomhus",
+        "description": "Kalmar Parkgolf är en en rolig, äventyrsfylld och vacker stadsanpassad sportanläggning med en minigolfbana som kombinerar vacker miljö, professionell bangolf och aväntyrliiga inslag.",
+        "lat": 56.66296,
+        "lng": 16.35468,
+        "price": 158
+    },
+    {
+        "id": 2,
+        "name": "Rosenlunds äventyrsminigolf",
+        "in": "utomhus",
+        "description": "Fantasifull äventyrsbana om 18 hål i Jönköping. Försök slå spik genom vulkaner, flygplan och bilar.",
+        "lat": 57.78779,
+        "lng": 14.22807,
+        "price": 200
+    },
+    {
+        "id": 3,
+        "name": "Talluddens Adventure Golf",
+        "in": "utomhus",
+        "description": "Minigolfbanan har 16 unika hål och byggda med många spännande hinder.",
+        "lat": 56.64727,
+        "lng": 16.46443,
+        "price": 200
+    },
+    {
+        "id": 4,
+        "name": "Ekudden Minigolf",
+        "in": "utomhus",
+        "description": ".",
+        "lat": 56.68059,
+        "lng": 16.36031,
+        "price": 200
+    }
+]
