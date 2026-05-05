@@ -1,0 +1,10 @@
+.kalender{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    height: 400px;
+}
+.date{
+    background-color: aqua;
+    margin: 2px;
+
+}
