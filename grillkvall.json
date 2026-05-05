@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Kronobergs Naturreservat",
+        "in": "utomhus",
+        "lat": 56.92613,
+        "lng": 14.79218
+    },
+    {
+        "id": 2,
+        "name": "Helgö grillplats",
+        "in": "utomhus",
+        "lat": 56.96227,
+        "lng": 14.78744
+    },
+    {
+        "id": 3,
+        "name": "Bokhultet",
+        "in": "utomhus",
+        "lat": 56.85958,
+        "lng": 14.76784
+    },
+    {
+        "id": 4,
+        "name": "Jägaregap Nature Reserve",
+        "in": "utomhus",
+        "lat": 56.96617,
+        "lng": 14.78098
+    },
+    {
+        "id": 5,
+        "name": "Notteryd",
+        "in": "utomhus",
+        "lat": 56.90906,
+        "lng": 14.88618
+    },
+    {
+        "id": 6,
+        "name": "Färjestadens Dämme",
+        "in": "utomhus",
+        "lat": 56.65461,
+        "lng": 16.47239
+    },
+    {
+        "id": 7,
+        "name": "Öland. Södra Greda",
+        "in": "utomhus",
+        "lat": 56.99445,
+        "lng": 16.87486
+    },
+    {
+        "id": 8,
+        "name": "Ramsnäs",
+        "in": "utomhus",
+        "lat": 57.24752,
+        "lng": 16.95827
+    }
+]
