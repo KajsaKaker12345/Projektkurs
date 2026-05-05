@@ -2,9 +2,16 @@
     display: grid;
     grid-template-columns: repeat(7,1fr);
     height: 400px;
+    margin-top: 40px;
 }
-.date{
-    background-color: aqua;
-    margin: 2px;
+.day{
+    margin: 6px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 2px;
+}
 
+#pil{
+    transform: scale(-1);
+    width: 70px;
 }
