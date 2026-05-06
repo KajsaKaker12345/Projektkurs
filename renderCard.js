@@ -11,7 +11,7 @@ export function createCards(establishments) {
         cardDiv.classList.add("card");
         cardDiv.innerHTML = `
         <img class="kort-bild" src="${d.image}" alt="">
-        <h3>${d.name}</h3>
+        <h3>${d.name}</h3><img class="save" src="spara.svg" alt="Spara">
         `;
         cardDiv.addEventListener("click", () => {
             window.location.href = `detaljsida/detalj.html?id=${d.id}`;
