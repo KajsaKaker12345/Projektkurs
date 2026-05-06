@@ -1,0 +1,21 @@
+.status{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.stats{
+    border-radius: 5px;
+    margin: 4px;
+    border: solid 2px black;
+    height: 65px;
+    width: 65px;
+}
+.stats img{
+    background-color: rgb(139, 182, 139);
+    height: 100%;
+    width: 100%;
+}
+#dejt-status{
+    width: 200px;
+
+}

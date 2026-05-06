@@ -1,0 +1,11 @@
+.card-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.slump-dejt{
+    border-radius: 5px;
+    margin: 10px;
+    border: solid 2px black;
+    width: 150px;
+    height: 130px;
+}
