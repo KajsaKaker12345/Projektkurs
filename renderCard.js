@@ -2,7 +2,7 @@ const response = await fetch("dates.json");
 const data = await response.json();
 createCards(data);
 
-function createCards(establishments) {
+export function createCards(establishments) {
     const cardContainer = document.getElementById("card-container");
     cardContainer.innerHTML = "";
 

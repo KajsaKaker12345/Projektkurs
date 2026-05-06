@@ -2,7 +2,7 @@
 #hidden-nav{
     display: none;
 }
-#hidden-nav.show{
+#hidden-nav.active{
     display: block;
     position: absolute;
     top: 40px;
