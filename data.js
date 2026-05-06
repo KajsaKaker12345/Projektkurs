@@ -1,6 +1,7 @@
 export function makeLocalElement(data) {
     const map = document.getElementById("map");
     map.innerHTML = "";
+    const filterContainer = document.getElementById("filters");
 
     for (const item of data) {
         const element = document.createElement("div");
@@ -12,10 +13,18 @@ export function makeLocalElement(data) {
         `;
         map.append(element);
     }
+    filterContainer.innerHTML = `<h2>Föreslagna platser</h2>
+        <form>
+            <label for="place">Plats</label>
+            <select name="" id="">
+                <option"></option>
+            </select>
+        </form>`;
 }
 export function makeFetchElement(data) {
     const map = document.getElementById("map");
     map.innerHTML = "";
+    const filterContainer = document.getElementById("filters");
 
     for (const item of data) {
         const element = document.createElement("div");
@@ -28,4 +37,11 @@ export function makeFetchElement(data) {
         `;
         map.append(element);
     }
+    filterContainer.innerHTML = `<h2>Föreslagna platser</h2>
+        <form>
+            <label for="place">Plats</label>
+            <select name="" id="">
+                <option"></option>
+            </select>
+        </form>`;
 }
