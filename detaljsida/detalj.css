@@ -2,3 +2,26 @@
     width: 100%;
     height: auto;
 }
+#container h2 {
+    font-size: 1.6em;
+    text-align: center;
+}
+#head img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 0 10px;
+}
+#head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#vald-dejt {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+#vald-dejt button {
+    padding: 10px 20px;
+}
