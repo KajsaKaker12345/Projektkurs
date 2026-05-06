@@ -1,12 +1,3 @@
-/* import { getFetch } from "./fetch.js";
-
-async function getData() {
-    const data = await getFetch("establishment", "getall");
-    console.log(data);
-    createCards(data.payload);
-}*/
-import { makeClick } from "./fetch.js";
-
 const response = await fetch("dates.json");
 const data = await response.json();
 createCards(data);

@@ -22,10 +22,3 @@ export async function getFetch(category = {}) {
     const data = await response.json();
     return data;
  }
-
-
-
-export async function makeClick(category) {
-    const data = await getFetch(category);
-    return data;
- }

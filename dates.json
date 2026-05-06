@@ -38,7 +38,7 @@
     "controller": "activity",
     "method": "getall",
     "filter": {
-        "descriptions": "älgsafari"
+        "descriptions": "älgpark,älgsafari"
     },
    "image": "image/algsafari.png"
 },
@@ -91,7 +91,7 @@
     "in": "inomhus",
     "description": "En avslappnad dejt på en bar, där ni kan njuta av goda drinkar, musik och varandras sällskap i en livlig atmosfär.",
     "type": "api",
-    "controller": "activity",
+    "controller": "food",
     "method": "getall",
     "filter": {
         "alcohol_licence": "Y",
