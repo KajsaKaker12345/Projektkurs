@@ -5,10 +5,10 @@ searchBtn.addEventListener("click", () => {
     searchInput.classList.toggle("active");
 });
 
-import { createCards } from "./renderCard.js";
-
 const response = await fetch("dates.json");
 const data = await response.json();
+
+import { createCards } from "./renderCard.js";
 
 const input = document.getElementById("search-input");
 const resultat = document.getElementById("search-resultat");
@@ -21,9 +21,8 @@ input.addEventListener("input", () => {
     resultat.innerHTML = "";
     error.textContent = "";
 
-    for( const s of filtered){
         createCards(filtered);
-    }
+    
 
     if(filtered.length === 0){
         error.textContent = "Inga resultat";
