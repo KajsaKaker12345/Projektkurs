@@ -21,6 +21,7 @@ export function makeLocalElement(data) {
             </select>
         </form>`;
 }
+
 export function makeFetchElement(data) {
     const map = document.getElementById("map");
     map.innerHTML = "";
@@ -34,13 +35,32 @@ export function makeFetchElement(data) {
         element.innerHTML = `
             <h3>${item.name}</h3>
             <p>${priceOrRating}</p>
+            <p>${item.city}, ${item.province}</p>
         `;
         map.append(element);
     }
+    
+
+    const filters =[];
+
+    if (data.some(item => item.price_range)) {
+        filters.push("price_range");
+    }
+
+    if (data.some(item => item.avg_dinner_pricing)) {
+        filters.push("avg_dinner_pricing");
+    }
+
+    if (data.some(item => item.rating)) {
+        filters.push("rating");
+    }
+
+    // filter container
     filterContainer.innerHTML = `<h2>Föreslagna platser</h2>
         <form>
-            <label for="place">Plats</label>
-            <select name="" id="">
+            <label for="price">Prisklass</label>
+            <select name="price" id="price">
+            ${filters.includes("price_range")}
                 <option"></option>
             </select>
         </form>`;

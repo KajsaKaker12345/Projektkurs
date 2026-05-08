@@ -38,7 +38,7 @@
    "in": "utomhus",
    "description": "En spännande älgsafari i skogen, där ni kan upptäcka vilda älgar i deras naturliga miljö och njuta av en unik naturupplevelse tillsammans.",
    "type": "api",
-    "controller": "activity",
+    "controller": "establishment",
     "method": "getall",
     "filter": {
         "descriptions": "älgpark,älgsafari"
@@ -86,7 +86,7 @@
     "in": "inomhus",
     "description": "En klassisk dejt på bio, där ni kan dela en filmupplevelse tillsammans med goda snacks och dricka.",
     "type": "api",
-    "controller": "activity",
+    "controller": "establishment",
     "method": "getall",
     "filter": {
         "descriptions": "biograf"
@@ -202,7 +202,7 @@
     "in": "inomhus",
     "description": "En rolig dejt på en bowlinghall, där ni kan tävla mot varandra, skratta och ha kul i en avslappnad och social miljö, vilket ger er möjlighet att lära känna varandra på ett lekfullt och underhållande sätt.",
     "type": "api",
-    "controller": "activity",
+    "controller": "establishment",
     "method": "getall",
     "filter": {
         "descriptions": "Bowlinghall"
