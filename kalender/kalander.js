@@ -29,8 +29,7 @@ function showNextDate() {
     nextDiv.classList.add("next-date");
 
     nextDiv.innerHTML = `
-    <img src="../${date.image}" alt="${date.name}">
-    <h3>${date.name}</h3><button class="remove-btn">Ta bort</button>
+    <p>Datum</p><h3>${date.name}</h3><button class="remove-btn">Ta bort</button><button class="read-more"><a href="../detaljsida/detalj.html?id=${date.id}">Läs mer</a></button>
     `;
 
     const removeBtn = nextDiv.querySelector(".remove-btn");
