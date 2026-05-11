@@ -39,29 +39,34 @@ export function makeFetchElement(data) {
         `;
         map.append(element);
     }
+
+}
+function convertToCity(lat, lng) {
+    const response = fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}localityLanguage=en
+`);
+    return response.then(res => res.json())
+        .then(data => data.city);
+}
+
+export function makeFilter(data) {
+    const form = document.getElementById("form");
+    const provinceInput = document.getElementById("provinces");
+   /* const priceInput = document.getElementById("price");
+    const priceValue = document.getElementById("priceValue");
+
+    priceValue.textContent = priceInput.value;
+    */
     
+    form.addEventListener("change", () => {
+        const selectedProvince = provinceInput.value;
 
-    const filters =[];
+        let filteredData = data.filter(item => item.province === selectedProvince);
 
-    if (data.some(item => item.price_range)) {
-        filters.push("price_range");
-    }
-
-    if (data.some(item => item.avg_dinner_pricing)) {
-        filters.push("avg_dinner_pricing");
-    }
-
-    if (data.some(item => item.rating)) {
-        filters.push("rating");
-    }
-
-    // filter container
-    filterContainer.innerHTML = `<h2>Föreslagna platser</h2>
-        <form>
-            <label for="price">Prisklass</label>
-            <select name="price" id="price">
-            ${filters.includes("price_range")}
-                <option"></option>
-            </select>
-        </form>`;
+        if (selectedProvince === "Alla") {
+            makeFetchElement(data);
+            return;
+        }
+        else {
+        makeFetchElement(filteredData);
+    }});
 }

@@ -15,6 +15,19 @@
     <div id="förslag"></div>
     <div id="vald-dejt"></div>
     <div id="filters">
+        <h2>Förslagna dejter</h2>
+        <form id="form">
+            <label for="provinces">Landskap:</label>
+            <select name="provinces" id="provinces">
+                <option value="Alla">Alla</option>
+                <option value="Småland">Småland</option>
+                <option value="Öland">Öland</option>
+            </select>
+            <label for="price">Max pris: <span id="priceValue"></span>kr</label>
+            0<input type="range" id="price" name="price" min="0" max="1000">
+            1000
+
+        </form>
     </div>
     <div id="map">
     </div>

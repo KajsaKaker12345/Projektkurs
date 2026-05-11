@@ -71,11 +71,12 @@
     "in": "inomhus",
     "description": "En romantisk middag på en mysig restaurang, där ni kan njuta av god mat, varandras sällskap och en intim atmosfär.",
     "type": "api",
-    "controller": "food",
+    "controller": "establishment",
     "method": "getall",
     "filter": {
-        "settings": "RESTAURANT",
-        "types": "FINE_DINING"
+        "types": "food",
+        "descriptions": "Restaurang"
+        
     },
     "price": "hög",
     "image": "image/dinner.jpg"

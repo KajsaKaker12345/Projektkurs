@@ -25,3 +25,7 @@
 #vald-dejt button {
     padding: 10px 20px;
 }
+label {
+    margin-top: 10px;
+    display: block;
+}

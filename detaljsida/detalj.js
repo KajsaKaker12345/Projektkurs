@@ -1,5 +1,6 @@
 import { makeFetchElement } from "../data.js";
 import { getFetch } from "../fetch.js";
+import { makeFilter } from "../data.js";
 import { makeLocalElement } from "../data.js";
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -47,6 +48,7 @@ async function createDetails(category) {
     else if (category.type === "api") {
         data = await getFetch(category);
         makeFetchElement(data.payload);
+        makeFilter(data.payload);
     }
     
     else {
