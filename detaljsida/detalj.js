@@ -27,7 +27,7 @@ async function createDetails(category) {
         return;
     }
 
-    headerContainer.innerHTML = `<a href="../index.html"><img src="../image/pil.svg" alt="tillbaka pil"></a><h1>${category.name}</h1><img src="../spara.svg" alt="image/spara ikon">`;
+    headerContainer.innerHTML = `<a href="../index.html"><img src="../image/pil.svg" alt="tillbaka pil"></a><h1>${category.name}</h1><button><img src="../image/spara.svg" alt="image/spara ikon"></button>`;
     detailsContainer.innerHTML = `
         <img src="../${category.image}" alt="${category.name}">
         <p>${category.description}</p>
