@@ -5,18 +5,46 @@ const data = await response.json();
 createCards(data);
 
 const placeInput = document.getElementById("place");
+const priceInput = document.getElementById("price");
+const priceSign = document.getElementById("priceValue");
 const form = document.getElementById("form");
-
 
 form.addEventListener("change", filterList);
 
 function filterList() {
+
     const placeValue = placeInput.value;
+    const priceValue = priceInput.value;
     let filtered = data;
+    
+    if (priceValue == 1) {
+            priceSign.textContent = "$";
+        }
+
+        if (priceValue == 2) {
+            priceSign.textContent = "$$";
+        }
+        if (priceValue == 3) {
+            priceSign.textContent = "$$$";
+        }
 
     if (placeValue !== "alla") {
         filtered = data.filter(d => d.in === placeValue);
     }
+    filtered = filtered.filter(d => {
+
+        if (priceValue == 1) {
+            return d.price === "låg";
+        }
+
+        if (priceValue == 2) {
+            return d.price === "låg" || d.price === "medel";
+        }
+        if (priceValue == 3) {
+            return d.price === "låg" || d.price === "medel" || d.price === "hög";
+        }
+
+    });
 
     createCards(filtered);
     

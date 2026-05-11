@@ -1,4 +1,5 @@
 import { makeFetchElement } from "../data.js";
+import { loadMap } from "./kartan.js";
 import { getFetch } from "../fetch.js";
 import { makeFilter } from "../data.js";
 import { makeLocalElement } from "../data.js";
@@ -44,12 +45,14 @@ async function createDetails(category) {
         const response = await fetch(`../${category.filename}`);
         data = await response.json();
         makeLocalElement(data);
+        loadMap(data);
     }
 
     else if (category.type === "api") {
         data = await getFetch(category);
         makeFetchElement(data.payload);
         makeFilter(data.payload);
+        loadMap(data.payload);
     }
     
     else {
