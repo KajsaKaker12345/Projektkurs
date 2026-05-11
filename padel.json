@@ -6,7 +6,8 @@
     "description": "",
     "lat": 56.86115,
     "lng": 14.81980,
-    "price": ""
+    "price": "",
+    "rating": 4
 },
 {
     "id": 2,
@@ -15,7 +16,8 @@
     "description": "",
     "lat": 56.85570,
     "lng": 14.85814,
-    "price": 300
+    "price": 300,
+    "rating": 5
 },
 {
     "id": 3,
@@ -24,7 +26,8 @@
     "description": "",
     "lat": 56.90600,
     "lng": 14.83240,
-    "price": 300
+    "price": 300,
+    "rating": 4
 },
 {
     "id": 4,
@@ -33,7 +36,8 @@
     "description": "Padel hall med fokus på grym spelmiljö, stora ytor och skönt häng.",
     "lat": 56.90886,
     "lng": 14.56022,
-    "price": ""
+    "price": "",
+    "rating": 4
 },
 {
     "id": 5,
@@ -42,7 +46,8 @@
     "description": "Spela på Ölands finaste banor, vi erbjuder naturnära padelbanor.",
     "lat": 56.65471,
     "lng": 16.53846,
-    "price": ""
+    "price": "",
+    "rating": 4
 },
 {
     "id": 6,
@@ -51,7 +56,8 @@
     "description": "Lundagård Camping erbjuder första inomhus-padeltennishallen på Öland 2020!.",
     "lat": 56.91227,
     "lng": 16.73251,
-    "price": 320
+    "price": 320,
+    "rating": 4
 },
 {
     "id": 7,
@@ -60,7 +66,8 @@
     "description": "Padel Arena är centralt belägen i Borgholm och har 10 banor.",
     "lat": 56.88291,
     "lng": 16.66050,
-    "price": ""
+    "price": "",
+    "rating": 4
 },
 {
     "id": 8,
@@ -69,6 +76,7 @@
     "description": "4 st inomhus banor i dubbel, 2 st utomhis banor i dubbel damt 1st singel. Det finns em liten shop och lounge tillgänglig.",
     "lat": 56.65834,
     "lng": 16.49097,
-    "price": ""
+    "price": "",
+    "rating": 4
 }
 ]

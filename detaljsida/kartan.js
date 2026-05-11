@@ -10,5 +10,5 @@ export async function loadMap(data) {
 
   markers.clearLayers();
     for (const place of data) {
-      L.marker([place.lat,place.lng]).addTo(markers).bindPopup(`<h3>${place.name}</h3>`); }
+      L.marker([place.lat,place.lng]).addTo(markers).bindPopup(`<h3>${place.name}</h3><p>Recensioner: ${Number(place.rating)}/5</p>`); }
   }

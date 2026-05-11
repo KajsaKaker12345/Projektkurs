@@ -45,6 +45,11 @@ function filterList() {
         }
 
     });
+    if (filtered.length === 0) {
+        const container = document.getElementById("card-container");
+        container.innerHTML = "<p>Det finns tyvärr inga dejter som matchar din sök filtrering! </p>";
+        return;
+    }
 
     createCards(filtered);
     
