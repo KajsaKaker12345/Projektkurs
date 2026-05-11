@@ -8,7 +8,7 @@ export function createCards(establishments) {
         cardDiv.classList.add("card");
         cardDiv.innerHTML = `
         <img class="kort-bild" src="${d.image}" alt="">
-        <h3>${d.name}</h3><button class="save"><img src="spara.svg" alt="Spara"></button>
+        <h3>${d.name}</h3><button class="save"><img src="image/spara.svg" alt="Spara"></button>
         `;
 
         const saveBtn = cardDiv.querySelector(".save");
