@@ -33,8 +33,24 @@
     <main>
         <div>
             <h2>Populära dejter</h2>
+            <div id="p">
+            <div class="popular-bild">
             <img src="image/cook.jpg" alt="">
+            <h3>Vandring</h3>
+            </div>
+            <div class="popular-bild">
             <img src="image/cook.jpg" alt="">
+            <h3>Restaurang</h3>
+            </div>
+            <div class="popular-bild">
+            <img src="image/cook.jpg" alt="">
+            <h3>Vandring</h3>
+            </div>
+            <div class="popular-bild">
+            <img src="image/cook.jpg" alt="">
+            <h3>Restaurang</h3>
+            </div>
+            </div>
         </div>
         <hr>
         <div>
@@ -49,8 +65,9 @@
                 </select>
                 </div>
                 <div class="field">
-                <label for="price">Prisklass:</label>
-                <input type="range" name="price" id="price" min="0" max="1000">
+                <label for="price">Prisklass: <span id="priceValue">$$$</span></label>
+                <input type="range" name="price" id="price" min="1" value="3" max="3">
+                
                 </div>
             </form>
         </div>

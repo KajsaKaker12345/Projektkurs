@@ -88,3 +88,15 @@ footer{
 #search-input.active{
     display: inline-block;
 }
+#p {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+
+}
+.popular-bild {
+    border: solid black 1px;
+    padding: 6px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
