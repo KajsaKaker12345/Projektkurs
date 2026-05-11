@@ -3,6 +3,7 @@ import { loadMap } from "./kartan.js";
 import { getFetch } from "../fetch.js";
 import { makeFilter } from "../data.js";
 import { makeLocalElement } from "../data.js";
+import { makeOwnElement } from "../data.js";
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
@@ -57,6 +58,7 @@ async function createDetails(category) {
     
     else {
         data = category;
+        makeOwnElement(data);
     }
 
     dateBtn.addEventListener("click", (e) => {

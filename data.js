@@ -13,16 +13,9 @@ export function makeLocalElement(data) {
         `;
         map.append(element);
     }
-    filterContainer.innerHTML = `<h2>Föreslagna platser</h2>
-        <form>
-            <label for="place">Plats</label>
-            <select name="" id="">
-                <option"></option>
-            </select>
-        </form>`;
 }
 
-export function makeFetchElement(data) {
+export async function makeFetchElement(data) {
     const map = document.getElementById("map");
     map.innerHTML = "";
     const filterContainer = document.getElementById("filters");
@@ -32,16 +25,23 @@ export function makeFetchElement(data) {
         element.classList.add("map-item");
         const priceOrRating = item.price_range ? `Prisklass: ${item.price_range}kr` : item.avg_dinner_pricing ? `Genomsnittligt pris: ${item.avg_dinner_pricing}kr` : `Recentioner: ${Number(item.rating)}/5`;
 
+        
+        let city = item.city;
+        let province = item.province;
+
+        if (!city && item.lat && item.lng) {
+            city = await convertToCity(item.lat, item.lng);
+        }
         element.innerHTML = `
             <h3>${item.name}</h3>
             <p>${priceOrRating}</p>
-            <p>${item.city}, ${item.province}</p>
+            <p>${city}, ${province}</p>
         `;
         map.append(element);
     }
 
 }
-function convertToCity(lat, lng) {
+async function convertToCity(lat, lng) {
     const response = fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}localityLanguage=en
 `);
     return response.then(res => res.json())
@@ -69,4 +69,13 @@ export function makeFilter(data) {
         else {
         makeFetchElement(filteredData);
     }});
+}
+
+export function makeOwnElement(data) {
+    const map = document.getElementById("map");
+    map.innerHTML = "";
+    const api = document.getElementById("api");
+    api.innerHTML = "";
+    const filtersElement = document.getElementById("filters");
+    filtersElement.innerHTML = "";
 }
