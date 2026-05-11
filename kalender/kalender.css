@@ -15,3 +15,6 @@
     transform: scale(-1);
     width: 70px;
 }
+.next-date{
+    border: 1px solid black;
+}

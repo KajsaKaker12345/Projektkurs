@@ -8,6 +8,7 @@ const id = urlParams.get("id");
 
 const response = await fetch("../dates.json");
 const categories = await response.json();
+console.log("ladda kategorier:", categories);
 
 const category = categories.find(c => String(c.id) === id);
 
@@ -55,5 +56,31 @@ async function createDetails(category) {
         data = category;
     }
 
+    dateBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        let doDate = [];
+
+        try{
+       const storedDate = localStorage.getItem("doDate");
+
+       if(storedDate && storedDate !== "") {
+        doDate = JSON.parse(storedDate);
+         }
+
+        }catch(error) {
+            console.error("Error parsing doDate from localStorage:", error);
+            localStorage.removeItem("doDate");
+        }
+
+       const exists = doDate.find(item => item.id === category.id);
+
+         if (!exists) {
+
+        doDate.push(category);
+
+        localStorage.setItem("doDate", JSON.stringify(doDate));
+        console.log(doDate);
+         }
+    });
 
 }
