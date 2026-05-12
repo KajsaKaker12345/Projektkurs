@@ -15,7 +15,7 @@ console.log("ladda kategorier:", categories);
 const category = categories.find(c => String(c.id) === id);
 
 createDetails(category);
-
+const message = document.getElementById("message");
 
 // funktionen för att skapa elementen och hämta data beroende på typen
 async function createDetails(category) {
@@ -85,6 +85,8 @@ async function createDetails(category) {
 
         localStorage.setItem("doDate", JSON.stringify(doDate));
         console.log(doDate);
+        message.textContent = "Du har startat en dejt, kolla i din kalender!";
+        message.style.color = "green";
          }
     });
 
@@ -105,6 +107,8 @@ async function createDetails(category) {
 
         bekräftaBtn.addEventListener("click", () => {
             calenderBtn.disabled = false;
+            message.textContent = "Dejten har lagts till i din kalender!";
+            message.style.color = "green";
             const dateInput = document.getElementById("dateInput").value;
             if (!dateInput) {
                 return;
