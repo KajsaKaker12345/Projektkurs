@@ -12,6 +12,7 @@ export function createCards(establishments) {
         `;
 
         const saveBtn = cardDiv.querySelector(".save");
+        const message = document.getElementById("message");
 
         saveBtn.addEventListener("click", (e) => {
             e.stopPropagation(); // så man inte öppnar detaljsidan
@@ -23,7 +24,14 @@ export function createCards(establishments) {
             if (!exists) {
                 saved.push(d);
                 localStorage.setItem("saved", JSON.stringify(saved));
+                message.textContent = "Dejten har sparats!";
+                message.style.color = "green";
+            } else {
+                message.textContent = "Dejten är redan sparad!";
+                message.style.color = "orange";
             }
+            console.log(message);
+
         });
 
         cardDiv.addEventListener("click", () => {
