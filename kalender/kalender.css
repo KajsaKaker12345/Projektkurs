@@ -9,6 +9,8 @@
     border-radius: 5px;
     border: 2px solid black;
     padding: 2px;
+    width: 70px;
+
 }
 
 #pil{
@@ -17,4 +19,9 @@
 }
 .next-date{
     border: 1px solid black;
+}
+
+#dejt-heart{
+    width: 20px;
+    height: 20px;
 }

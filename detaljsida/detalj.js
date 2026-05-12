@@ -88,4 +88,35 @@ async function createDetails(category) {
          }
     });
 
+    calenderBtn.addEventListener("click", () => {
+        const datumInput = document.createElement("div");
+        datumInput.classList.add("datum-input");
+        datumInput.innerHTML = `
+        <div class="input">
+        <label for="date">Välj datum:</label>
+        <input type="date" id="dateInput" name="date">
+        <button id="save-date">Bekräfta</button>
+        </div>
+        `;
+        buttonsContainer.append(datumInput);
+
+        const bekräftaBtn = document.getElementById("save-date");
+
+        bekräftaBtn.addEventListener("click", () => {
+            const dateInput = document.getElementById("dateInput").value;
+            if (!dateInput) {
+                return;
+             }
+             let planeradDejt = JSON.parse(localStorage.getItem("planeradDejt")) || [];
+             const finns = planeradDejt.find(item => item.id === category.id);
+
+                if (!finns) {
+                    planeradDejt.push({ id: category.id, name: category.name, date: dateInput });
+                    localStorage.setItem("planeradDejt", JSON.stringify(planeradDejt));
+                    console.log(planeradDejt);
+                }
+                datumInput.remove();
+            });
+    });
+
 }
