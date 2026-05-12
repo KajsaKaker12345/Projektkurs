@@ -99,10 +99,12 @@ async function createDetails(category) {
         </div>
         `;
         buttonsContainer.append(datumInput);
+        calenderBtn.disabled = true;
 
         const bekräftaBtn = document.getElementById("save-date");
 
         bekräftaBtn.addEventListener("click", () => {
+            calenderBtn.disabled = false;
             const dateInput = document.getElementById("dateInput").value;
             if (!dateInput) {
                 return;
