@@ -3,6 +3,7 @@ import { createCards } from "../renderCard.js";
 const btn = document.getElementById("menu-icon");
 const nav = document.getElementById("hidden-nav");
 const card = document.getElementById("card-container");
+const message = document.getElementById("message");
 
 function skapaKort(){
     card.innerHTML = "";
@@ -20,6 +21,8 @@ function skapaKort(){
             saved = saved.filter(item => item.id !== save.id);
             localStorage.setItem("saved", JSON.stringify(saved));
             kortDiv.remove();
+            message.textContent = "Dejten har tagits bort från dina sparade dejter.";
+            message.style.color = "red";
         });
 
         card.appendChild(kortDiv);
