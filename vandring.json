@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "Bokhultet",
+        "in": "utomhus",
+        "description": "Vid Bergunda-sjöarna ligger detta naturreservat. Bokskogar höjer skönhetsvärdet vid en promenad här.",
+        "lat": 56.85959,
+        "lng": 14.76782,   
+        "price": 0,
+        "rating": 4.5,
+        "province": "Småland"
+    },
+    {
+        "id": 2,
+        "name": "John Bauer leden",
+        "in": "utomhus",
+        "description": "En vacker led genom bokskog och Vättern nära.",
+        "lat": 57.78241,
+        "lng": 14.18492,   
+        "price": 0,
+        "rating": 4.7,
+        "province": "Småland"
+    },
+    {
+       "id": 3,
+       "name": "Klevens Naturstig",
+       "in": "utomhus",
+       "description": "Fin vidunderlig utsikt, Bra parkeringsmöjligheter, Lite vandring ca 2 km.",
+        "lat": 58.10909,
+        "lng": 14.54271,
+        "price": 0,
+        "rating": 4.0,
+        "province": "Småland" 
+    },
+    {
+        "id": 4,
+       "name": "Romanäs Naturreservat",
+       "in": "utomhus",
+       "description": "Romanäs ligger vid sjön Sommen, bara en dryg kilometer norr om Svartåns utlopp.",
+        "lat": 58.06419,
+        "lng": 15.01717,
+        "price": 0,
+        "rating": 5.0,
+        "province": "Småland" 
+    },
+    {
+        "id": 5,
+       "name": "Kustvägen Byrum",
+       "in": "utomhus",
+       "description": "En av de vackraste vägarna på ön, kan göras med bil, el cykel.",
+        "lat": 57.24202,
+        "lng": 16.97745,
+        "price": 0,
+        "rating": 4.8,
+        "province": "Öland" 
+    }
+]
