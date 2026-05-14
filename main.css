@@ -88,7 +88,7 @@ footer{
 #search-input.active{
     display: inline-block;
 }
-#p {
+.p {
     display: flex;
     gap: 8px;
     overflow-x: auto;
