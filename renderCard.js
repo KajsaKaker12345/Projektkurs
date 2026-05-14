@@ -3,6 +3,7 @@ export function createCards(establishments) {
     const cardContainer = document.getElementById("card-container");
     const populäraDejter = document.getElementById("populära")
     cardContainer.innerHTML = "";
+    populäraDejter.innerHTML = "";
 
     const populärKort = document.createElement("div");
     populärKort.classList.add("p");
