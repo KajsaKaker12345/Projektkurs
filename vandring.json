@@ -8,7 +8,8 @@
         "lng": 14.76782,   
         "price": 0,
         "rating": 4.5,
-        "province": "Småland"
+        "province": "Småland",
+        "city": "Växjö"
     },
     {
         "id": 2,
@@ -19,7 +20,8 @@
         "lng": 14.18492,   
         "price": 0,
         "rating": 4.7,
-        "province": "Småland"
+        "province": "Småland",
+        "city": "Jönköping"
     },
     {
        "id": 3,
@@ -30,7 +32,8 @@
         "lng": 14.54271,
         "price": 0,
         "rating": 4.0,
-        "province": "Småland" 
+        "province": "Småland",
+        "city": "Västervik"
     },
     {
         "id": 4,
@@ -41,7 +44,8 @@
         "lng": 15.01717,
         "price": 0,
         "rating": 5.0,
-        "province": "Småland" 
+        "province": "Småland",
+        "city": "Västervik"
     },
     {
         "id": 5,
@@ -52,6 +56,7 @@
         "lng": 16.97745,
         "price": 0,
         "rating": 4.8,
-        "province": "Öland" 
+        "province": "Öland",
+        "city": "Kalmar"
     }
 ]

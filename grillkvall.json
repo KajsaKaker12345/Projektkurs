@@ -5,7 +5,9 @@
         "in": "utomhus",
         "lat": 56.92613,
         "lng": 14.79218,
-        "rating": 4
+        "rating": 4,
+        "province": "Småland",
+        "city": "Växjö"
     },
     {
         "id": 2,
@@ -13,7 +15,9 @@
         "in": "utomhus",
         "lat": 56.96227,
         "lng": 14.78744,
-        "rating": 4
+        "rating": 4,
+        "province": "Småland",
+        "city": "Växjö"
     },
     {
         "id": 3,
@@ -21,7 +25,9 @@
         "in": "utomhus",
         "lat": 56.85958,
         "lng": 14.76784,
-        "rating": 5
+        "rating": 5,
+        "province": "Småland",
+        "city": "Växjö"
     },
     {
         "id": 4,
@@ -29,7 +35,9 @@
         "in": "utomhus",
         "lat": 56.96617,
         "lng": 14.78098,
-        "rating": 4
+        "rating": 4,
+        "province": "Småland",
+        "city": "Växjö"
     },
     {
         "id": 5,
@@ -37,7 +45,9 @@
         "in": "utomhus",
         "lat": 56.90906,
         "lng": 14.88618,
-        "rating": 4
+        "rating": 4,
+        "province": "Småland",
+        "city": "Växjö"
     },
     {
         "id": 6,
@@ -45,7 +55,9 @@
         "in": "utomhus",
         "lat": 56.65461,
         "lng": 16.47239,
-        "rating": 4
+        "rating": 4,
+        "province": "Öland",
+        "city": "Färjestaden"
     },
     {
         "id": 7,
@@ -53,7 +65,9 @@
         "in": "utomhus",
         "lat": 56.99445,
         "lng": 16.87486,
-        "rating": 5
+        "rating": 5,
+        "province": "Öland",
+        "city": "Färjestaden"
     },
     {
         "id": 8,
@@ -61,6 +75,8 @@
         "in": "utomhus",
         "lat": 57.24752,
         "lng": 16.95827,
-        "rating": 5
+        "rating": 5,
+        "province": "Öland",
+        "city": "Borgholm"
     }
 ]
