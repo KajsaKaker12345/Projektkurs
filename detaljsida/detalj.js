@@ -1,5 +1,6 @@
 import { makeFetchElement } from "../data.js";
 import { loadMap } from "./kartan.js";
+import { saveTheDate } from "../renderCard.js";
 import { getFetch } from "../fetch.js";
 import { makeFilter } from "../data.js";
 import { makeLocalElement } from "../data.js";
@@ -27,12 +28,17 @@ async function createDetails(category) {
         return;
     }
 
-    headerContainer.innerHTML = `<a href="../index.html"><img src="../image/pil.svg" alt="tillbaka pil"></a><h1>${category.name}</h1><button><img src="../image/spara.svg" alt="image/spara ikon"></button>`;
+    headerContainer.innerHTML = `<a href="../index.html"><img src="../image/pil.svg" alt="tillbaka pil"></a><h1>${category.name}</h1><img src="../image/spara.svg" alt="image/spara ikon" id="save">`;
     detailsContainer.innerHTML = `
         <img src="../${category.image}" alt="${category.name}">
         <p>${category.description}</p>
     `; 
 
+    const saveBtn = document.getElementById("save");
+    saveBtn.addEventListener("click", () => {
+        saveTheDate(category, message);
+    });
+    
     const buttonsContainer = document.getElementById("vald-dejt");
     const dateBtn = document.createElement("button");
     const calenderBtn = document.createElement("button");
@@ -60,7 +66,7 @@ async function createDetails(category) {
         data = category;
         makeOwnElement(data);
     }
-
+// gör dejt idag 
     dateBtn.addEventListener("click", (e) => {
         e.preventDefault();
         let doDate = [];
@@ -89,7 +95,7 @@ async function createDetails(category) {
         message.style.color = "green";
          }
     });
-
+// lägg i kalender 
     calenderBtn.addEventListener("click", () => {
         const datumInput = document.createElement("div");
         datumInput.classList.add("datum-input");
