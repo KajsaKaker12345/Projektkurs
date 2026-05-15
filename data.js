@@ -1,3 +1,6 @@
+import { loadMap } from "./detaljsida/kartan.js";
+
+// rendera lokal data
 export function makeLocalElement(data) {
     const map = document.getElementById("map");
     map.innerHTML = "";
@@ -14,7 +17,7 @@ export function makeLocalElement(data) {
         map.append(element);
     }
 }
-
+// rendera data från api
 export async function makeFetchElement(data) {
     const map = document.getElementById("map");
     map.innerHTML = "";
@@ -41,21 +44,18 @@ export async function makeFetchElement(data) {
     }
 
 }
+// funktion konvertera kordinater till stad  
 async function convertToCity(lat, lng) {
     const response = fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}localityLanguage=en
 `);
     return response.then(res => res.json())
         .then(data => data.city);
 }
-
+// filtrera data för lista och karta
 export function makeFilter(data) {
     const form = document.getElementById("form");
     const provinceInput = document.getElementById("provinces");
-   /* const priceInput = document.getElementById("price");
-    const priceValue = document.getElementById("priceValue");
-
-    priceValue.textContent = priceInput.value;
-    */
+   
     
     form.addEventListener("change", () => {
         const selectedProvince = provinceInput.value;
@@ -64,18 +64,20 @@ export function makeFilter(data) {
 
         if (selectedProvince === "Alla") {
             makeFetchElement(data);
+            loadMap(data);
             return;
         }
         else {
         makeFetchElement(filteredData);
+        loadMap(filteredData);
     }});
 }
-
+// rendera egen data utan fil.
 export function makeOwnElement(data) {
     const map = document.getElementById("map");
     map.innerHTML = "";
     const api = document.getElementById("api");
-    api.innerHTML = "";
+    api.remove();
     const filtersElement = document.getElementById("filters");
     filtersElement.innerHTML = "";
 }
