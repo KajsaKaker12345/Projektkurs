@@ -1,6 +1,7 @@
 
 html, body {
     margin: 0;
+    background-color: rgb(238, 244, 245);
 }
 #hidden-nav{
     display: none;
@@ -10,12 +11,17 @@ html, body {
     position: absolute;
     top: 40px;
     left: 10px;
-    background-color: rgb(177, 213, 240);
-    
+    background-color: rgb(186, 215, 220);
 }
+
 .save, .save img{
     width: 30px;
     height: 30px;
+    margin-top: 5px;
+}
+.save.active {
+    background-color: rgb(175, 20, 20);
+    padding: 0;
 }
 
 img{
@@ -32,27 +38,37 @@ img{
 }
 #spara-icon{
     width: 30px;
-    height: 30px;
 }
 h2{
     margin-left: 40px;
 }
 
 .kort-bild{
-    width: 160px;
-    margin: 6px;
+    width: 150px;
 }
 .card{
     display:inline-flex;
-    margin-top: 30px;
-    border: solid black 1px;
-    width:340px;
+    border: solid rgb(166, 166, 166) 1px;
+    width:330px;
     border-radius: 8px;
+    margin: 11px 11px 11px 11px;
+    background-color: white;
+    padding: 5px;
+    justify-content: space-between;
+    font-size: 15px;
 }
-
+#card-left {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 #card-besk{
     margin-left: 20px;
 }
+.card h3{
+    margin-top: 17px;
+}
+
 form{
     margin-top: 30px;
     display: flex;
@@ -68,7 +84,7 @@ h1{
 }
 
 header{
-    background-color: rgb(201, 226, 230);
+    background-color: rgb(186, 215, 220);
     height: 51px;
     display: flex;
     align-items: center;
@@ -91,6 +107,9 @@ footer{
 }
 #price{
     width: 100px;
+}
+input[type="range"] {
+    accent-color: rgb(175, 20, 20);
 }
 .field{
     display: flex;
@@ -116,10 +135,15 @@ footer{
     gap: 8px;
     overflow-x: auto;
     margin: 8px;
+    height: 180px;
 }
 .popular-bild {
-    border: solid black 1px;
+    border: solid rgb(166, 166, 166) 1px;
     padding: 6px;
     border-radius: 8px;
     flex-shrink: 0;
+    background-color: white;
+}
+.p h3 {
+    margin: 5px;
 }

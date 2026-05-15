@@ -162,7 +162,7 @@
 },
 {
     "id": 15,
-    "name": "Matlagningskväll",
+    "name": "Matlagning",
     "in": "hemma",
     "description": "En romantisk matlagningskväll hemma, där ni kan laga en måltid tillsammans, njuta av goda smaker och skapa en intim och mysig atmosfär i köket, vilket ger er möjlighet att samarbeta och ha kul tillsammans.",
     "type": "own",

@@ -39,8 +39,11 @@ export function createCards(establishments) {
         const cardDiv = document.createElement("div");
         cardDiv.classList.add("card");
         cardDiv.innerHTML = `
+        <div id = "card-left">
         <img class="kort-bild" src="${d.image}" alt="">
-        <h3>${d.name}</h3><img src="image/spara.svg" alt="Spara" class="save">   `;
+        <h3>${d.name}</h3>
+        </div>
+        <img src="image/spara.svg" alt="Spara" class="save">   `;
 
 
 
@@ -51,7 +54,7 @@ export function createCards(establishments) {
         saveBtn.addEventListener("click", (e) => {
             e.stopPropagation(); // så man inte öppnar detaljsidan
                 saveTheDate(d, message);
-
+                saveBtn.classList.toggle("active");
             
 
         });
