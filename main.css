@@ -1,4 +1,7 @@
 
+html, body {
+    margin: 0;
+}
 #hidden-nav{
     display: none;
 }
@@ -19,9 +22,12 @@ img{
     border-radius: 6px;
 }
 
-#menu-icon, #sök-icon{
-    width: 35px;
-    height: 35px;
+#menu-icon{
+    width: 29px;
+}
+#sök-icon {
+    width: 28px;
+    height: 28px;
 }
 #spara-icon{
     width: 30px;
@@ -49,22 +55,34 @@ h2{
 form{
     margin-top: 30px;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    justify-content: center;
 }
-
+form label {
+    margin-bottom: 5px;
+}
 h1{
-    font-size: 20px;
+    font-size: 15px;
     margin: 0;
 }
 
 header{
-    background-color: rgb(78, 223, 245);
-    height: 40px;
+    background-color: rgb(201, 226, 230);
+    height: 51px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
     position: relative;
+}
+#logo {
+    width: 35px;
+}
+#appName {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 3px;
 }
 footer{
     position: fixed;
@@ -87,10 +105,16 @@ footer{
 #search-input.active{
     display: inline-block;
 }
+#search-container{
+    display: flex;
+    width: 28px;
+    align-items: center;
+}
 .p {
     display: flex;
     gap: 8px;
     overflow-x: auto;
+    margin: 8px;
 }
 .popular-bild {
     border: solid black 1px;

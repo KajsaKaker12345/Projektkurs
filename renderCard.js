@@ -51,9 +51,6 @@ export function createCards(establishments) {
         saveBtn.addEventListener("click", (e) => {
             e.stopPropagation(); // så man inte öppnar detaljsidan
                 saveTheDate(d, message);
-
-            
-
         });
 
         cardDiv.addEventListener("click", () => {
