@@ -7,7 +7,9 @@
         "lat": 56.66296,
         "lng": 16.35468,
         "price": 158,
-        "rating": 4
+        "rating": 4,
+        "province": "Småland",
+        "city": "Kalmar"
     },
     {
         "id": 2,
@@ -17,7 +19,9 @@
         "lat": 57.78779,
         "lng": 14.22807,
         "price": 200,
-        "rating": 4
+        "rating": 4,
+        "province": "Småland",
+        "city": "Kalmar"
     },
     {
         "id": 3,
@@ -27,7 +31,9 @@
         "lat": 56.64727,
         "lng": 16.46443,
         "price": 200,
-        "rating": 5
+        "rating": 5,
+        "province": "Öland",
+        "city": "Färjestaden"
     },
     {
         "id": 4,
@@ -37,16 +43,20 @@
         "lat": 56.68059,
         "lng": 16.36031,
         "price": 200,
-        "rating": 5
+        "rating": 5,
+        "province": "Småland",
+        "city": "Kalmar"
     },
     {
         "id": 5,
         "name": "Eriksöre Camping",
         "in": "utomhus",
         "description": "Klart man vill spela minigolf på semesterna! Dra ihop hela familjen eller kompisgänget och anorda turnering på vår minigolfbana.",
-        "lat": 56.66296,
-        "lng": 16.35468,
+        "lat": 56.61743,
+        "lng": 16.44782,
         "price": "",
-        "rating": 5
+        "rating": 5,
+        "province": "Öland",
+        "city": "Färjestaden"
     }
 ]

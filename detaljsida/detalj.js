@@ -11,7 +11,7 @@ const id = urlParams.get("id");
 
 const response = await fetch("../dates.json");
 const categories = await response.json();
-console.log("ladda kategorier:", categories);
+//console.log("ladda kategorier:", categories);
 
 const category = categories.find(c => String(c.id) === id);
 
@@ -52,13 +52,14 @@ async function createDetails(category) {
         const response = await fetch(`../${category.filename}`);
         data = await response.json();
         makeLocalElement(data);
+        makeFilter(data, makeLocalElement);
         loadMap(data);
     }
 
     else if (category.type === "api") {
         data = await getFetch(category);
         makeFetchElement(data.payload);
-        makeFilter(data.payload);
+        makeFilter(data.payload, makeFetchElement);
         loadMap(data.payload);
     }
     

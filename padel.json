@@ -7,7 +7,9 @@
     "lat": 56.86115,
     "lng": 14.81980,
     "price": "",
-    "rating": 4
+    "rating": 4,
+    "province": "Småland",
+    "city": "Växjö"
 },
 {
     "id": 2,
@@ -17,7 +19,9 @@
     "lat": 56.85570,
     "lng": 14.85814,
     "price": 300,
-    "rating": 5
+    "rating": 5,
+    "province": "Småland",
+    "city": "Växjö"
 },
 {
     "id": 3,
@@ -27,7 +31,9 @@
     "lat": 56.90600,
     "lng": 14.83240,
     "price": 300,
-    "rating": 4
+    "rating": 4,
+    "province": "Småland",
+    "city": "Alvesta"
 },
 {
     "id": 4,
@@ -37,7 +43,9 @@
     "lat": 56.90886,
     "lng": 14.56022,
     "price": "",
-    "rating": 4
+    "rating": 4,
+    "province": "Småland",
+    "city": "Alvesta"
 },
 {
     "id": 5,
@@ -47,7 +55,9 @@
     "lat": 56.65471,
     "lng": 16.53846,
     "price": "",
-    "rating": 4
+    "rating": 4,
+    "province": "Öland",
+    "city": "Färjestaden"
 },
 {
     "id": 6,
@@ -57,7 +67,9 @@
     "lat": 56.91227,
     "lng": 16.73251,
     "price": 320,
-    "rating": 4
+    "rating": 4,
+    "province": "Öland",
+    "city": "Borgholm"
 },
 {
     "id": 7,
@@ -67,7 +79,9 @@
     "lat": 56.88291,
     "lng": 16.66050,
     "price": "",
-    "rating": 4
+    "rating": 4,
+    "province": "Öland",
+    "city": "Borgholm"
 },
 {
     "id": 8,
@@ -77,6 +91,8 @@
     "lat": 56.65834,
     "lng": 16.49097,
     "price": "",
-    "rating": 4
+    "rating": 4,
+    "province": "Öland",
+    "city": "Färjestaden"
 }
 ]

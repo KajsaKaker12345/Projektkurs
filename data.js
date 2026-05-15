@@ -52,25 +52,71 @@ async function convertToCity(lat, lng) {
         .then(data => data.city);
 }
 // filtrera data för lista och karta
-export function makeFilter(data) {
-    const form = document.getElementById("form");
+export function makeFilter(data, renderFunction) {
+    //const form = document.getElementById("form");
     const provinceInput = document.getElementById("provinces");
-   
-    
-    form.addEventListener("change", () => {
+    const cityInput = document.getElementById("city");
+
+
+    provinceInput.innerHTML = `<option value="Alla">Alla</option>`;
+
+
+    const provinces = [];
+    for (const item of data) {
+
+        if (!provinces.includes(item.province)) {
+            provinces.push(item.province);
+
+
+        const provinceOption = document.createElement("option");
+        provinceOption.value = item.province;
+        provinceOption.textContent = item.province;
+        provinceInput.append(provinceOption);
+        }
+    }
+    updateCity();
+// anropa vid filter ändringar
+    provinceInput.addEventListener("change", () => {
+
+    updateCity();
+    filterData();
+    });
+    cityInput.addEventListener("change", filterData)
+
+// filtrera vilka städer som ska visas
+function updateCity() {
+        cityInput.innerHTML = `<option value="Alla">Alla städer</option>`;
+
         const selectedProvince = provinceInput.value;
 
-        let filteredData = data.filter(item => item.province === selectedProvince);
+    const cities = [];
+    for (const item of data) {
 
-        if (selectedProvince === "Alla") {
-            makeFetchElement(data);
-            loadMap(data);
-            return;
+        if ((selectedProvince === "Alla" || item.province === selectedProvince) && !cities.includes(item.city)) {
+
+            cities.push(item.city);
+
+
+        const cityOption = document.createElement("option");
+        cityOption.value = item.city;
+        cityOption.textContent = item.city;
+        cityInput.append(cityOption);
         }
-        else {
-        makeFetchElement(filteredData);
+        }
+    }
+//filtrera data
+    function filterData() {
+    
+    //form.addEventListener("change", () => {
+        const selectedCity = cityInput.value;
+        const selectedProvince = provinceInput.value;
+
+        let filteredData = data.filter(item => (selectedProvince === "Alla" || item.province === selectedProvince) && (selectedCity === "Alla" || item.city === selectedCity));
+        
+        renderFunction(filteredData);
         loadMap(filteredData);
-    }});
+    }
+    
 }
 // rendera egen data utan fil.
 export function makeOwnElement(data) {
