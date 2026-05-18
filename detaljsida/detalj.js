@@ -131,7 +131,12 @@ async function createDetails(category) {
                 datumInput.remove();
             });
     });
-
+    if(category.slug){
     document.body.classList.add(category.slug);
+    const section = document.querySelector(`.${category.slug}`);
 
+    if (section) {
+    section.style.display = "block";
+    }
+    }
 }

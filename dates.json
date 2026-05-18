@@ -29,6 +29,7 @@
 {
     "id": 3,
     "name": "Picknick",
+    "slug": "picknick",
     "in": "utomhus",
     "description": "En romantisk picknick i en vacker park, där ni kan njuta av god mat, varandras sällskap och den lugna atmosfären.",
     "type": "own",
@@ -65,6 +66,7 @@
 {
     "id": 6,
     "name": "Sjärnskådning",
+    "slug": "stjarnskadning",
     "in": "utomhus",
     "description": "En magisk kväll med stjärnskådning, där ni kan ligga på en filt och titta upp på stjärnorna, dela drömmar och känna er små i det stora universumet tillsammans.",
     "type": "own",
@@ -122,6 +124,7 @@
 {
     "id": 10,
     "name": "Spelkväll",
+    "slug": "spelkvall",
     "in": "hemma",
     "description": "En rolig spelkväll hemma, där ni kan spela brädspel, kortspel eller videospel tillsammans och skapa en avslappnad och underhållande atmosfär.",
     "type": "own",
@@ -132,6 +135,7 @@
 {
     "id": 11,
     "name": "TV-Spel",
+    "slug": "tvSpel",
     "in": "hemma",
     "description": "En avslappnad dejt där ni kan spela TV-spel tillsammans, skratta och ha kul i en bekväm hemmiljö.",
     "type": "own",
@@ -157,6 +161,7 @@
 {
     "id": 13,
     "name": "Pyssel",
+    "slug": "pyssel",
     "in": "hemma",
     "description": "En kreativ dejt där ni kan pyssla tillsammans, skapa konstverk eller göra DIY-projekt i en avslappnad hemmiljö, vilket ger er möjlighet att lära känna varandra på ett roligt och personligt sätt.",
     "type": "own",
@@ -178,6 +183,7 @@
 {
     "id": 15,
     "name": "Matlagning",
+    "slug": "cook",
     "in": "hemma",
     "description": "En romantisk matlagningskväll hemma, där ni kan laga en måltid tillsammans, njuta av goda smaker och skapa en intim och mysig atmosfär i köket, vilket ger er möjlighet att samarbeta och ha kul tillsammans.",
     "type": "own",
@@ -188,6 +194,7 @@
 {
     "id": 16,
     "name": "Sip and paint",
+    "slug": "sipnpaint",
     "in": "hemma",
     "description": "En kreativ dejt där ni kan delta i en 'sip and paint'-kväll, där ni kan måla tillsammans medan ni njuter av goda drinkar och har kul i en avslappnad och social miljö, vilket ger er möjlighet att lära känna varandra på ett roligt och personligt sätt.",
     "type": "own",
