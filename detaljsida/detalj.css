@@ -33,3 +33,24 @@ label {
     height: 200px;
     width: 100%;
 }
+.cook{
+    display: none;
+}
+.sipnpaint{
+    display: none;
+}
+.spelkvall{
+    display: none;
+}
+.tvSpel{
+    display: none;
+}
+.stjarnskadning{
+    display: none;
+}
+.picknick{
+    display: none;
+}
+.pyssel{
+    display: none;
+}
