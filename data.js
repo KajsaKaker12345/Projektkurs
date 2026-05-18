@@ -56,6 +56,8 @@ export function makeFilter(data, renderFunction) {
     //const form = document.getElementById("form");
     const provinceInput = document.getElementById("provinces");
     const cityInput = document.getElementById("city");
+    //const municipalityInput = document.getElementById("municipality");
+
 
 
     provinceInput.innerHTML = `<option value="Alla">Alla</option>`;
@@ -111,7 +113,7 @@ function updateCity() {
         const selectedCity = cityInput.value;
         const selectedProvince = provinceInput.value;
 
-        let filteredData = data.filter(item => (selectedProvince === "Alla" || item.province === selectedProvince) && (selectedCity === "Alla" || item.city === selectedCity));
+        let filteredData = data.filter(item => (selectedProvince === "Alla" || item.province === selectedProvince)&& (selectedCity === "Alla" || item.city === selectedCity));
         
         renderFunction(filteredData);
         loadMap(filteredData);
