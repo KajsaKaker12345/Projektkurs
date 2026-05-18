@@ -1,3 +1,6 @@
+* {
+     font-family: Arial, Helvetica, sans-serif;
+}
 #container img {
     width: 100%;
     height: auto;
@@ -41,5 +44,76 @@ body.cook .cook, body.pyssel .pyssel, body.sipnpaint .sipnpaint, body.spelkvall 
     display: block;
 } 
 
+button {
+    background-color: rgb(224, 216, 206);
+    border-radius: 7px;
+    border: 1.5px solid rgb(183, 172, 148);
+    width: 13em;
+    margin: 20px 0 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: 510;
+}
+#container .stars {
+    width: 120px;
+    height: auto;
+    margin-top: 2px;
+    display: flex;
+    margin-left: auto;
+}
 
+#container p {
+    margin: 8px;
+}
 
+.sipnpaint h3 {
+    margin: 0;
+    padding: 10px;
+    margin-top: 10px;
+}
+.nöd {
+    padding: 0;
+    margin: 0 0 40px 30px;
+    line-height: 1.7em;
+    font-size: 0.9em;
+}
+
+.tips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "tipsH3 tipsH3"
+    "ul1 ul2";
+   background-color: rgb(224, 216, 206);
+    width: 350px;
+    margin: auto;
+    border: 0.5px solid rgb(179, 159, 137);
+    border-radius: 5px;
+}
+.tips ul {
+    list-style: none;
+}
+.ul1 {
+    grid-area: ul1;
+    border: 0.5px solid rgb(172, 154, 131);
+    margin: 0;
+    padding: 10px;
+    line-height: 2em;
+    font-size: 0.9em;
+}
+.ul2 {
+    grid-area: ul2;
+     border: 0.5px solid rgb(170, 160, 137);
+    margin: 0;
+    padding: 10px;
+    line-height: 2em;
+    font-size: 0.9em;
+}
+.tips h3 {
+    grid-area: tipsH3;
+    background-color: rgb(224, 216, 206);
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+     border: 0.5px solid rgb(167, 152, 133);
+}

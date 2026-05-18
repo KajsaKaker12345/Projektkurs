@@ -29,8 +29,10 @@ async function createDetails(category) {
     }
 
     headerContainer.innerHTML = `<a href="../index.html"><img src="../image/pil.svg" alt="tillbaka pil"></a><h1>${category.name}</h1><img src="../image/spara.svg" alt="image/spara ikon" id="save">`;
+    
     detailsContainer.innerHTML = `
         <img src="../${category.image}" alt="${category.name}">
+        <img src="../${category.rating}" alt="rating" class="stars">
         <p>${category.description}</p>
     `; 
 
