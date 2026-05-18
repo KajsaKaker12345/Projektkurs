@@ -117,6 +117,5 @@ btn.addEventListener("click", () => {
 
 kalenderKort();
 kortPlanerad();
-showNextDate();
 
 //datum sträng (byggt upp strängen dynaimskt) year= 2026 month= 5 day=01 "->" click" month +=1 year=2026 month = 6  lägga in i ett nytt datum objekt och if sats month <= 12 skicka in till ett dejt objekt, kalender vy, månads vy vanilla javascript 
