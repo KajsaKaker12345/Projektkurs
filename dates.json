@@ -19,7 +19,8 @@
     "controller": "establishment",
     "method": "getall",
     "filter": {
-        "descriptions": "camping"
+        "descriptions": "camping",
+        "cities": ["Växjö", "Jönköping", "Värnamo", "Vimmerby", "Kalmar", "Västervik", "Älmhult", "Högby", "Degerhamn", "Borgholm", "Färjestaden", "Köpingsvik", "Byxelkrok", "Mörbylånga", "Oskarshamn", "Nybro", "Hovmantorp", "Älmeboda"]
     },
     "price": "medel",
     "image": "image/camping.jpg",
