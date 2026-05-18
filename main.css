@@ -19,10 +19,7 @@ html, body {
     height: 30px;
     margin-top: 5px;
 }
-.save.active {
-    background-color: rgb(175, 20, 20);
-    padding: 0;
-}
+
 img{
     width: 140px;
     border-radius: 6px;

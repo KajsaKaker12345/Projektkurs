@@ -53,9 +53,16 @@ export function createCards(establishments) {
 
         saveBtn.addEventListener("click", (e) => {
             e.stopPropagation(); // så man inte öppnar detaljsidan
+                
+            if (saveBtn.classList.contains("active")) {
+            saveBtn.src = "image/spara.svg";
+            saveBtn.classList.remove("active");
+
+            } else {
+                saveBtn.src = "image/sparaD.svg";
+                saveBtn.classList.add("active");
                 saveTheDate(d, message);
-                saveBtn.classList.toggle("active");
-            
+            }
 
         });
 
