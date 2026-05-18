@@ -30,7 +30,7 @@ let planeradDejt = JSON.parse(localStorage.getItem("planeradDejt")) || [];
     const planerad = planeradDejt.find(item => {const date = new Date(item.date); return date.getDate() === day});
 
     if (planerad) {
-        dagElem.innerHTML += `<img id="dejt-heart"src="../image/HjärtaTomt.svg" alt="Hjärta">`;
+        dagElem.innerHTML += `<img id="dejt-heart"src="../image/HjärtaFyllt.svg" alt="Hjärta">`;
         dagElem.title = planerad.name;
     }
     kalender.append(dagElem);
@@ -73,3 +73,4 @@ btn.addEventListener("click", () => {
 
 showNextDate();
 
+//datum sträng (buggt upp strängen dynaimskt) year= 2026 month= 5 day=01 "->" click" month +=1 year=2026 month = 6  lägga in i ett nytt datum objekt och if sats month <= 12 skicka in till ett dejt objekt, kalender vy, månads vy vanilla javascript 
