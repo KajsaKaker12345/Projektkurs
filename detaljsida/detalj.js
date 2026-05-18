@@ -132,4 +132,6 @@ async function createDetails(category) {
             });
     });
 
+    document.body.classList.add(category.slug);
+
 }

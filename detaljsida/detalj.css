@@ -33,24 +33,13 @@ label {
     height: 200px;
     width: 100%;
 }
-.cook{
+.cook, .pyssel, .sipnpaint, .spelkvall, .tvSpel, .stjarnskadning, .picknick{
     display: none;
 }
-.sipnpaint{
-    display: none;
-}
-.spelkvall{
-    display: none;
-}
-.tvSpel{
-    display: none;
-}
-.stjarnskadning{
-    display: none;
-}
-.picknick{
-    display: none;
-}
-.pyssel{
-    display: none;
-}
+
+body.cook .cook, body.pyssel .pyssel, body.sipnpaint .sipnpaint, body.spelkvall .spelkvall, body.tvSpel .tvSpel, body.stjarnskadning .stjarnskadning, body.picknick .picknick{
+    display: block;
+} 
+
+
+
