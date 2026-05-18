@@ -57,12 +57,10 @@ export function createCards(establishments) {
         const cardDiv = document.createElement("div");
         cardDiv.classList.add("card");
         cardDiv.innerHTML = `
-        <div id = "card-left">
         <img class="kort-bild" src="${d.image}" alt="">
         <h3>${d.name}</h3>
-        </div>
-        <img src="image/spara.svg" alt="Spara" class="save">
         <p class="place">${d.in}</p>
+        <img src="image/spara.svg" alt="Spara" class="save">
         <img class="rating" src="${d.rating}" alt=""> `;
 
 
