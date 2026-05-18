@@ -14,13 +14,7 @@ html, body {
     background-color: rgb(186, 215, 220);
 }
 
-.save, .save img{
-    width: 30px;
-    height: 30px;
-    margin-top: 5px;
-    justify-self: right;
-    padding: 1px 2px 20px 30px;
-}
+
 
 img{
     width: 140px;
@@ -49,6 +43,7 @@ h2{
 .card{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
     "kort-bild cardTitle saveIcon"
     "kort-bild place place"
@@ -58,28 +53,34 @@ h2{
     border-radius: 8px;
     margin: 11px 11px 11px 11px;
     background-color: white;
-    padding: 10px;
+    padding: 6px;
     font-size: 15px;
     height: 125px;
-    
+    gap: 2px;
 }
-#card-left {
-    display: flex;
-    gap: 10px;
-}
+
 #card-besk{
     margin-left: 10px;
 }
 .card h3{
     grid-area: cardTitle;
-    padding: 3px 30px 2px 10px;
+    text-align: center;
 }
 .rating {
-    width: 90px;
     grid-area: rating;
+    width: 90px;
 }
 .place {
     grid-area: place;
+    margin-left: 12px;
+}
+.save, .save img{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    justify-self: right;
+    padding: 1px 2px 20px 30px;
+    grid-area: saveIcon;
 }
 
 form{
