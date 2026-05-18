@@ -8,15 +8,15 @@ export function createCards(establishments) {
     const populärKort = document.createElement("div");
     populärKort.classList.add("p");
     populärKort.innerHTML = 
-    `<div class="popular-bild" id="1"><img src="image/walk.jpg" alt="" class="Pimg"><h3>Vandring</h3><img src="image/spara.svg" alt="Spara" class="saveP"><img src="image/4stars.svg" alt="4 stjärnor" class="starsP"></div>
+    `<div class="popular-bild" id="1"><img src="image/walk.jpg" alt="" class="Pimg"><h3>Vandring</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Utomhus</p><img src="image/4stars.svg" alt="4 stjärnor" class="starsP"></div>
     
-    <div class="popular-bild" id="7"><img src="image/dinner.jpg" class="Pimg"><h3>Resturang</h3><img src="image/spara.svg" alt="Spara" class="saveP"><img src="image/5stars.svg" alt="5 stjärnor" class="starsP"></div>
+    <div class="popular-bild" id="7"><img src="image/dinner.jpg" class="Pimg"><h3>Resturang</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Inomhus</p><img src="image/5stars.svg" alt="5 stjärnor" class="starsP"></div>
     
-    <div class="popular-bild" id="10"><img src="image/spelkvall.png" class="Pimg"><h3>Spelkväll</h3><img src="image/spara.svg" alt="Spara" class="saveP"><img src="image/35stars.svg" alt="3,5 stjärnor" class="starsP"></div>
+    <div class="popular-bild" id="10"><img src="image/spelkvall.png" class="Pimg"><h3>Spelkväll</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Hemma</p><img src="image/35stars.svg" alt="3,5 stjärnor" class="starsP"></div>
     
-    <div class="popular-bild" id="8"><img src="image/bio.png" class="Pimg"><h3>Bio</h3><img src="image/spara.svg" alt="Spara" class="saveP"><img src="image/35stars.svg" alt="3,5 stjärnor" class="starsP"></div>
+    <div class="popular-bild" id="8"><img src="image/bio.png" class="Pimg"><h3>Bio</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Inomhus</p><img src="image/35stars.svg" alt="3,5 stjärnor" class="starsP"></div>
     
-    <div class="popular-bild" id="19"><img src="image/bowling.svg" class="Pimg"><h3>Bowling</h3><img src="image/spara.svg" alt="Spara" class="saveP"><img src="image/35stars.svg" alt="3,5 stjärnor" class="starsP"></div>`;
+    <div class="popular-bild" id="19"><img src="image/bowling.svg" class="Pimg"><h3>Bowling</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Inomhus</p><img src="image/35stars.svg" alt="3,5 stjärnor" class="starsP"></div>`;
 
     populäraDejter.append(populärKort);
 

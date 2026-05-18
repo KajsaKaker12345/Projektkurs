@@ -55,7 +55,7 @@ function filterList() {
     
 }
 
-const btn = document.getElementById("menu-icon");
+const btn = document.querySelector(".menu-icon");
 const nav = document.getElementById("hidden-nav");
 
 btn.addEventListener("click", () => {
