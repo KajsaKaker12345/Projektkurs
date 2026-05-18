@@ -8,14 +8,32 @@ export function createCards(establishments) {
     const populärKort = document.createElement("div");
     populärKort.classList.add("p");
     populärKort.innerHTML = 
-    `<div class="popular-bild" id="1"><img src="image/walk.jpg" alt=""><h3>Vandring</h3></div>
-    <div class="popular-bild" id="7"><img src="image/dinner.jpg"><h3>Resturang</h3></div>
-    <div class="popular-bild" id="10"><img src="image/spelkvall.png"><h3>Spelkväll</h3></div>
-    <div class="popular-bild" id="8"><img src="image/bio.png"><h3>Bio</h3></div>
-    <div class="popular-bild" id="19"><img src="image/bowling.svg"><h3>Bowling</h3></div>`;
-
+    `<div class="popular-bild" id="1"><img src="image/walk.jpg" alt="" class="Pimg"><h3>Vandring</h3><img src="image/spara.svg" alt="Spara" class="saveP"><img src="image/4stars.svg" alt="4 stjärnor" class="starsP"></div>
+    
+    <div class="popular-bild" id="7"><img src="image/dinner.jpg" class="Pimg"><h3>Resturang</h3><img src="image/spara.svg" alt="Spara" class="saveP"><img src="image/5stars.svg" alt="5 stjärnor" class="starsP"></div>
+    
+    <div class="popular-bild" id="10"><img src="image/spelkvall.png" class="Pimg"><h3>Spelkväll</h3><img src="image/spara.svg" alt="Spara" class="saveP"><img src="image/35stars.svg" alt="3,5 stjärnor" class="starsP"></div>
+    
+    <div class="popular-bild" id="8"><img src="image/bio.png" class="Pimg"><h3>Bio</h3><img src="image/spara.svg" alt="Spara" class="saveP"><img src="image/35stars.svg" alt="3,5 stjärnor" class="starsP"></div>
+    
+    <div class="popular-bild" id="19"><img src="image/bowling.svg" class="Pimg"><h3>Bowling</h3><img src="image/spara.svg" alt="Spara" class="saveP"><img src="image/35stars.svg" alt="3,5 stjärnor" class="starsP"></div>`;
 
     populäraDejter.append(populärKort);
+
+    const savePopDate = populärKort.querySelectorAll(".saveP");
+    savePopDate.forEach(btn  => {
+        btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            
+            if (btn.classList.contains("activePop")) {
+                btn.src = "image/spara.svg";
+                btn.classList.remove("activePop");
+            } else {
+                btn.src = "image/sparaD.svg";
+                btn.classList.add("activePop");
+            }
+        });
+    });
 
     const vandring = document.getElementById("1").addEventListener("click", () =>{
         window.location.href= `detaljsida/detalj.html?id=1`;
@@ -43,8 +61,9 @@ export function createCards(establishments) {
         <img class="kort-bild" src="${d.image}" alt="">
         <h3>${d.name}</h3>
         </div>
-        <img src="image/spara.svg" alt="Spara" class="save">   `;
-
+        <img src="image/spara.svg" alt="Spara" class="save">
+        <p class="place">${d.in}</p>
+        <img class="rating" src="${d.rating}" alt=""> `;
 
 
         const saveBtn = cardDiv.querySelector(".save");

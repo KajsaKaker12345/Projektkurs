@@ -7,7 +7,8 @@
     "type": "local",
     "filename": "vandring.json",
     "price": "låg",
-    "image": "image/walk.jpg"
+    "image": "image/walk.jpg",
+    "rating": "image/4stars.svg"
 },
 {
     "id": 2,
@@ -21,7 +22,8 @@
         "descriptions": "camping"
     },
     "price": "medel",
-    "image": "image/camping.jpg"
+    "image": "image/camping.jpg",
+    "rating": "image/3stars.svg"
 },
 {
     "id": 3,
@@ -30,7 +32,8 @@
     "description": "En romantisk picknick i en vacker park, där ni kan njuta av god mat, varandras sällskap och den lugna atmosfären.",
     "type": "own",
     "price": "låg",
-    "image": "image/picknick.jpg"
+    "image": "image/picknick.jpg",
+    "rating": "image/4stars.svg"
 },
 {
    "id": 4,
@@ -44,7 +47,8 @@
         "descriptions": "älgpark,älgsafari"
     },
     "price": "medel",
-   "image": "image/algsafari.png"
+   "image": "image/algsafari.png",
+   "rating": "image/3stars.svg"
 },
 {
     "id": 5,
@@ -54,7 +58,8 @@
     "type": "local",
     "filename": "grillkvall.json",
     "price": "medel",
-    "image": "image/grillkvall.jpg"
+    "image": "image/grillkvall.jpg",
+    "rating": "image/35stars.svg"
 },
 {
     "id": 6,
@@ -63,7 +68,8 @@
     "description": "En magisk kväll med stjärnskådning, där ni kan ligga på en filt och titta upp på stjärnorna, dela drömmar och känna er små i det stora universumet tillsammans.",
     "type": "own",
     "price": "låg",
-    "image": "image/stjarnskadning.jpg"
+    "image": "image/stjarnskadning.jpg",
+    "rating": "image/4stars.svg"
 },
 {
     "id": 7,
@@ -79,7 +85,8 @@
         
     },
     "price": "hög",
-    "image": "image/dinner.jpg"
+    "image": "image/dinner.jpg",
+    "rating": "image/5stars.svg"
 },
 {
     "id": 8,
@@ -93,7 +100,8 @@
         "descriptions": "biograf"
     },
     "price": "medel",
-    "image": "image/bio.png"
+    "image": "image/bio.png",
+    "rating": "image/35stars.svg"
 }, {
     "id": 9,
     "name": "Bar",
@@ -107,7 +115,8 @@
         "child_menu": "N"
     },
     "price": "medel",
-    "image": "image/bar.jpg"
+    "image": "image/bar.jpg",
+    "rating": "image/4stars.svg"
 },
 {
     "id": 10,
@@ -116,7 +125,8 @@
     "description": "En rolig spelkväll hemma, där ni kan spela brädspel, kortspel eller videospel tillsammans och skapa en avslappnad och underhållande atmosfär.",
     "type": "own",
     "price": "låg",
-    "image": "image/spelkvall.png"
+    "image": "image/spelkvall.png",
+    "rating": "image/35stars.svg"
 },
 {
     "id": 11,
@@ -125,7 +135,8 @@
     "description": "En avslappnad dejt där ni kan spela TV-spel tillsammans, skratta och ha kul i en bekväm hemmiljö.",
     "type": "own",
     "price": "låg",
-    "image": "image/wii.jpg"
+    "image": "image/wii.jpg",
+    "rating": "image/45stars.svg"
 },
 {
     "id": 12,
@@ -139,7 +150,8 @@
         "spa": "Y"
     },
     "price": "hög",
-    "image": "image/spa.jpg"
+    "image": "image/spa.jpg",
+    "rating": "image/5stars.svg"
 }, 
 {
     "id": 13,
@@ -148,7 +160,8 @@
     "description": "En kreativ dejt där ni kan pyssla tillsammans, skapa konstverk eller göra DIY-projekt i en avslappnad hemmiljö, vilket ger er möjlighet att lära känna varandra på ett roligt och personligt sätt.",
     "type": "own",
     "price": "låg",
-    "image": "image/dreja.png"
+    "image": "image/dreja.png",
+    "rating": "image/4stars.svg"
 },
 {
     "id": 14,
@@ -158,7 +171,8 @@
     "type": "local",
     "filename": "dreja.json",
     "price": "medel",
-    "image": "image/dreja.png"
+    "image": "image/dreja.png",
+    "rating": "image/4stars.svg"
 },
 {
     "id": 15,
@@ -167,7 +181,8 @@
     "description": "En romantisk matlagningskväll hemma, där ni kan laga en måltid tillsammans, njuta av goda smaker och skapa en intim och mysig atmosfär i köket, vilket ger er möjlighet att samarbeta och ha kul tillsammans.",
     "type": "own",
     "price": "medel",
-    "image": "image/cook.jpg"
+    "image": "image/cook.jpg",
+    "rating": "image/5stars.svg"
 },
 {
     "id": 16,
@@ -176,7 +191,8 @@
     "description": "En kreativ dejt där ni kan delta i en 'sip and paint'-kväll, där ni kan måla tillsammans medan ni njuter av goda drinkar och har kul i en avslappnad och social miljö, vilket ger er möjlighet att lära känna varandra på ett roligt och personligt sätt.",
     "type": "own",
     "price": "medel",
-    "image": "image/sipandpaint.jpg"
+    "image": "image/sipandpaint.jpg",
+    "rating": "image/45stars.svg"
 },
 {
     "id": 17,
@@ -186,7 +202,8 @@
     "type": "local",
     "filename": "padel.json",
     "price": "medel",
-    "image": "image/padel.jpg"
+    "image": "image/padel.jpg",
+    "rating": "image/4stars.svg"
 },
 {
     "id": 18,
@@ -195,7 +212,8 @@
     "description": "En romantisk cykelutflykt tillsammans, där ni kan utforska vackra platser, njuta av frisk luft och varandras sällskap, vilket ger er möjlighet att lära känna varandra på ett avslappnat och äventyrligt sätt.",
     "type": "own",
     "price": "låg",
-    "image": "image/cykelutflykt.jpg"
+    "image": "image/cykelutflykt.jpg",
+    "rating": "image/3stars.svg"
 },
 {
     "id": 19,
@@ -209,7 +227,8 @@
         "descriptions": "Bowlinghall"
     },
     "price": "medel",
-    "image": "image/bowling.svg"
+    "image": "image/bowling.svg",
+    "rating": "image/35stars.svg"
 },
 {
     "id": 20,
@@ -219,6 +238,7 @@
     "type": "local",
     "filename": "minigolf.json",
     "price": "medel",
-    "image": "image/minigolf.svg"
+    "image": "image/minigolf.svg",
+    "rating": "image/4stars.svg"
 }
 ]
