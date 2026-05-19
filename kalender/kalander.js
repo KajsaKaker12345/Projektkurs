@@ -54,6 +54,9 @@ function kalenderKort(){
 }
 function kortPlanerad(){
 
+    plannedContainer.innerHTML = "";
+
+
     for (const plan of planeradDejt) {
     const planen = document.createElement("div");
     planen.classList.add("planerad-dejt");
@@ -68,6 +71,7 @@ const removeBtn = planen.querySelector(".remove-btn");
 removeBtn.addEventListener("click", () => {
         planeradDejt = planeradDejt.filter(item => item.id !== plan.id);
         localStorage.setItem("planeradDejt", JSON.stringify(planeradDejt));
+        kalenderKort();
         kortPlanerad();
     });
     plannedContainer.append(planen);
@@ -117,5 +121,3 @@ btn.addEventListener("click", () => {
 
 kalenderKort();
 kortPlanerad();
-
-//datum sträng (byggt upp strängen dynaimskt) year= 2026 month= 5 day=01 "->" click" month +=1 year=2026 month = 6  lägga in i ett nytt datum objekt och if sats month <= 12 skicka in till ett dejt objekt, kalender vy, månads vy vanilla javascript 
