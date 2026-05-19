@@ -1,9 +1,14 @@
+
 #card-container{
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .slump-dejt{
-    border-radius: 5px;
+    display: none;
+}
+.slump-dejt.active{
+    display: block;
+     border-radius: 5px;
     margin: 6px auto 6px auto;
     border: solid 2px black;
     width: 160px;
@@ -48,4 +53,17 @@
     transform: translateX(-50%);
     color: black;
     background-color: white;
+}
+#gifen{
+    display: none;
+}
+
+#gifen.active{
+    display: block;
+}
+#stillBild{
+    display: block;
+}
+#stillBild.active{
+    display: none;
 }
