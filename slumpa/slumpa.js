@@ -34,7 +34,7 @@ function randomizeDates(data) {
     <div class="card-inner">
 
     <div class="card-header">
-    <img id="klöver-kort" src="../image/slumpKlöver.svg" alt="">
+    <img id="klöver-kort" src="../image/Slumpande.svg" alt="">
     </div>
 
     <div class="card-front">
