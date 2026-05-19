@@ -19,6 +19,11 @@
     align-items: center;
     justify-content: space-between;
 }
+#head h1 {
+    font-size: 1.7em;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
 #vald-dejt {
     display: flex;
     justify-content: center;
@@ -46,12 +51,21 @@ body.cook .cook, body.pyssel .pyssel, body.sipnpaint .sipnpaint, body.spelkvall 
 
 button {
     background-color: rgb(224, 216, 206);
-    border-radius: 7px;
+    border-radius: 3px;
     border: 1.5px solid rgb(183, 172, 148);
     width: 13em;
     margin: 20px 0 20px 0;
     font-size: 0.9em;
     font-weight: 500;
+}
+button:hover {
+    background-color: rgb(195, 176, 154);
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1.5px solid rgb(32, 32, 32);
+    font-weight: 700;
+    transition: 0.1s;
+    transform: scale(1.02);
 }
 #container .stars {
     width: 120px;
@@ -122,3 +136,49 @@ button {
      font-weight: 550;
      font-size: 1.1em;
 }
+#foodPicknick {
+    background-color: rgb(208, 196, 182);
+    border-radius: 5px;
+}
+#foodPicknick h3 {
+    padding-top: 15px;
+    text-align: center;
+     font-weight: 500;
+     font-size: 1.1em;
+     padding-bottom: 1px;
+}
+
+#foodPicknick ul {
+    list-style: none;
+    padding: 10px;
+    padding-top: 2px;
+    font-size: 0.9em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.5em;
+}
+
+#nodPick h3 {
+    font-weight: 510;
+     font-size: 1.1em;
+     margin-left: 10px;
+     margin-bottom: 7px;
+}
+#nodPick ul {
+    padding: 0;
+    margin: 0 0 25px 25px;
+    line-height: 1.7em;
+    font-size: 0.9em;
+}
+#foodPicknick li {
+    border-radius: 5px;
+    background-color: rgb(240, 235, 229);
+    border: 1px solid rgb(179, 159, 137);
+    width: 6.5em;
+     font-size: 0.9em;
+     padding: 15px;
+}
+
+
