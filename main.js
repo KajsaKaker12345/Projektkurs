@@ -55,11 +55,13 @@ function filterList() {
     
 }
 
-const btn = document.querySelector(".menu-icon");
+const btns = document.querySelectorAll(".menu-icon");
 const nav = document.getElementById("hidden-nav");
 
-btn.addEventListener("click", () => {
-    nav.classList.toggle("active");
+btns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
 });
 
 
