@@ -1,5 +1,5 @@
 * {
-     font-family: Arial, Helvetica, sans-serif;
+     font-family: "Inter", sans-serif;
 }
 #container img {
     width: 100%;
@@ -50,9 +50,8 @@ button {
     border: 1.5px solid rgb(183, 172, 148);
     width: 13em;
     margin: 20px 0 20px 0;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9em;
-    font-weight: 510;
+    font-weight: 500;
 }
 #container .stars {
     width: 120px;
@@ -70,6 +69,8 @@ button {
     margin: 0;
     padding: 10px;
     margin-top: 10px;
+    font-weight: 550;
+    font-size: 1.1em;
 }
 .nöd {
     padding: 0;
@@ -100,6 +101,7 @@ button {
     padding: 10px;
     line-height: 2em;
     font-size: 0.9em;
+    background-color: rgb(240, 235, 229);
 }
 .ul2 {
     grid-area: ul2;
@@ -108,6 +110,7 @@ button {
     padding: 10px;
     line-height: 2em;
     font-size: 0.9em;
+    background-color: rgb(240, 235, 229);
 }
 .tips h3 {
     grid-area: tipsH3;
@@ -116,4 +119,6 @@ button {
     padding: 10px;
     text-align: center;
      border: 0.5px solid rgb(167, 152, 133);
+     font-weight: 550;
+     font-size: 1.1em;
 }

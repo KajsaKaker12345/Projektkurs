@@ -39,6 +39,16 @@ async function createDetails(category) {
     const saveBtn = document.getElementById("save");
     saveBtn.addEventListener("click", () => {
         saveTheDate(category, message);
+
+         if (saveBtn.classList.contains("active")) {
+            saveBtn.src = "../image/spara.svg";
+            saveBtn.classList.remove("active");
+
+            } else {
+                saveBtn.src = "../image/sparaD.svg";
+                saveBtn.classList.add("active");
+                saveTheDate(d, message);
+            }
     });
     
     const buttonsContainer = document.getElementById("vald-dejt");
