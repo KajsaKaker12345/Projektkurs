@@ -46,6 +46,18 @@
     position: absolute;
     transform: rotateY(180deg);
 }
+.card-back h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+
+    background: rgba(255, 255, 255, 0.85);
+    color: black;
+    font-size: 13px;
+    text-align: center;
+}
 
 #stillBild.hidden{
     display: none;
