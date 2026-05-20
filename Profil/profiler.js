@@ -1,9 +1,29 @@
-const btn = document.getElementById("menu-icon");
+const btn = document.querySelector(".menu-icon");
 const nav = document.getElementById("hidden-nav");
 const nextContainer = document.getElementById("pågående");
 const slutfördaContainer = document.getElementById("slutförda");
 const kryssBtn = document.querySelector("#kryss");
 
+const img = document.getElementById("dejt-status");
+let imgNumber = Number(localStorage.getItem("imgNumber")) || 0; //knapp räkning
+let fullHeartCount = Number(localStorage.getItem("fullHeartCount")) || 0;
+// räkning för fullföljda hjärtan
+const fullHeart = document.getElementById("fullHeart");
+
+// rendera fullföljda hjärtan men också säga vilket stort hjärta som ska visas
+if (imgNumber > 0) {
+    img.src = `../imageStatus/status-hjärta${imgNumber}.svg`
+} else {
+    img.src = "../imageStatus/HjärtaTomt.svg";
+}
+
+for (let i = 0; i < fullHeartCount; i++) {
+    const heartImage = document.createElement("img");
+    heartImage.src = "../image/HjärtaFyllt.svg";
+    heartImage.alt = "fullt hjärta";
+    fullHeart.append(heartImage);
+}
+// spara
 let doDate = [];
 let doneDate = [];
 
@@ -54,6 +74,7 @@ function showNextDate() {
         nextContainer.append(nextDiv);
     }
 
+    // klarknappen för att stänga pågående dejten
     klarBtn.addEventListener("click", () => {
         message.classList.toggle("active");
 
@@ -62,14 +83,65 @@ function showNextDate() {
 
         slutfördaContainer.append(nextDiv);
         klarBtn.style.display = "none";
+
+        imgNumber++;
+        
+        if (imgNumber > 5) {
+        imgNumber = 0;
+        img.src = `../imageStatus/HjärtaTomt.svg`;
+    }   else if (imgNumber === 5) {
+        img.src = `../imageStatus/status-hjärta${imgNumber}.svg`;
+        const text = document.createElement("p");
+        text.id = "textMsg";
+        text.textContent = "Nu har ni fyllt ett helt hjärta! Fortsätt samla hjärtan för att få belöningar, såsom rabattkoder till dejterna!";
+        message.append(text);
+
+        const heartImage = document.createElement("img");
+        heartImage.id = "heartImage";
+        heartImage.alt = "Fullt hjärta";
+        heartImage.src = "../image/HjärtaFyllt.svg";
+        fullHeart.append(heartImage);
+
+        fullHeartCount++;
+        localStorage.setItem("fullHeartCount", fullHeartCount);
+    }
+    else {
+        img.src = `../imageStatus/status-hjärta${imgNumber}.svg`
+        }
+        localStorage.setItem("imgNumber", imgNumber);
+        
     });
+
+    // kryssknapp för att stänga meddelande knapp
     kryssBtn.addEventListener("click", () => {
         message.classList.remove("active");
+        const text = document.getElementById("textMsg");
+
+        if (text) {
+            text.remove();
+        }
+
+        if (imgNumber === 5) {
+            imgNumber = 0;
+            img.src = "../imageStatus/HjärtaTomt.svg";
+            localStorage.setItem("imgNumber", imgNumber);
+        
+        
+        }
+        /*const text = document.getElementById("text");
+        const heartImage = document.getElementById("heartImage");
+
+        if (imgNumber > 5) {
+        imgNumber = 0;
+        img.src = `../imageStatus/HjärtaTomt.svg`;
+        message.classList.remove("active");
+    } */
     });
 }
 }
+//localStorage.removeItem("doneDate")
+console.log(doneDate)
 showNextDate();
-
 btn.addEventListener("click", () => {
     nav.classList.toggle("active");
 });

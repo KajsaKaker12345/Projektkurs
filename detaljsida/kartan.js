@@ -18,7 +18,7 @@ export async function loadMap(data) {
 
     if (bounds.length > 0) {
       map.fitBounds(bounds, {
-        padding: [40, 40],
+        padding: [20, 20],
         maxZoom: 9
       });
     }

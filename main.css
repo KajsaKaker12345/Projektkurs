@@ -51,13 +51,13 @@ html, body {
     padding-right: 30px;
 }
 
+.menu-icon{
+    width: 29px;
+}
+
 img{
     width: 140px;
     border-radius: 6px;
-}
-
-.menu-icon{
-    width: 29px;
 }
 #sök-icon {
     width: 28px;
@@ -201,10 +201,11 @@ input[type="select"] {
 
 #search-input.active{
     display: inline-block;
+    width: 110px;
 }
 #search-container{
     display: flex;
-    width: 28px;
+    width: auto;
     align-items: center;
 }
 
