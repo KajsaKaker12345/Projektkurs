@@ -201,10 +201,11 @@ input[type="select"] {
 
 #search-input.active{
     display: inline-block;
+    width: 110px;
 }
 #search-container{
     display: flex;
-    width: 28px;
+    width: auto;
     align-items: center;
 }
 
