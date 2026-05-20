@@ -49,7 +49,7 @@
         "descriptions": "älgpark,älgsafari"
     },
     "price": "medel",
-   "image": "image/algsafari.png",
+   "image": "image/Algsafari.png",
    "rating": "image/3stars.svg"
 },
 {
@@ -103,7 +103,7 @@
         "descriptions": "biograf"
     },
     "price": "medel",
-    "image": "image/bio.png",
+    "image": "image/Bio.png",
     "rating": "image/35stars.svg"
 }, {
     "id": 9,
