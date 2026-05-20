@@ -13,7 +13,6 @@ const data = await response.json();
 
 const cardContainer = document.getElementById("card-container");
 
-randomizeDates(data);
 function randomizeDates(data) {
     cardContainer.innerHTML = "";
 
@@ -26,6 +25,7 @@ function randomizeDates(data) {
     for (const item of randomDates) {
     const element = document.createElement("div");
     element.classList.add("slump-dejt");
+    element.classList.add("active");
     element.addEventListener("click", () => {
         element.classList.toggle("flipped");
     });
@@ -37,7 +37,7 @@ function randomizeDates(data) {
     <img id="klöver-kort" src="../image/Slumpande.svg" alt="">
     </div>
 
-    <div class="card-front">
+    <div class="card-back">
     <img src="../${item.image}" alt="">
     <h3>${item.name}</h3>
     </div>
@@ -56,6 +56,7 @@ startGIF.addEventListener("click", ()=>{
 
     GIF.classList.toggle("active");
     stilla.classList.toggle("active");
+    
 
     cardContainer.innerHTML ="";
 
@@ -63,14 +64,17 @@ startGIF.addEventListener("click", ()=>{
 
     setTimeout(() => {
         GIF.classList.remove("active");
-        stilla.style.display = "none";
+        stilla.classList.remove("active");
+        stilla.classList.add("hidden")
 
         randomizeDates(data);
 
         const allaKort = document.querySelectorAll(".slump-dejt");
 
-        allaKort.forEach(card => {
-            card.classList.toggle("active");
+        allaKort.forEach((card, index) => {
+            setTimeout(()=>{
+                card.classList.add("flipped");
+            }, index * 400);
         });
         
     }, 5000);
