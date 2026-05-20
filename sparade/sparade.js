@@ -1,6 +1,6 @@
 import { createCards } from "../renderCard.js";
 
-const btn = document.getElementById("menu-icon");
+const btn = document.querySelector(".menu-icon");
 const nav = document.getElementById("hidden-nav");
 const card = document.getElementById("card-container");
 const message = document.getElementById("message");
@@ -21,7 +21,7 @@ function skapaKort(){
             saved = saved.filter(item => item.id !== save.id);
             localStorage.setItem("saved", JSON.stringify(saved));
             kortDiv.remove();
-            message.textContent = "Dejten har tagits bort från dina sparade dejter.";
+            message.textContent = "Dejten har tagits bort från dina sparade dejter.";// lägg till en tid på meddelandet så att det inte visas hela tiden utan bara typ 3 sek
             message.style.color = "red";
         });
 

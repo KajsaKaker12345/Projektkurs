@@ -1,4 +1,4 @@
-.kalender{
+#kalender-struktur{
     display: grid;
     grid-template-columns: repeat(7,1fr);
     height: 400px;
@@ -12,9 +12,12 @@
     width: 50px;
 }
 
-#pil{
+#nästa{
     transform: scale(-1);
     width: 70px;
+}
+#förra{
+    width:70px;
 }
 .next-date{
     border: 1px solid black;

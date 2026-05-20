@@ -28,15 +28,27 @@ async function createDetails(category) {
         return;
     }
 
-    headerContainer.innerHTML = `<a href="../index.html"><img src="../image/pil.svg" alt="tillbaka pil"></a><h1>${category.name}</h1><img src="../image/spara.svg" alt="image/spara ikon" id="save">`;
+    headerContainer.innerHTML = `<a href="../index.html"><img src="../image/pil.svg" alt="tillbaka pil"></a><h1>${category.name.toUpperCase()}</h1><img src="../image/spara.svg" alt="image/spara ikon" id="save">`;
+    
     detailsContainer.innerHTML = `
         <img src="../${category.image}" alt="${category.name}">
+        <img src="../${category.rating}" alt="rating" class="stars">
         <p>${category.description}</p>
     `; 
 
     const saveBtn = document.getElementById("save");
     saveBtn.addEventListener("click", () => {
         saveTheDate(category, message);
+
+         if (saveBtn.classList.contains("active")) {
+            saveBtn.src = "../image/spara.svg";
+            saveBtn.classList.remove("active");
+
+            } else {
+                saveBtn.src = "../image/sparaD.svg";
+                saveBtn.classList.add("active");
+                saveTheDate(d, message);
+            }
     });
     
     const buttonsContainer = document.getElementById("vald-dejt");

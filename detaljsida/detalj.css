@@ -1,3 +1,6 @@
+* {
+     font-family: "Inter", sans-serif;
+}
 #container img {
     width: 100%;
     height: auto;
@@ -15,6 +18,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+#head h1 {
+    font-size: 1.7em;
+    font-weight: 500;
+    letter-spacing: 1.5px;
 }
 #vald-dejt {
     display: flex;
@@ -51,3 +59,136 @@ body.cook .cook, body.pyssel .pyssel, body.sipnpaint .sipnpaint, body.spelkvall 
 #cityProvince {
     margin-top: 0;
 }
+button {
+    background-color: rgb(224, 216, 206);
+    border-radius: 3px;
+    border: 1.5px solid rgb(183, 172, 148);
+    width: 13em;
+    margin: 20px 0 20px 0;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+button:hover {
+    background-color: rgb(195, 176, 154);
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1.5px solid rgb(32, 32, 32);
+    font-weight: 700;
+    transition: 0.1s;
+    transform: scale(1.02);
+}
+#container .stars {
+    width: 120px;
+    height: auto;
+    margin-top: 2px;
+    display: flex;
+    margin-left: auto;
+}
+
+#container p {
+    margin: 8px;
+}
+
+.sipnpaint h3 {
+    margin: 0;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: 550;
+    font-size: 1.1em;
+}
+.nöd {
+    padding: 0;
+    margin: 0 0 40px 30px;
+    line-height: 1.7em;
+    font-size: 0.9em;
+}
+
+.tips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "tipsH3 tipsH3"
+    "ul1 ul2";
+   background-color: rgb(224, 216, 206);
+    width: 350px;
+    margin: auto;
+    border: 0.5px solid rgb(179, 159, 137);
+    border-radius: 5px;
+}
+.tips ul {
+    list-style: none;
+}
+.ul1 {
+    grid-area: ul1;
+    border: 0.5px solid rgb(172, 154, 131);
+    margin: 0;
+    padding: 10px;
+    line-height: 2em;
+    font-size: 0.9em;
+    background-color: rgb(240, 235, 229);
+}
+.ul2 {
+    grid-area: ul2;
+     border: 0.5px solid rgb(170, 160, 137);
+    margin: 0;
+    padding: 10px;
+    line-height: 2em;
+    font-size: 0.9em;
+    background-color: rgb(240, 235, 229);
+}
+.tips h3 {
+    grid-area: tipsH3;
+    background-color: rgb(224, 216, 206);
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+     border: 0.5px solid rgb(167, 152, 133);
+     font-weight: 550;
+     font-size: 1.1em;
+}
+#foodPicknick {
+    background-color: rgb(208, 196, 182);
+    border-radius: 5px;
+}
+#foodPicknick h3 {
+    padding-top: 15px;
+    text-align: center;
+     font-weight: 500;
+     font-size: 1.1em;
+     padding-bottom: 1px;
+}
+
+#foodPicknick ul {
+    list-style: none;
+    padding: 10px;
+    padding-top: 2px;
+    font-size: 0.9em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.5em;
+}
+
+#nodPick h3 {
+    font-weight: 510;
+     font-size: 1.1em;
+     margin-left: 10px;
+     margin-bottom: 7px;
+}
+#nodPick ul {
+    padding: 0;
+    margin: 0 0 25px 25px;
+    line-height: 1.7em;
+    font-size: 0.9em;
+}
+#foodPicknick li {
+    border-radius: 5px;
+    background-color: rgb(240, 235, 229);
+    border: 1px solid rgb(179, 159, 137);
+    width: 6.5em;
+     font-size: 0.9em;
+     padding: 15px;
+}
+
+
