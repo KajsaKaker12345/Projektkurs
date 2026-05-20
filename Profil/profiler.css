@@ -1,23 +1,23 @@
-.status{
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+#fullHeart {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 35px 0 15px 0;
 }
-.stats{
-    border-radius: 5px;
-    margin: 4px;
-    border: solid 2px black;
-    height: 65px;
-    width: 65px;
+#fullHeart img {
+    height: 25px;
+    width: 25px;
+    margin: 0 3px 0 3px;
 }
-.stats img{
-    background-color: rgb(139, 182, 139);
-    height: 100%;
-    width: 100%;
+#fullHeart h3 {
+    margin: 0;
+}
+#dejtdiv {
+    border-bottom: solid black 1px;
+    margin: 10px;
+    text-align: center;
 }
 #dejt-status{
     width: 200px;
-
 }
 #klar-img{
     width: 20px;
