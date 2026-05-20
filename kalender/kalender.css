@@ -9,7 +9,10 @@
     border-radius: 5px;
     border: 2px solid black;
     padding: 2px;
-    width: 50px;
+    width: 42px;
+}
+.day h3 {
+    font-size: 13px;
 }
 
 #nästa{
