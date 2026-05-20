@@ -1,6 +1,6 @@
 import { createCards } from "../renderCard.js";
 
-const btn = document.getElementById("menu-icon");
+const btn = document.querySelector(".menu-icon");
 const nav = document.getElementById("hidden-nav");
 const card = document.getElementById("card-container");
 const message = document.getElementById("message");

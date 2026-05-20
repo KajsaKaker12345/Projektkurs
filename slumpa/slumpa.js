@@ -1,4 +1,4 @@
-const btn = document.getElementById("menu-icon");
+const btn = document.querySelector(".menu-icon");
 const nav = document.getElementById("hidden-nav");
 const startGIF = document.getElementById("startaGIF");
 const GIF = document.getElementById("gifen");

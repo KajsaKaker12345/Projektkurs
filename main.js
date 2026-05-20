@@ -9,6 +9,16 @@ const priceInput = document.getElementById("price");
 const priceSign = document.getElementById("priceValue");
 const form = document.getElementById("form");
 
+const btn = document.querySelector(".menu-icon");
+const nav = document.getElementById("hidden-nav");
+
+
+    btn.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+
+
+
 form.addEventListener("change", filterList);
 
 function filterList() {
@@ -54,14 +64,4 @@ function filterList() {
     createCards(filtered);
     
 }
-
-const btns = document.querySelectorAll(".menu-icon");
-const nav = document.getElementById("hidden-nav");
-
-btns.forEach(btn => {
-    btn.addEventListener("click", () => {
-        nav.classList.toggle("active");
-    });
-});
-
 

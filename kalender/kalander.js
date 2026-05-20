@@ -1,5 +1,5 @@
 const kalender = document.querySelector(".kalender");
-const btn = document.getElementById("menu-icon");
+const btn = document.querySelector(".menu-icon");
 const nav = document.getElementById("hidden-nav");
 const nextContainer = document.getElementById("nästa-dejt");
 const plannedContainer = document.getElementById("planerade-dejter");

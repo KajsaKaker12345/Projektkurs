@@ -51,13 +51,13 @@ html, body {
     padding-right: 30px;
 }
 
+.menu-icon{
+    width: 29px;
+}
+
 img{
     width: 140px;
     border-radius: 6px;
-}
-
-.menu-icon{
-    width: 29px;
 }
 #sök-icon {
     width: 28px;
