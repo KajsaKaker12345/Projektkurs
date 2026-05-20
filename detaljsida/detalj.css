@@ -119,7 +119,6 @@ button:hover {
     width: 350px;
     margin: auto;
     border: 0.5px solid rgb(179, 159, 137);
-    border-radius: 5px;
 }
 .tips ul {
     list-style: none;
@@ -153,8 +152,7 @@ button:hover {
      font-size: 1.1em;
 }
 #foodPicknick {
-    background-color: rgb(208, 196, 182);
-    border-radius: 5px;
+     background-color: rgb(218, 208, 196);
     margin: 15px;
 }
 #foodPicknick h3 {
@@ -190,7 +188,6 @@ button:hover {
     font-size: 0.9em;
 }
 #foodPicknick li {
-    border-radius: 5px;
     background-color: rgb(240, 235, 229);
     border: 1px solid rgb(179, 159, 137);
     width: 6.5em;
@@ -222,8 +219,7 @@ button:hover {
      list-style: none;
     font-size: 0.9em;
     text-align: center;
-     border: 1px solid rgb(170, 160, 137);
-     border-radius: 2px;
+    border: 1px solid rgb(209, 198, 186);
     width: 8em;
     padding: 0;
     margin: 0;
@@ -233,7 +229,7 @@ button:hover {
     margin: auto;
 }
 .arstid {
-    background-color: rgb(224, 216, 206);
+     background-color: rgb(223, 213, 200);
     margin: 0;
     padding: 8px;
     font-size: 1.1em;
@@ -272,7 +268,6 @@ button:hover {
    font-weight: 500;
    width: 20%;
    padding: 10px;
-   border-radius: 3px;
     border: 1.5px solid rgb(183, 172, 148);
    text-align: center;
    background-color: rgb(255, 255, 255);
@@ -292,11 +287,11 @@ button:hover {
     display: flex;
 }
 #karlekskort, #moodboard, #lerfigurer {
-    background-color: rgb(240, 235, 229);
-    margin: 6px;
     padding: 9px;
     list-style: none;
-    border: 1px solid rgb(179, 159, 137);
+     background-color: rgb(241, 237, 232);
+    margin: 6px;
+    border: 1px solid rgb(209, 198, 186);
     justify-content: space-evenly;
     width: 33%;
 }
@@ -346,3 +341,39 @@ button:hover {
     margin: 0;
     border-bottom: 1px solid rgb(209, 198, 186);
 }
+
+#playstation, #xbox, #nintendo {
+    display: flex;
+    align-items: center;
+    background-color: rgb(240, 235, 229);
+    margin-bottom: 15px;
+    height: 120px;
+    
+}
+.tvSpel h3 {
+    text-align: center;
+    padding-top: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding-bottom: 1px;
+}
+.tvSpel li {
+   font-size: 0.9em;
+   padding: 5px;
+   list-style: none;
+}
+
+#playstation p, #xbox p, #nintendo p {
+   font-size: 1em;
+   margin-left: 10px;
+   font-weight: 500;
+   width: 20%;
+   padding: 10px;
+    border: 1.5px solid rgb(183, 172, 148);
+   text-align: center;
+   background-color: rgb(255, 255, 255);
+}
+#playstation ul, #xbox ul, #nintendo ul {
+     width: 75%;
+} 
