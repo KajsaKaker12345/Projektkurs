@@ -1,9 +1,15 @@
 * {
      font-family: "Inter", sans-serif;
 }
+body {
+    margin: 0;
+}
 #container img {
-    width: 100%;
+    width: 96%;
     height: auto;
+    margin: 10px;
+    justify-content: center;
+    display: flex;
 }
 #container h2 {
     font-size: 1.6em;
@@ -12,7 +18,7 @@
 #head img {
     width: 40px;
     height: 40px;
-    margin: 0 10px 0 10px;
+    margin: 20px;
 }
 #head {
     display: flex;
@@ -50,9 +56,9 @@ body.cook .cook, body.pyssel .pyssel, body.sipnpaint .sipnpaint, body.spelkvall 
 } 
 
 button {
-    background-color: rgb(224, 216, 206);
+    background-color: rgb(207, 195, 181);
     border-radius: 3px;
-    border: 1.5px solid rgb(183, 172, 148);
+    border: 1px solid rgb(205, 194, 181);
     width: 13em;
     margin: 20px 0 20px 0;
     font-size: 0.9em;
@@ -139,6 +145,7 @@ button:hover {
 #foodPicknick {
     background-color: rgb(208, 196, 182);
     border-radius: 5px;
+    margin: 15px;
 }
 #foodPicknick h3 {
     padding-top: 15px;
@@ -160,13 +167,13 @@ button:hover {
     gap: 0.5em;
 }
 
-#nodPick h3 {
+.nodvandigt h3 {
     font-weight: 510;
      font-size: 1.1em;
      margin-left: 10px;
      margin-bottom: 7px;
 }
-#nodPick ul {
+.nodvandigt ul {
     padding: 0;
     margin: 0 0 25px 25px;
     line-height: 1.7em;
@@ -181,4 +188,151 @@ button:hover {
      padding: 15px;
 }
 
+#timeStars h3 {
+    padding-top: 15px;
+    text-align: center;
+     font-weight: 500;
+     font-size: 1.1em;
+     padding-bottom: 1px;
+}
 
+#ulStars {
+    list-style: none;
+    font-size: 0.9em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#vinter, #var, #sommar, #höst {
+    flex-direction: column;
+     display: flex;
+    gap: 0.2em;
+     list-style: none;
+    font-size: 0.9em;
+    text-align: center;
+     border: 1px solid rgb(170, 160, 137);
+     border-radius: 2px;
+    width: 8em;
+    padding: 0;
+    margin: 0;
+    height: 6em;
+}
+#timeStars {
+    margin: auto;
+}
+.arstid {
+    background-color: rgb(224, 216, 206);
+    margin: 0;
+    padding: 8px;
+    font-size: 1.1em;
+}
+.hourStars {
+    padding: 13px;
+    font-size: 0.97em;
+    align-items: center;
+}
+
+/*-------- SPELKVÄLL -------*/
+#monopol, #hiddenReal, #hitster, #smart10 {
+    display: flex;
+    align-items: center;
+    background-color: rgb(240, 235, 229);
+    margin-bottom: 15px;
+    height: 120px;
+    
+}
+.spelkvall h3 {
+    text-align: center;
+    padding-top: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding-bottom: 1px;
+}
+.spelkvall li {
+   font-size: 0.86em;
+   padding: 5px;
+   list-style: none;
+}
+#monopol p, #hiddenReal p, #hitster p, #smart10 p {
+   font-size: 1em;
+   margin-left: 10px;
+   font-weight: 500;
+   width: 20%;
+   padding: 10px;
+   border-radius: 3px;
+    border: 1.5px solid rgb(183, 172, 148);
+   text-align: center;
+   background-color: rgb(255, 255, 255);
+}
+#monopol ul, #hiddenReal ul, #hitster ul, #smart10 ul {
+     width: 75%;
+} 
+
+.pyssel h3 {
+    text-align: center;
+    font-weight: 500;
+    padding-top: 10px;
+    font-size: 1.2em;
+}
+
+#pysselIdeer {
+    display: flex;
+}
+#karlekskort, #moodboard, #lerfigurer {
+    background-color: rgb(240, 235, 229);
+    margin: 6px;
+    padding: 9px;
+    list-style: none;
+    border: 1px solid rgb(179, 159, 137);
+    justify-content: space-evenly;
+    width: 33%;
+}
+#karlekskort li, #moodboard li, #lerfigurer li {
+    font-size: 0.9em;
+    padding: 2px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cook h3 {
+    text-align: center;
+    font-weight: 500;
+    padding-top: 10px;
+    font-size: 1.2em;
+}
+#all-food {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+#förrätt, #huvudrätt, #efterrätt {
+    background-color: rgb(241, 237, 232);
+    margin: 6px;
+    border: 1px solid rgb(209, 198, 186);
+    justify-content: space-evenly;
+    width: 33%;
+}
+#förrätt ul, #huvudrätt ul, #efterrätt ul {
+    list-style: none;
+    padding: 2px;
+}
+#förrätt li, #huvudrätt li, #efterrätt li {
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+#förrätt p, #huvudrätt p, #efterrätt p {
+    font-size: 1.03em;
+    text-align: center;
+    padding: 8px;
+    font-weight: 450;
+    background-color: rgb(224, 216, 206);
+    margin: 0;
+    border-bottom: 1px solid rgb(209, 198, 186);
+}
