@@ -1,5 +1,30 @@
 import { loadMap } from "./detaljsida/kartan.js";
 
+function getImageRating(rating) {
+    const roundedRating = Math.round(Number(rating) * 2) / 2;
+    console.log(roundedRating)
+
+    if (roundedRating === 1) {
+        return "../image/1stars.svg"
+    } else if (roundedRating === 1.5) {
+        return "../image/15stars.svg"
+    } else if (roundedRating === 2) {
+        return "../image/2stars.svg"
+    } else if (roundedRating === 2.5) {
+        return "../image/25stars.svg"
+    } else if (roundedRating === 3) {
+        return "../image/3stars.svg"
+    } else if (roundedRating === 3.5) {
+        return "../image/35stars.svg" 
+    } else if (roundedRating === 4) {
+        return "../image/4stars.svg"
+    } else if (roundedRating === 4.5) {
+        return "../image/45stars.svg"
+    } else {
+        return "../image/5stars.svg"
+    }
+}
+
 // rendera lokal data
 export function makeLocalElement(data) {
     const map = document.getElementById("map");
@@ -9,10 +34,14 @@ export function makeLocalElement(data) {
     for (const item of data) {
         const element = document.createElement("div");
         element.classList.add("map-item");
+        const price = item.price ? `Prisklass: ${item.price}` : "Ingen kostnad" ;
+        const ratingImage = getImageRating(item.rating);
 
         element.innerHTML = `
             <h3>${item.name}</h3>
-            <p>${item.description}</p>
+            <p id="cityProvince">${item.city}, ${item.province}</p>
+            <p><img src="${ratingImage}" alt="stjärnaa" id="stars"> ${item.rating}/5</p>
+            <p>${price}</p>
         `;
         map.append(element);
     }
@@ -27,6 +56,7 @@ export async function makeFetchElement(data) {
         const element = document.createElement("div");
         element.classList.add("map-item");
         const priceOrRating = item.price_range ? `Prisklass: ${item.price_range}kr` : item.avg_dinner_pricing ? `Genomsnittligt pris: ${item.avg_dinner_pricing}kr` : `Recentioner: ${Number(item.rating)}/5`;
+        const ratingImage = getImageRating(item.rating);
 
         
         let city = item.city;
@@ -37,8 +67,9 @@ export async function makeFetchElement(data) {
         }
         element.innerHTML = `
             <h3>${item.name}</h3>
+            <p id="cityProvince">${city}, ${province}</p>
+            <p><img src ="${ratingImage}" id="stars"> ${Number(item.rating)}/5</p>
             <p>${priceOrRating}</p>
-            <p>${city}, ${province}</p>
         `;
         map.append(element);
     }
