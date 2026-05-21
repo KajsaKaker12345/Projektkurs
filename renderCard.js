@@ -31,6 +31,7 @@ export function createCards(establishments) {
             } else {
                 btn.src = "image/sparaD.svg";
                 btn.classList.add("activePop");
+                saveTheDate(d, message);
             }
         });
     });

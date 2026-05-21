@@ -1,11 +1,13 @@
-const btn = document.querySelector(".menu-icon");
+const btn = document.querySelectorAll(".menu-icon");
 const nav = document.getElementById("hidden-nav");
 const startGIF = document.getElementById("startaGIF");
 const GIF = document.getElementById("gifen");
 const stilla = document.getElementById("stillBild");
 
-btn.addEventListener("click", () => {
-    nav.classList.toggle("active");
+btn.forEach(menuBtn => {
+     menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("active");
+});
 });
 
 const response = await fetch("../dates.json");
@@ -13,19 +15,39 @@ const data = await response.json();
 
 const cardContainer = document.getElementById("card-container");
 
+let previousDates = [];
+
 function randomizeDates(data) {
     cardContainer.innerHTML = "";
 
     const randomDates = [];
+    const usedIndex = [];
 
-     for (let i = 0; i < 3; i++) {
+    while (randomDates.length < 3) {
+
     const randomIndex = Math.floor(Math.random() * data.length);
-    randomDates.push(data[randomIndex]);
+    const selectedDate = data[randomIndex];
+
+    if (
+        usedIndex.includes(randomIndex) || 
+        previousDates.includes(selectedDate.name)
+
+    ){
+        continue;
+    }
+    usedIndex.push(randomIndex);
+    randomDates.push(selectedDate);
      }
+
+    previousDates = randomDates.map(item => item.name);
+
     for (const item of randomDates) {
+
     const element = document.createElement("div");
+
     element.classList.add("slump-dejt");
     element.classList.add("active");
+
     element.addEventListener("click", () => {
         element.classList.toggle("flipped");
     });

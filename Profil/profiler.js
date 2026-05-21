@@ -1,4 +1,4 @@
-const btn = document.querySelector(".menu-icon");
+const btn = document.querySelectorAll(".menu-icon");
 const nav = document.getElementById("hidden-nav");
 const nextContainer = document.getElementById("pågående");
 const slutfördaContainer = document.getElementById("slutförda");
@@ -142,6 +142,8 @@ function showNextDate() {
 //localStorage.removeItem("doneDate")
 console.log(doneDate)
 showNextDate();
-btn.addEventListener("click", () => {
-    nav.classList.toggle("active");
+btn.forEach(menuBtn => {
+     menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("active");
+});
 });

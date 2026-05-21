@@ -1,5 +1,5 @@
 const kalender = document.querySelector(".kalender");
-const btn = document.querySelector(".menu-icon");
+const btn = document.querySelectorAll(".menu-icon");
 const nav = document.getElementById("hidden-nav");
 const nextContainer = document.getElementById("nästa-dejt");
 const plannedContainer = document.getElementById("planerade-dejter");
@@ -117,8 +117,10 @@ const förra = document.getElementById("förra").addEventListener("click", ()=>{
         }
 
 
-btn.addEventListener("click", () => {
-    nav.classList.toggle("active");
+btn.forEach(menuBtn => {
+     menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("active");
+});
 });
 
 kalenderKort();

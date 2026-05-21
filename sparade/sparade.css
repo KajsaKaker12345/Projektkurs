@@ -10,3 +10,8 @@
     width: 50px;
     align-items: center;
 }
+.noDates{
+    color: rgb(104, 103, 103);
+    margin-left: 12px;
+    font-size: 15px;
+}
