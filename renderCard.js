@@ -24,6 +24,14 @@ export function createCards(establishments) {
     savePopDate.forEach(btn  => {
         btn.addEventListener("click", (e) => {
             e.stopPropagation();
+
+            const popDiven = btn.closest(".popular-bild");
+
+            const cardId = Number(popDiven.id);
+
+            const selectedDate = establishments.find(item => item.id === cardId);
+
+            const message = document.getElementById("message");
             
             if (btn.classList.contains("activePop")) {
                 btn.src = "image/spara.svg";
@@ -31,7 +39,7 @@ export function createCards(establishments) {
             } else {
                 btn.src = "image/sparaD.svg";
                 btn.classList.add("activePop");
-                saveTheDate(d, message);
+                saveTheDate(selectedDate, message);
             }
         });
     });
@@ -66,8 +74,8 @@ export function createCards(establishments) {
 
 
         const saveBtn = cardDiv.querySelector(".save");
-        const message = document.getElementById("message");
         // detta p elementet ("message") ska hamna synligt vid klick
+         const message = document.getElementById("message");
 
         saveBtn.addEventListener("click", (e) => {
             e.stopPropagation(); // så man inte öppnar detaljsidan
