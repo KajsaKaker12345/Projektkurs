@@ -2,7 +2,7 @@ import { loadMap } from "./detaljsida/kartan.js";
 
 function getImageRating(rating) {
     const roundedRating = Math.round(Number(rating) * 2) / 2;
-    console.log(roundedRating)
+    
 
     if (roundedRating === 1) {
         return "../image/1stars.svg"
@@ -34,15 +34,22 @@ export function makeLocalElement(data) {
     for (const item of data) {
         const element = document.createElement("div");
         element.classList.add("map-item");
-        const price = item.price ? `Prisklass: ${item.price}` : "Ingen kostnad" ;
+        const price = item.price ? `Från: ${item.price}kr` : "Ingen kostnad";
         const ratingImage = getImageRating(item.rating);
 
         element.innerHTML = `
-            <h3>${item.name}</h3>
-            <p id="cityProvince">${item.city}, ${item.province}</p>
-            <p><img src="${ratingImage}" alt="stjärnaa" id="stars"> ${item.rating}/5</p>
-            <p>${price}</p>
+            <h3 class="h3">${item.name}</h3>
+            <p class="cityProvince">${item.city}, ${item.province}</p>
+            <p class="stars"><img src="${ratingImage}" alt="stjärnaa"> ${item.rating}/5</p>
+            <p class="p">${price}</p>
         `;
+            if (item.website !== "") {
+        const button = document.createElement("button");
+        button.classList.add("webben");
+        button.innerHTML = `<a href="${item.website}">Länk till webbsidan</a>`;
+        element.append(button);
+
+        }
         map.append(element);
     }
 }
@@ -55,7 +62,10 @@ export async function makeFetchElement(data) {
     for (const item of data) {
         const element = document.createElement("div");
         element.classList.add("map-item");
-        const priceOrRating = item.price_range ? `Prisklass: ${item.price_range}kr` : item.avg_dinner_pricing ? `Genomsnittligt pris: ${item.avg_dinner_pricing}kr` : `Recentioner: ${Number(item.rating)}/5`;
+        /*const priceOrRating = item.price_range ? `Prisklass: ${item.price_range}kr` : item.avg_dinner_pricing ? `Genomsnittligt pris: ${item.avg_dinner_pricing}kr` : `Recentioner: ${Number(item.rating)}/5`;*/
+
+        const fromPrice = item.price_range.split("-")[0];
+        const price = item.price_range ? `Från: ${fromPrice} kr` : "Ingen kostnad";
         const ratingImage = getImageRating(item.rating);
 
         
@@ -66,11 +76,17 @@ export async function makeFetchElement(data) {
             city = await convertToCity(item.lat, item.lng);
         }
         element.innerHTML = `
-            <h3>${item.name}</h3>
-            <p id="cityProvince">${city}, ${province}</p>
-            <p><img src ="${ratingImage}" id="stars"> ${Number(item.rating)}/5</p>
-            <p>${priceOrRating}</p>
+            <h3 class="h3">${item.name}</h3>
+            <p class="cityProvince">${city}, ${province}</p>
+            <p class="stars"><img src ="${ratingImage}"> ${Number(item.rating)}/5</p>
+            <p class="p">${price}</p>
         `;
+        if (item.website !== "") {
+        const button = document.createElement("button");
+        button.classList.add("webben");
+        button.innerHTML = `<a href="${item.website}">Länk till webbsidan</a>`;
+        element.append(button);
+        }
         map.append(element);
     }
 
