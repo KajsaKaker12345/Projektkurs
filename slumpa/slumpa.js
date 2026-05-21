@@ -13,19 +13,39 @@ const data = await response.json();
 
 const cardContainer = document.getElementById("card-container");
 
+let previousDates = [];
+
 function randomizeDates(data) {
     cardContainer.innerHTML = "";
 
     const randomDates = [];
+    const usedIndex = [];
 
-     for (let i = 0; i < 3; i++) {
+    while (randomDates.length < 3) {
+
     const randomIndex = Math.floor(Math.random() * data.length);
-    randomDates.push(data[randomIndex]);
+    const selectedDate = data[randomIndex];
+
+    if (
+        usedIndex.includes(randomIndex) || 
+        previousDates.includes(selectedDate.name)
+
+    ){
+        continue;
+    }
+    usedIndex.push(randomIndex);
+    randomDates.push(selectedDate);
      }
+
+    previousDates = randomDates.map(item => item.name);
+
     for (const item of randomDates) {
+
     const element = document.createElement("div");
+
     element.classList.add("slump-dejt");
     element.classList.add("active");
+
     element.addEventListener("click", () => {
         element.classList.toggle("flipped");
     });
