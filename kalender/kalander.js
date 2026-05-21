@@ -1,5 +1,5 @@
 const kalender = document.querySelector(".kalender");
-const btn = document.querySelector(".menu-icon");
+const btn = document.querySelectorAll(".menu-icon");
 const nav = document.getElementById("hidden-nav");
 const nextContainer = document.getElementById("nästa-dejt");
 const plannedContainer = document.getElementById("planerade-dejter");
@@ -61,12 +61,14 @@ function kortPlanerad(){
     const planen = document.createElement("div");
     planen.classList.add("planerad-dejt");
     planen.innerHTML = `
-    <h3>${plan.name}</h3><p>${plan.date}</p><button class="remove-btn">Ta bort</button><button class="read-more"><a href="../detaljsida/detalj.html?id=${plan.id}">Läs mer</a></button>
+    <p>${plan.date}</p><h3>${plan.name}</h3><button class="remove-btn"></button><button class="read-more"><a href="../detaljsida/detalj.html?id=${plan.id}">Läs mer</a></button>
     `;
 
 
 
 const removeBtn = planen.querySelector(".remove-btn");
+
+removeBtn.innerHTML = `<img src="../image/trash.svg" alt="Ta bort">`;
 
 removeBtn.addEventListener("click", () => {
         planeradDejt = planeradDejt.filter(item => item.id !== plan.id);
@@ -115,8 +117,10 @@ const förra = document.getElementById("förra").addEventListener("click", ()=>{
         }
 
 
-btn.addEventListener("click", () => {
-    nav.classList.toggle("active");
+btn.forEach(menuBtn => {
+     menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("active");
+});
 });
 
 kalenderKort();

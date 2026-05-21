@@ -1,0 +1,17 @@
+.menu-icon{
+    width: 29px;
+}
+.pageName {
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.appLogo img {
+    width: 50px;
+    align-items: center;
+}
+.noDates{
+    color: rgb(104, 103, 103);
+    margin-left: 12px;
+    font-size: 15px;
+}

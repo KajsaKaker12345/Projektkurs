@@ -1,4 +1,21 @@
 
+header h1 {
+    text-align: center;
+}
+.menu-icon{
+    width: 29px;
+}
+.pageName {
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.appLogo img {
+    width: 50px;
+    align-items: center;
+}
+
+
 #card-container{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;

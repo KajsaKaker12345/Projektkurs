@@ -1,3 +1,16 @@
+.menu-icon{
+    width: 29px;
+}
+.pageName {
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.appLogo img {
+    width: 50px;
+    align-items: center;
+}
+
 #fullHeart {
     display: flex;
     flex-wrap: wrap;
@@ -25,19 +38,38 @@
 
 .next-date{
     border: 1px solid black;
+    width: 9em;
 }
 .message{
     display: none;
     max-width: 300px;
     margin: auto;
     padding: 24px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1.5px solid rgb(127, 24, 24);
     text-align: center;
+    background-color: rgb(240, 235, 229);
 }
-
+.message b {
+    font-weight: 500;
+}
+.message button {
+    background-color: red;
+     width: 25px;
+     height: 25px;
+    justify-content: center;
+    border: 1px solid rgb(127, 24, 24);
+    border-radius: 2px;
+    justify-content: center;
+}
 .message.active{
     display: block;
 }
-#kryss{
+#kryss {
     width: 20px;
+    height: 20px;
+    margin: 2px;
+}
+
+h3 {
+    font-weight: 550;
 }
