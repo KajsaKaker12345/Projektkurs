@@ -11,6 +11,11 @@
     align-items: center;
 }
 
+#månad {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
 #kalender-struktur{
     display: grid;
     grid-template-columns: repeat(7,1fr);
@@ -42,4 +47,70 @@
 #dejt-heart{
     width: 20px;
     height: 20px;
+}
+
+h3 {
+    margin: 10px;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.planerad-dejt {
+    background-color: rgb(205, 187, 168);
+    border: 1px solid rgb(133, 113, 92);
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
+    grid-template-areas: "date name remove readMore";
+    margin: 17px 10px 17px 10px;
+    align-items: center;
+    padding: 2px;
+    width: 92%;
+}
+
+.planerad-dejt p {
+    grid-area: date;
+    font-size: 0.95em;
+    padding: 2px;
+    margin-left: 4px;
+}
+
+.planerad-dejt h3 {
+    grid-area: name;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.remove-btn {
+    background-color: rgba(183, 20, 20, 0.791);
+    border: 0.5px solid rgb(130, 18, 18);
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+     margin-left: 14px;
+     grid-area: remove;
+     justify-content: right;
+}
+.remove-btn img {
+    width: 17px;
+}
+.read-more {
+    background-color: rgb(135, 107, 86);
+    width: 6.5em;
+    height: 30px;
+    border: 0.5px solid rgb(87, 67, 46);
+    border-radius: 4px;
+    margin-right: 4px;
+    grid-area: readMore;
+}
+
+.read-more a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.6px;
 }
