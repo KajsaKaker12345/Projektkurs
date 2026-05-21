@@ -1,6 +1,6 @@
 import { createCards } from "../renderCard.js";
 
-const btn = document.querySelector(".menu-icon");
+const btn = document.querySelectorAll(".menu-icon");
 const nav = document.getElementById("hidden-nav");
 const card = document.getElementById("card-container");
 const message = document.getElementById("message");
@@ -29,9 +29,12 @@ function skapaKort(){
     }
 }
 
-btn.addEventListener("click", () => {
-    nav.classList.toggle("active");
+btn.forEach(menuBtn => {
+     menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("active");
 });
+});
+
 console.log(nav);
 let saved = [];
 

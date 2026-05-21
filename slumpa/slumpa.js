@@ -1,11 +1,13 @@
-const btn = document.querySelector(".menu-icon");
+const btn = document.querySelectorAll(".menu-icon");
 const nav = document.getElementById("hidden-nav");
 const startGIF = document.getElementById("startaGIF");
 const GIF = document.getElementById("gifen");
 const stilla = document.getElementById("stillBild");
 
-btn.addEventListener("click", () => {
-    nav.classList.toggle("active");
+btn.forEach(menuBtn => {
+     menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("active");
+});
 });
 
 const response = await fetch("../dates.json");
