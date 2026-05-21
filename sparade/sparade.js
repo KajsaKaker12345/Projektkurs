@@ -6,7 +6,15 @@ const card = document.getElementById("card-container");
 const message = document.getElementById("message");
 
 function skapaKort(){
+    
     card.innerHTML = "";
+
+     if(saved.length === 0){
+            card.innerHTML = `<p>Du har för tillfället inga sparade dejter....</p>`;
+            card.classList.add("noDates")
+            return;
+        }
+
     for(const save of saved){
         const kortDiv = document.createElement("div");
         kortDiv.classList.add("card");
