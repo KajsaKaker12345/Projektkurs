@@ -9,14 +9,15 @@ const priceInput = document.getElementById("price");
 const priceSign = document.getElementById("priceValue");
 const form = document.getElementById("form");
 
-const btn = document.querySelector(".menu-icon");
+const btn = document.querySelectorAll(".menu-icon");
 const nav = document.getElementById("hidden-nav");
 
-
-    btn.addEventListener("click", () => {
+btn.forEach(menuBtn => {
+     menuBtn.addEventListener("click", () => {
         nav.classList.toggle("active");
-    });
-
+});
+});
+  
 
 
 form.addEventListener("change", filterList);
