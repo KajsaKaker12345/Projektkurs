@@ -105,21 +105,6 @@
     "price": "medel",
     "image": "image/Bio.png",
     "rating": "image/35stars.svg"
-}, {
-    "id": 9,
-    "name": "Bar",
-    "in": "inomhus",
-    "description": "En avslappnad dejt på en bar, där ni kan njuta av goda drinkar, musik och varandras sällskap i en livlig atmosfär.",
-    "type": "api",
-    "controller": "food",
-    "method": "getall",
-    "filter": {
-        "alcohol_licence": "Y",
-        "child_menu": "N"
-    },
-    "price": "medel",
-    "image": "image/bar.jpg",
-    "rating": "image/4stars.svg"
 },
 {
     "id": 10,
@@ -147,12 +132,12 @@
     "id": 12,
     "name": "Hotell",
     "in": "Inomhus",
-    "description": "SKRIV OM:En avkopplande dejt på ett spa, där ni kan njuta av massage, bastu och andra avkopplande behandlingar tillsammans för att skapa en romantisk och lugn atmosfär.",
+    "description": "En avkopplande dejt på ett hotell, där ni kan njuta av massage, bastu och andra avkopplande behandlingar tillsammans för att skapa en romantisk och lugn atmosfär.",
     "type": "api",
-    "controller": "accommodation",
+    "controller": "establishment",
     "method": "getall",
     "filter": {
-        "spa": "Y"
+        "descriptions": "hotell"
     },
     "price": "hög",
     "image": "image/hotel.png",
@@ -166,17 +151,6 @@
     "description": "En kreativ dejt där ni kan pyssla tillsammans, skapa konstverk eller göra DIY-projekt i en avslappnad hemmiljö, vilket ger er möjlighet att lära känna varandra på ett roligt och personligt sätt.",
     "type": "own",
     "price": "låg",
-    "image": "image/dreja.png",
-    "rating": "image/4stars.svg"
-},
-{
-    "id": 14,
-    "name": "Dreja",
-    "in": "Inomhus",
-    "description": "En unik dejt där ni kan prova på drejning tillsammans, skapa vackra keramikföremål och ha kul i en kreativ och avslappnad miljö, vilket ger er möjlighet att lära känna varandra på ett nytt och spännande sätt.",
-    "type": "local",
-    "filename": "dreja.json",
-    "price": "medel",
     "image": "image/dreja.png",
     "rating": "image/4stars.svg"
 },

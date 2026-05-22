@@ -20,18 +20,34 @@ main {
     margin-left: 12px;
     font-size: 15px;
 }
+.delete{
+    border: solid 2px rgb(177, 6, 6);
+    margin: 10px;
+    width: 20px;
+}
+.delete:hover{
+    background-color: rgb(177, 6, 6);
+}
 
 
+@media (min-width: 1300px){
 
-@media (min-width: 700px){
+.menu-icon, #logo {
+    width: 40px;
+}
+
+}
+@media (min-width: 500px){
 
 .card {
     width: 250px;
     display: flex;
     flex-direction: column;
     height: 250px;
+    margin: auto;
+    margin-top: 20px;
 }
-.card img{
+.kort-bild{
     width: 250px;
 }
 #kort-info{
@@ -41,13 +57,15 @@ main {
     margin-top: 10px;
     padding: 1px;
 }
+.delete{
+    width: 30px;
+    height: 40px;
+}
 }
 @media (min-width: 985px){
     #card-container{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1em;
-    margin-left: 60px;
+    grid-template-columns: repeat(4,1fr);
 }
 }
 @media (max-width: 984px){

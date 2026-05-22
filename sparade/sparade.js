@@ -20,7 +20,7 @@ function skapaKort(){
         kortDiv.classList.add("card");
         kortDiv.innerHTML = `
         <img class="kort-bild" src="../${save.image}" alt="">
-        <div id="kort-info"><h3>${save.name}</h3><button class="delete">Tabort</button></div>
+        <div id="kort-info"><h3>${save.name}</h3><img class="delete" src="../image/trash.svg"></img></div>
         `;
 
         const deleteBtn = kortDiv.querySelector(".delete");

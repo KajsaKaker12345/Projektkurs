@@ -1,6 +1,6 @@
 import { loadMap } from "./detaljsida/kartan.js";
 
-function getImageRating(rating) {
+export function getImageRating(rating) {
     const roundedRating = Math.round(Number(rating) * 2) / 2;
     
 
@@ -40,10 +40,11 @@ export function makeLocalElement(data) {
         element.innerHTML = `
             <h3 class="h3">${item.name}</h3>
             <p class="cityProvince">${item.city}, ${item.province}</p>
-            <p class="stars"><img src="${ratingImage}" alt="stjärnaa"> ${item.rating}/5</p>
+            <div class="rating"><p> ${item.rating}/5</p>
+            <img src="${ratingImage}" alt="stjärnaa"></div>
             <p class="p">${price}</p>
         `;
-            if (item.website !== "") {
+            if (item.website) {
         const button = document.createElement("button");
         button.classList.add("webben");
         button.innerHTML = `<a href="${item.website}">Länk till webbsidan</a>`;
@@ -67,6 +68,7 @@ export async function makeFetchElement(data) {
         const fromPrice = item.price_range.split("-")[0];
         const price = item.price_range ? `Från: ${fromPrice} kr` : "Ingen kostnad";
         const ratingImage = getImageRating(item.rating);
+        
 
         
         let city = item.city;
@@ -78,7 +80,8 @@ export async function makeFetchElement(data) {
         element.innerHTML = `
             <h3 class="h3">${item.name}</h3>
             <p class="cityProvince">${city}, ${province}</p>
-            <p class="stars"><img src ="${ratingImage}"> ${Number(item.rating)}/5</p>
+            <div class="rating"><p> ${Number(item.rating)}/5</p> 
+            <img src ="${ratingImage}"></div>
             <p class="p">${price}</p>
         `;
         if (item.website !== "") {

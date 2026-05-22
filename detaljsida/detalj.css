@@ -32,7 +32,6 @@ body {
 }
 #vald-dejt {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     margin: 10px 18px 10px 18px;
@@ -81,7 +80,7 @@ body.cook .cook, body.pyssel .pyssel, body.sipnpaint .sipnpaint, body.spelkvall 
     grid-template-areas: 
     "cityProvince cityProvince"
     "h3 h3"
-    "stars stars"
+    "rating rating"
     "webben p"
     ; 
     background-color: rgb(240, 234, 227);
@@ -98,15 +97,26 @@ body.cook .cook, body.pyssel .pyssel, body.sipnpaint .sipnpaint, body.spelkvall 
     grid-area: cityProvince;
     font-size: 0.9em;
     margin-top: 0;
+    background-color: rgb(219, 214, 207);
+    width: max-content;
+    padding: 3px;
+    border-radius: 3px;
+}
+.rating img {
+    width: 80px;
 }
 .p {
     grid-area: p;
     justify-self: end;
-    margin: 0;
+    align-self: end;
+    margin: 6px 0;
 }
-.stars {
-    grid-area: stars;
+.rating {
+    gap: 9px;
+    grid-area: rating;
     margin-top: 0;
+    display: flex;
+    flex-direction: row;
 }
 .webben {
     grid-area: webben;
@@ -118,7 +128,6 @@ body.cook .cook, body.pyssel .pyssel, body.sipnpaint .sipnpaint, body.spelkvall 
 }
 .webben a {
     color: black;
-    text-decoration: none;
 }
 #vald-dejt button {
     background-color: rgb(207, 195, 181);
