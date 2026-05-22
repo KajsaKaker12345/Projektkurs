@@ -8,15 +8,15 @@ export function createCards(establishments) {
     const populärKort = document.createElement("div");
     populärKort.classList.add("p");
     populärKort.innerHTML = 
-    `<div class="popular-bild" id="1"><img src="image/walk.jpg" alt="" class="Pimg"><h3>Vandring</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Utomhus</p><img src="image/4stars.svg" alt="4 stjärnor" class="starsP"></div>
+    `<div class="popular-bild" id="16"><img src="image/sipandpaint.jpg" alt="" class="Pimg"><h3>Sip and Paint</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Hemma</p><img src="image/45stars.svg" alt="4,5 stjärnor" class="starsP"></div>
     
     <div class="popular-bild" id="7"><img src="image/dinner.jpg" class="Pimg"><h3>Resturang</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Inomhus</p><img src="image/5stars.svg" alt="5 stjärnor" class="starsP"></div>
     
-    <div class="popular-bild" id="10"><img src="image/spelkvall.png" class="Pimg"><h3>Spelkväll</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Hemma</p><img src="image/35stars.svg" alt="3,5 stjärnor" class="starsP"></div>
+    <div class="popular-bild" id="11"><img src="image/wii.jpg" class="Pimg"><h3>TV-spel</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Hemma</p><img src="image/45stars.svg" alt="4,5 stjärnor" class="starsP"></div>
     
-    <div class="popular-bild" id="8"><img src="image/bio.png" class="Pimg"><h3>Bio</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Inomhus</p><img src="image/35stars.svg" alt="3,5 stjärnor" class="starsP"></div>
+    <div class="popular-bild" id="12"><img src="image/hotel.png" class="Pimg"><h3>Hotell</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Inomhus</p><img src="image/5stars.svg" alt="5 stjärnor" class="starsP"></div>
     
-    <div class="popular-bild" id="19"><img src="image/bowling.svg" class="Pimg"><h3>Bowling</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Inomhus</p><img src="image/35stars.svg" alt="3,5 stjärnor" class="starsP"></div>`;
+    <div class="popular-bild" id="15"><img src="image/cook.jpg" class="Pimg"><h3>Matlagning</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Hemma</p><img src="image/5stars.svg" alt="5 stjärnor" class="starsP"></div>`;
 
     populäraDejter.append(populärKort);
 
@@ -44,20 +44,20 @@ export function createCards(establishments) {
         });
     });
 
-    const vandring = document.getElementById("1").addEventListener("click", () =>{
-        window.location.href= `detaljsida/detalj.html?id=1`;
+    const sip = document.getElementById("16").addEventListener("click", () =>{
+        window.location.href= `detaljsida/detalj.html?id=16`;
     });
     const resturang = document.getElementById("7").addEventListener("click", () =>{
         window.location.href= `detaljsida/detalj.html?id=7`;
     });
-    const spelKväll = document.getElementById("10").addEventListener("click", () =>{
-        window.location.href= `detaljsida/detalj.html?id=10`;
+    const tvSpel = document.getElementById("11").addEventListener("click", () =>{
+        window.location.href= `detaljsida/detalj.html?id=11`;
     });
-    const bio = document.getElementById("8").addEventListener("click", () =>{
-        window.location.href= `detaljsida/detalj.html?id=8`;
+    const cooking = document.getElementById("15").addEventListener("click", () =>{
+        window.location.href= `detaljsida/detalj.html?id=15`;
     });
-    const bowling = document.getElementById("19").addEventListener("click", () => {
-        window.location.href = `detaljsida/detalj.html?id=19`;
+    const hotel = document.getElementById("12").addEventListener("click", () => {
+        window.location.href = `detaljsida/detalj.html?id=12`;
     });
     
 
