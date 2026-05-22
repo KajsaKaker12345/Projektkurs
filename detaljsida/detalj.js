@@ -52,11 +52,23 @@ async function createDetails(category) {
     });
     
     const buttonsContainer = document.getElementById("vald-dejt");
+
+    const dejtBox = document.createElement("div");
+    dejtBox.classList.add("dejt-box", "hidden");
+
+    const dateInput = document.createElement("input");
+    dateInput.type = "date";
+
+    const confirmBtn = document.createElement("button");
+    confirmBtn.textContent = "Bekräfta";
+
+    dejtBox.append(dateInput, confirmBtn);
+
     const dateBtn = document.createElement("button");
     const calenderBtn = document.createElement("button");
     dateBtn.textContent = "Gör dejt idag";
     calenderBtn.textContent = "Lägg i kalender";
-    buttonsContainer.append(dateBtn, calenderBtn);
+    buttonsContainer.append(dejtBox, dateBtn, calenderBtn);
 
     let data;
 
@@ -110,37 +122,31 @@ async function createDetails(category) {
     });
 // lägg i kalender 
     calenderBtn.addEventListener("click", () => {
-        const datumInput = document.createElement("div");
-        datumInput.classList.add("datum-input");
-        datumInput.innerHTML = `
-        <div class="input">
-        <label for="date">Välj datum:</label>
-        <input type="date" id="dateInput" name="date">
-        <button id="save-date">Bekräfta</button>
-        </div>
-        `;
-        buttonsContainer.append(datumInput);
+
+        dejtBox.classList.remove("hidden");
+
+        dateBtn.disabled = true;
         calenderBtn.disabled = true;
 
-        const bekräftaBtn = document.getElementById("save-date");
 
-        bekräftaBtn.addEventListener("click", () => {
+        confirmBtn.addEventListener("click", () => {
+            dejtBox.classList.add("hidden");
+            dateBtn.disabled = false;
             calenderBtn.disabled = false;
             message.textContent = "Dejten har lagts till i din kalender!";
             message.style.color = "green";
-            const dateInput = document.getElementById("dateInput").value;
-            if (!dateInput) {
+            if (!dateInput.value) {
                 return;
              }
              let planeradDejt = JSON.parse(localStorage.getItem("planeradDejt")) || [];
              const finns = planeradDejt.find(item => item.id === category.id);
 
                 if (!finns) {
-                    planeradDejt.push({ id: category.id, name: category.name, date: dateInput });
+                    planeradDejt.push({ id: category.id, name: category.name, date: dateInput.value });
                     localStorage.setItem("planeradDejt", JSON.stringify(planeradDejt));
                     console.log(planeradDejt);
                 }
-                datumInput.remove();
+                dejtBox.remove();
             });
     });
     if(category.slug){
@@ -152,3 +158,4 @@ async function createDetails(category) {
     }
     }
 }
+//github secrets 

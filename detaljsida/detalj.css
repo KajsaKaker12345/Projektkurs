@@ -32,12 +32,26 @@ body {
 }
 #vald-dejt {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     margin: 10px 18px 10px 18px;
 }
 #vald-dejt button {
     padding: 10px 20px;
+}
+.dejt-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.hidden{
+    display: none;
+}
+button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 label {
     margin-top: 10px;
@@ -428,3 +442,7 @@ body.cook .cook, body.pyssel .pyssel, body.sipnpaint .sipnpaint, body.spelkvall 
 #playstation ul, #xbox ul, #nintendo ul {
      width: 75%;
 } 
+
+
+
+/*---- LÄGG I KALENDER -----*/
