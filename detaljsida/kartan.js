@@ -13,7 +13,6 @@ export async function loadMap(data) {
   const bounds = [];
   
     for (const place of data) {
-      const fromPrice = place.price_range.split("-")[0];
       const ratingImage = getImageRating(place.rating);
 
       L.marker([place.lat,place.lng]).addTo(markers).bindPopup(`<h3>${place.name}</h3><div class="rating"><p>${Number(place.rating)}/5</p><img src ="${ratingImage}"></div></div>`); 
