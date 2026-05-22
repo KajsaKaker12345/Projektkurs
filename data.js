@@ -1,6 +1,6 @@
 import { loadMap } from "./detaljsida/kartan.js";
 
-function getImageRating(rating) {
+export function getImageRating(rating) {
     const roundedRating = Math.round(Number(rating) * 2) / 2;
     
 

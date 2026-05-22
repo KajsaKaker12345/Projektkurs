@@ -1,3 +1,4 @@
+  import { getImageRating } from "../data.js";
   const map = L.map("api").setView([56.8790, 14.8058], 7);
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -12,7 +13,10 @@ export async function loadMap(data) {
   const bounds = [];
   
     for (const place of data) {
-      L.marker([place.lat,place.lng]).addTo(markers).bindPopup(`<h3>${place.name}</h3><p>Recensioner: ${Number(place.rating)}/5</p>`); 
+      const fromPrice = place.price_range.split("-")[0];
+      const ratingImage = getImageRating(place.rating);
+
+      L.marker([place.lat,place.lng]).addTo(markers).bindPopup(`<h3>${place.name}</h3><div class="rating"><p>${Number(place.rating)}/5</p><img src ="${ratingImage}"></div></div>`); 
       bounds.push([place.lat, place.lng]);
     }
 
