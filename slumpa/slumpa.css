@@ -105,3 +105,15 @@ header h1 {
 #stillBild.active{
     display: none;
 }
+#beskrivning{
+    font-size: 1.1em;
+
+    text-align: center;
+}
+#startaGIF{
+    width: 200px;
+    height: 50px;
+    font-size: 1.1em;
+    display: block;
+    margin: 30px auto;
+}

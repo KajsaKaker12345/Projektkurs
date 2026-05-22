@@ -6,6 +6,9 @@ html, body {
     background-color: rgb(243, 240, 237);
     font-family: "Inter", sans-serif;
 }
+main {
+    height: 100vh;
+}
 #hidden-nav{
     display: none;
 }
