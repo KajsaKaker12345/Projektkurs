@@ -4,12 +4,15 @@
 body {
     margin: 0;
 }
-#container img {
+#stjärnor {
+    margin: 10px;
+}
+#container #img {
     width: 96%;
     height: auto;
-    margin: auto;
     justify-content: center;
     display: flex;
+    margin: auto;
 }
 #container h2 {
     font-size: 1.6em;
