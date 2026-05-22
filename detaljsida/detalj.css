@@ -34,7 +34,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 20px;
+    margin: 10px 18px 10px 18px;
 }
 #vald-dejt button {
     padding: 10px 20px;
@@ -54,18 +54,59 @@ label {
 body.cook .cook, body.pyssel .pyssel, body.sipnpaint .sipnpaint, body.spelkvall .spelkvall, body.tvSpel .tvSpel, body.stjarnskadning .stjarnskadning, body.picknick .picknick{
     display: block;
 } 
-#stars {
+.stars {
     width: 70px;
 }
-
-.map-item {
-    background-color: rgb(240, 234, 227);
-    margin: 10px 0 10px 0;
+#filters {
+    margin: 18px;
 }
-#cityProvince {
+/* container för renderingar*/
+.map-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "cityProvince cityProvince"
+    "h3 h3"
+    "stars stars"
+    "webben p"
+    ; 
+    background-color: rgb(240, 234, 227);
+    margin: 18px;
+    padding: 10px;
+    border-radius: 8px;
+}
+.h3 {
+    grid-area: h3;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.cityProvince {
+    grid-area: cityProvince;
+    font-size: 0.9em;
     margin-top: 0;
 }
-button {
+.p {
+    grid-area: p;
+    justify-self: end;
+    margin: 0;
+}
+.stars {
+    grid-area: stars;
+    margin-top: 0;
+}
+.webben {
+    grid-area: webben;
+    justify-self: start;
+    align-self: center;
+    padding: 6px 14px 6px 14px;
+    background-color: white;
+    border-radius: 3px;
+}
+.webben a {
+    color: black;
+    text-decoration: none;
+}
+#vald-dejt button {
     background-color: rgb(207, 195, 181);
     border-radius: 3px;
     border: 1px solid rgb(205, 194, 181);
@@ -74,7 +115,7 @@ button {
     font-size: 0.9em;
     font-weight: 500;
 }
-button:hover {
+#vald-dejt button:hover {
     background-color: rgb(195, 176, 154);
     cursor: pointer;
     border-radius: 3px;
@@ -92,7 +133,7 @@ button:hover {
 }
 
 #container p {
-    margin: 8px;
+    margin: 18px;
 }
 
 .sipnpaint h3 {

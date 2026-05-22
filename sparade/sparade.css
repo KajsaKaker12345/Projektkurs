@@ -1,3 +1,8 @@
+
+main {
+    height: 100vh;
+}
+
 .menu-icon{
     width: 29px;
 }
@@ -14,4 +19,46 @@
     color: rgb(104, 103, 103);
     margin-left: 12px;
     font-size: 15px;
+}
+
+
+@media (min-width: 1200px){
+
+main{
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgb(243, 240, 237);
+}
+header{
+    height: 70px;
+}
+h2{
+   padding: 20px;
+   margin: 0;
+}
+.menu-icon, #logo {
+    width: 40px;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+}
+@media (min-width: 700px){
+.card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+}
+.card img{
+    width: 250px;
+}
+#kort-info{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-top: 10px;
+    padding: 1px;
+}
 }
