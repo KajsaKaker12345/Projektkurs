@@ -145,9 +145,9 @@
 },
 {
     "id": 12,
-    "name": "Spa",
+    "name": "Hotell",
     "in": "Inomhus",
-    "description": "En avkopplande dejt på ett spa, där ni kan njuta av massage, bastu och andra avkopplande behandlingar tillsammans för att skapa en romantisk och lugn atmosfär.",
+    "description": "SKRIV OM:En avkopplande dejt på ett spa, där ni kan njuta av massage, bastu och andra avkopplande behandlingar tillsammans för att skapa en romantisk och lugn atmosfär.",
     "type": "api",
     "controller": "accommodation",
     "method": "getall",
@@ -155,7 +155,7 @@
         "spa": "Y"
     },
     "price": "hög",
-    "image": "image/spa.jpg",
+    "image": "image/hotel.png",
     "rating": "image/5stars.svg"
 }, 
 {
