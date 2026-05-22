@@ -44,30 +44,34 @@
     display: none;
     max-width: 300px;
     margin: auto;
-    padding: 24px;
+    padding: 4px;
     border: 1.5px solid rgb(127, 24, 24);
     text-align: center;
-    background-color: rgb(240, 235, 229);
+    background-color: rgb(221, 213, 202);
 }
 .message b {
     font-weight: 500;
 }
-.message button {
-    background-color: red;
-     width: 25px;
-     height: 25px;
-    justify-content: center;
-    border: 1px solid rgb(127, 24, 24);
-    border-radius: 2px;
-    justify-content: center;
+.message h2 {
+    padding: 2px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
+
 .message.active{
     display: block;
 }
 #kryss {
-    width: 20px;
-    height: 20px;
-    margin: 2px;
+    width: 17px;
+    height: 17px;
+     padding: 4px;
+     border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-top: 2px;
+    margin-right: 2px;
 }
 
 h3 {
