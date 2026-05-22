@@ -129,7 +129,7 @@ async function createDetails(category) {
         calenderBtn.disabled = true;
 
 
-        confirmBtnBtn.addEventListener("click", () => {
+        confirmBtn.addEventListener("click", () => {
             dejtBox.classList.add("hidden");
             dateBtn.disabled = false;
             calenderBtn.disabled = false;
@@ -142,11 +142,11 @@ async function createDetails(category) {
              const finns = planeradDejt.find(item => item.id === category.id);
 
                 if (!finns) {
-                    planeradDejt.push({ id: category.id, name: category.name, date: dateInput });
+                    planeradDejt.push({ id: category.id, name: category.name, date: dateInput.value });
                     localStorage.setItem("planeradDejt", JSON.stringify(planeradDejt));
                     console.log(planeradDejt);
                 }
-                datumInput.remove();
+                dejtBox.remove();
             });
     });
     if(category.slug){
@@ -158,3 +158,4 @@ async function createDetails(category) {
     }
     }
 }
+//github secrets 

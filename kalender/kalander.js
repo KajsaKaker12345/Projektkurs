@@ -42,7 +42,7 @@ function kalenderKort(){
     dagElem.classList.add("day");
     dagElem.innerHTML = `<h3>${day}</h3>`;
     
-    const planerad = planeradDejt.find(item => {const date = new Date(item.date); return date.getFullYear() === currentÅr && date.getMonth() === currentMånad && date.getDate() === day});
+    const planerad = planeradDejt.find(item => {const [year, month, dateDay] = item.date.split("-").map(Number); return year === currentÅr && month - 1 === currentMånad && dateDay === day});
 
     if (planerad) {
         dagElem.innerHTML += `<img id="dejt-heart"src="../image/HjärtaFyllt.svg" alt="Hjärta">`;
