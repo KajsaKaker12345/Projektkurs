@@ -164,7 +164,7 @@ header{
 
 /*----------------  -----------------*/
 #logo {
-    width: 35px;
+    width: 100px;
 }
 #appName {
     display: flex;
