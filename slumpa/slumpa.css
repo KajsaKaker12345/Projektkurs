@@ -119,3 +119,7 @@ header h1 {
     display: block;
     margin: 30px auto;
 }
+
+#startaGIF img{
+    width: 50px;
+}
