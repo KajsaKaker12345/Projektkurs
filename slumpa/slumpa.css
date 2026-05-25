@@ -101,6 +101,7 @@ header h1 {
 }
 #stillBild{
     display: block;
+    margin: 0 auto;
     width: 400px;
 }
 #stillBild.active{
