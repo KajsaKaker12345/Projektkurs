@@ -1,5 +1,16 @@
 
+.message{
+    background-color: rgba(210, 15, 1, 0.644);
+    width: 400px;
+    height: 35px;
+    border-radius: 20px;
+    padding: 2px;
+    font-size: 14px;
+    text-align: center;
 
+    position: fixed;
+    left: 50%;
+}
 
 .menu-icon{
     width: 29px;
@@ -19,12 +30,13 @@
     font-size: 15px;
 }
 .delete{
-    border: solid 2px rgb(177, 6, 6);
+    border: solid 2px rgb(137, 20, 11);
     margin: 10px;
     width: 20px;
+    background-color: rgba(177, 6, 6, 0.168);
 }
 .delete:hover{
-    background-color: rgb(177, 6, 6);
+    background-color: rgba(137, 19, 11, 0.701);
 }
 
 
@@ -56,8 +68,8 @@
     padding: 1px;
 }
 .delete{
-    width: 30px;
-    height: 40px;
+    width: 25px;
+    height: 35px;
 }
 }
 @media (min-width: 985px){
