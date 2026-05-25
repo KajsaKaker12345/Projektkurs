@@ -33,13 +33,10 @@
     width: 200px;
 }
 #klar-img{
-    width: 20px;
+    width: 19px;
+    align-items: center;
 }
 
-.next-date{
-    border: 1px solid black;
-    width: 9em;
-}
 .message{
     display: none;
     max-width: 300px;
@@ -76,4 +73,47 @@
 
 h3 {
     font-weight: 550;
+}
+
+#pågående {
+    margin: auto;
+    width: 98%;
+}
+.next-date {
+    width: 96%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid rgb(140, 107, 83);
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: 15em;
+}
+.done {
+    background-color: rgb(188, 215, 188);
+     border: 1px solid rgb(137, 152, 127);
+     width: 6.5em;
+     height: 2em;
+     font-size: 17px;
+    border-radius: 2px;
+    text-align: center;
+}
+.next-date h3 {
+    margin-left: 30px;
+}
+#slutförda {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+}
+#slutförda h3 {
+    font-size: 1.1em;
+}
+.completed {
+    width: 220px;
+    background-color: aliceblue;
+}
+.completed img {
+    width: 60px;
 }

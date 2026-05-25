@@ -20,7 +20,7 @@ function skapaKort(){
         kortDiv.classList.add("card");
         kortDiv.innerHTML = `
         <img class="kort-bild" src="../${save.image}" alt="">
-        <div id="kort-info"><h3>${save.name}</h3><img class="delete" src="../image/trash.svg"></img></div>
+        <div id="kort-info"><h3>${save.name}</h3><img class="delete" src="../image/trash.svg"></img><button id="läsMer"><a href="../detaljsida/detalj.html?id=${save.id}">Läs mer</a></button></div>
         `;
 
         const deleteBtn = kortDiv.querySelector(".delete");
@@ -28,9 +28,16 @@ function skapaKort(){
         deleteBtn.addEventListener("click", () => {
             saved = saved.filter(item => item.id !== save.id);
             localStorage.setItem("saved", JSON.stringify(saved));
-            kortDiv.remove();
-            message.textContent = "Dejten har tagits bort från dina sparade dejter.";// lägg till en tid på meddelandet så att det inte visas hela tiden utan bara typ 3 sek
-            message.style.color = "red";
+            
+            message.textContent = "Dejten har tagits bort från dina sparade dejter.....";// lägg till en tid på meddelandet så att det inte visas hela tiden utan bara typ 3 sek
+            message.style.display = "flex";
+            console.log(message.style.display);
+
+            skapaKort();
+
+            setTimeout(() => {
+                message.style.display = "none";
+            }, 3000);
         });
 
         card.appendChild(kortDiv);

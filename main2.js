@@ -1,8 +1,11 @@
 const searchBtn = document.getElementById("sök-icon");
 const searchInput = document.getElementById("search-input");
+const searchContainer = document.getElementById("search-container");
 
 searchBtn.addEventListener("click", () => {
     searchInput.classList.toggle("active");
+    searchContainer.classList.toggle("active");
+
 });
 
 const response = await fetch("dates.json");

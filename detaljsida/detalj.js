@@ -128,16 +128,21 @@ async function createDetails(category) {
         dateBtn.disabled = true;
         calenderBtn.disabled = true;
 
-
+    });
         confirmBtn.addEventListener("click", () => {
+            if (!dateInput.value) {
+            message.textContent = "Välj ett datum";
+            message.style.color = "red";
+                return;
+             }
+
             dejtBox.classList.add("hidden");
             dateBtn.disabled = false;
             calenderBtn.disabled = false;
+            
             message.textContent = "Dejten har lagts till i din kalender!";
             message.style.color = "green";
-            if (!dateInput.value) {
-                return;
-             }
+
              let planeradDejt = JSON.parse(localStorage.getItem("planeradDejt")) || [];
              const finns = planeradDejt.find(item => item.id === category.id);
 
@@ -148,7 +153,7 @@ async function createDetails(category) {
                 }
                 dejtBox.remove();
             });
-    });
+
     if(category.slug){
     document.body.classList.add(category.slug);
     const section = document.querySelector(`.${category.slug}`);
