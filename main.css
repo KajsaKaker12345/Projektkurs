@@ -163,7 +163,7 @@ header{
 }
 
 /*----------------  -----------------*/
-#logo {
+#Datelogo {
     width: 6.3em;
 }
 #appName {
@@ -198,18 +198,22 @@ input[type="select"] {
 
 #search-input{
     display: none;
-    margin-left:10px;
     padding: 5px;
 }
 
 #search-input.active{
-    display: inline-block;
+    display: block;
     width: 110px;
+    margin-left: 10px;
 }
 #search-container{
-    display: flex;
-    width: auto;
+    display: inline-flex;
     align-items: center;
+    width: 40px;
+
+}
+#search-container.active{
+width: 170px;
 }
 
 /*---------------- Populära dejter -----------------*/
