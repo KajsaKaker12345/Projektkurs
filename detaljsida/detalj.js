@@ -128,11 +128,11 @@ async function createDetails(category) {
         dateBtn.disabled = true;
         calenderBtn.disabled = true;
 
-
+    });
         confirmBtn.addEventListener("click", () => {
             if (!dateInput.value) {
             message.textContent = "Välj ett datum";
-            message.style.color = "röd";
+            message.style.color = "red";
                 return;
              }
 
@@ -153,7 +153,7 @@ async function createDetails(category) {
                 }
                 dejtBox.remove();
             });
-    });
+
     if(category.slug){
     document.body.classList.add(category.slug);
     const section = document.querySelector(`.${category.slug}`);
