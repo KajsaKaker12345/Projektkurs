@@ -97,9 +97,11 @@ header h1 {
 
 #gifen.active{
     display: block;
+    margin: 0 auto;
 }
 #stillBild{
     display: block;
+    margin: 0 auto;
     width: 400px;
 }
 #stillBild.active{
@@ -116,4 +118,8 @@ header h1 {
     font-size: 1.1em;
     display: block;
     margin: 30px auto;
+}
+
+#startaGIF img{
+    width: 50px;
 }
