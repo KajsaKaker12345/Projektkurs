@@ -78,7 +78,7 @@ startGIF.addEventListener("click", ()=>{
 
     GIF.classList.toggle("active");
     stilla.classList.toggle("active");
-    
+    startGIF.disabled = true;
 
     cardContainer.innerHTML ="";
 
@@ -87,7 +87,8 @@ startGIF.addEventListener("click", ()=>{
     setTimeout(() => {
         GIF.classList.remove("active");
         stilla.classList.remove("active");
-        stilla.classList.add("hidden")
+        stilla.classList.add("hidden");
+
 
         randomizeDates(data);
 
@@ -96,9 +97,10 @@ startGIF.addEventListener("click", ()=>{
         allaKort.forEach((card, index) => {
             setTimeout(()=>{
                 card.classList.add("flipped");
+                startGIF.disabled = false;
             }, index * 400);
         });
         
-    }, 5000);
+    }, 2000);
 
 }); 

@@ -97,6 +97,7 @@ header h1 {
 
 #gifen.active{
     display: block;
+    margin: 0 auto;
 }
 #stillBild{
     display: block;
