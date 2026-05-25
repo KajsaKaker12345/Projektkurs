@@ -6,31 +6,36 @@
     font-weight: 400;
     letter-spacing: 1px;
 }
-.appLogo img {
-    width: 50px;
+.appLogo img{
     align-items: center;
+    width: 1.3em;
 }
 
 #månad {
     font-size: 1.4em;
     font-weight: 400;
+   margin-top: 20px;
 }
 
 #kalender-struktur{
     display: grid;
     grid-template-columns: repeat(7,1fr);
     height: 400px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .day{
     margin: 3px;
-    border-radius: 5px;
-    border: 2px solid black;
+    border: 1px solid rgb(173, 158, 141);
     padding: 2px;
-    width: 42px;
+    width: 2.7em;
+    height: 4em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
 }
 .day h3 {
     font-size: 13px;
+    margin-top: 1px;
+    margin-left: 1px;
 }
 
 #nästa{
@@ -45,8 +50,8 @@
 }
 
 #dejt-heart{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 33px;
 }
 
 h3 {
@@ -58,7 +63,7 @@ h3 {
 }
 
 .planerad-dejt {
-    background-color: rgb(205, 187, 168);
+    background-color: rgb(221, 211, 199);
     border: 1px solid rgb(133, 113, 92);
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 1fr;
@@ -85,8 +90,8 @@ h3 {
 }
 
 .remove-btn {
-    background-color: rgb(205, 187, 168);
-    border: 1.5px solid rgb(205, 187, 168);
+     background-color: rgb(221, 211, 199);
+    border: 1.5px solid rgb(221, 211, 199);
     border-radius: 50px;
     padding: 2px;
      grid-area: remove;
@@ -98,10 +103,10 @@ h3 {
     margin-left: 8px;
 }
 .read-more {
-    background-color: rgb(135, 107, 86);
+    background-color: rgb(140, 41, 41);
     width: 5.6em;
     height: 27px;
-    border: 0.5px solid rgb(87, 67, 46);
+    border: 0.5px solid rgb(76, 12, 12);
     border-radius: 4px;
     grid-area: readMore;
 }

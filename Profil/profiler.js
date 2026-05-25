@@ -62,14 +62,23 @@ function showNextDate() {
     <h3>${date.name}</h3><button class="done"><img id="klar-img" src="../image/klar.svg" alt="klar med dejten"> Klar</button>
     `;
 
+
     const klarBtn = nextDiv.querySelector(".done");
     const message = document.querySelector(".message");
 
     const done = doneDate.includes(date.name);
 
     if(done) {
+
+        nextDiv.classList.add("completed");
+
+        nextDiv.innerHTML = `<img src="../${date.image}" alt="Bild på dejten"></img>
+        <h3>${date.name}</h3>`;
+
         slutfördaContainer.append(nextDiv);
+
         klarBtn.style.display = "none";
+
     }else {
         nextContainer.append(nextDiv);
     }
