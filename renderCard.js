@@ -63,13 +63,24 @@ export function createCards(establishments) {
 
     // ksk ha id istället för class på knappen
     for (const d of establishments) {
+        let saveImage = "image/spara.svg";
+        let saveClass = "save";
+
+        const saved = JSON.parse(localStorage.getItem("saved")) || [];
+        const exists = saved.find(item => item.id === d.id);
+
+
+        if(exists){
+            saveImage = "image/sparaD.svg";
+            saveClass = "save active";
+        }
         const cardDiv = document.createElement("div");
         cardDiv.classList.add("card");
         cardDiv.innerHTML = `
         <img class="kort-bild" src="${d.image}" alt="">
         <h3>${d.name}</h3>
         <p class="place">${d.in}</p>
-        <img src="image/spara.svg" alt="Spara" class="save">
+        <img src="${saveImage}" alt="Spara" class="${saveClass}">
         <img class="rating" src="${d.rating}" alt=""> `;
 
 
@@ -84,12 +95,20 @@ export function createCards(establishments) {
             saveBtn.src = "image/spara.svg";
             saveBtn.classList.remove("active");
 
+            let saved = JSON.parse(localStorage.getItem("saved")) || [];
+
+            saved = saved.filter(item => item.id !== d.id);
+
+            localStorage.setItem("saved", JSON.stringify(saved));
+
+           
+
             } else {
                 saveBtn.src = "image/sparaD.svg";
                 saveBtn.classList.add("active");
                 saveTheDate(d, message);
             }
-
+            console.log(saved);
         });
 
         cardDiv.addEventListener("click", () => {
@@ -101,11 +120,12 @@ export function createCards(establishments) {
 }
 export function saveTheDate(d, message) {
     
-        const saved = JSON.parse(localStorage.getItem("saved")) || [];
+        let saved = JSON.parse(localStorage.getItem("saved")) || [];
 
             const exists = saved.find(item => item.id === d.id);
 
             if (!exists) {
+                d.isSaved = true;
                 saved.push(d);
                 localStorage.setItem("saved", JSON.stringify(saved));
                 message.textContent = "Dejten har sparats!";
