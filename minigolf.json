@@ -8,6 +8,7 @@
         "lng": 16.35468,
         "price": 158,
         "rating": 4,
+        "website": "https://www.kalmarparkgolf.se",
         "province": "Småland",
         "city": "Kalmar"
     },
@@ -32,6 +33,7 @@
         "lng": 16.46443,
         "price": 200,
         "rating": 5,
+        "website": "https://talludden.nu/minigolf/",
         "province": "Öland",
         "city": "Färjestaden"
     },
@@ -44,6 +46,7 @@
         "lng": 16.36031,
         "price": 200,
         "rating": 5,
+        "website": "https://www.kalmarmgk.nu",
         "province": "Småland",
         "city": "Kalmar"
     },
@@ -56,6 +59,7 @@
         "lng": 16.44782,
         "price": "",
         "rating": 5,
+        "website": "https://www.eriksorecamping.se",
         "province": "Öland",
         "city": "Färjestaden"
     }

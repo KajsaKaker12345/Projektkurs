@@ -8,6 +8,7 @@
     "lng": 14.81980,
     "price": "",
     "rating": 4,
+    "website": "https://www.matchi.se/facilities/sodraclimatearena?lang=sv",
     "province": "Småland",
     "city": "Växjö"
 },
@@ -20,6 +21,7 @@
     "lng": 14.85814,
     "price": 300,
     "rating": 5,
+    "website": "https://www.campuspadel.se",
     "province": "Småland",
     "city": "Växjö"
 },
@@ -32,6 +34,7 @@
     "lng": 14.83240,
     "price": 300,
     "rating": 4,
+    "website": "https://www.padelhousebybsr.se",
     "province": "Småland",
     "city": "Alvesta"
 },
@@ -44,6 +47,7 @@
     "lng": 14.56022,
     "price": "",
     "rating": 4,
+    "website": "https://www.padelone.se",
     "province": "Småland",
     "city": "Alvesta"
 },
@@ -56,6 +60,7 @@
     "lng": 16.53846,
     "price": "",
     "rating": 4,
+    "website": "https://www.färjestadenspadel.se",
     "province": "Öland",
     "city": "Färjestaden"
 },
@@ -68,6 +73,7 @@
     "lng": 16.73251,
     "price": 320,
     "rating": 4,
+    "website": "https://lundegard.se/aktiviteter/padeltennis/",
     "province": "Öland",
     "city": "Borgholm"
 },
@@ -80,6 +86,7 @@
     "lng": 16.66050,
     "price": "",
     "rating": 4,
+    "website": "https://borgholm.padelarena.nu",
     "province": "Öland",
     "city": "Borgholm"
 },
@@ -92,6 +99,7 @@
     "lng": 16.49097,
     "price": "",
     "rating": 4,
+    "website": "https://www.matchi.se/facilities/jspadelfarjestaden?lang=sv",
     "province": "Öland",
     "city": "Färjestaden"
 }
