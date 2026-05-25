@@ -130,14 +130,19 @@ async function createDetails(category) {
 
 
         confirmBtn.addEventListener("click", () => {
+            if (!dateInput.value) {
+            message.textContent = "Välj ett datum";
+            message.style.color = "röd";
+                return;
+             }
+
             dejtBox.classList.add("hidden");
             dateBtn.disabled = false;
             calenderBtn.disabled = false;
+            
             message.textContent = "Dejten har lagts till i din kalender!";
             message.style.color = "green";
-            if (!dateInput.value) {
-                return;
-             }
+
              let planeradDejt = JSON.parse(localStorage.getItem("planeradDejt")) || [];
              const finns = planeradDejt.find(item => item.id === category.id);
 
