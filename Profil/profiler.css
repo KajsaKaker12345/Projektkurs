@@ -6,9 +6,27 @@
     font-weight: 400;
     letter-spacing: 1px;
 }
-.appLogo img {
-    width: 50px;
+#logo {
+    width: 5em;
+    margin-left: 0;
+}
+h1 {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-left: 2.1em;
+}
+h4 {
+    font-size: 1.3em;
+    font-weight: 450;
+    margin-left: 15px;
+    margin-bottom: 6px;
+    margin-top: 50px;
+}
+header {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 #fullHeart {
@@ -23,6 +41,8 @@
 }
 #fullHeart h3 {
     margin: 0;
+    font-weight: 450;
+    font-size: 1em;
 }
 #dejtdiv {
     border-bottom: solid black 1px;
@@ -35,6 +55,10 @@
 #klar-img{
     width: 19px;
     align-items: center;
+}
+#dejtdiv h2 {
+    margin-top: 1.3em;
+    font-weight: 500;
 }
 
 .message{
@@ -84,7 +108,7 @@ h3 {
     margin: auto;
     margin-top: 20px;
     background-color: white;
-    border: 1px solid rgb(140, 107, 83);
+    border: 1px solid rgb(178, 166, 158);
     flex-direction: row;
     display: flex;
     align-items: center;
@@ -101,19 +125,37 @@ h3 {
 }
 .next-date h3 {
     margin-left: 30px;
+    font-size: 1.1em;
+    font-weight: 550;
 }
 #slutförda {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1px;
+    margin: auto;
+    gap: 5px;
 }
-#slutförda h3 {
-    font-size: 1.1em;
+.completed h3 {
+    font-size: 1em;
+    margin: auto;
+    margin-top: 8px;
+    font-weight: 470;
+    text-align: center;
 }
-.completed {
-    width: 220px;
-    background-color: aliceblue;
+.completed {    
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    background-color: rgb(199, 184, 176);
+    margin-top: 25px;
+    border: none;
+    width: 87%;
+    height: 210px;
+     border: 1px solid rgb(175, 158, 143);
 }
 .completed img {
-    width: 60px;
+    width: 210px;
+   border-radius: 0;
+   padding: 6px;
+   
 }
+

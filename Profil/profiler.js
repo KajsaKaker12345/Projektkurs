@@ -72,8 +72,8 @@ function showNextDate() {
 
         nextDiv.classList.add("completed");
 
-        nextDiv.innerHTML = `<img src="../${date.image}" alt="Bild på dejten"></img>
-        <h3>${date.name}</h3>`;
+        nextDiv.innerHTML = `<div><img src="../${date.image}" alt="Bild på dejten"></img>
+        <h3>${date.name}</h3></div>`;
 
         slutfördaContainer.append(nextDiv);
 
