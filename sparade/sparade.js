@@ -28,9 +28,16 @@ function skapaKort(){
         deleteBtn.addEventListener("click", () => {
             saved = saved.filter(item => item.id !== save.id);
             localStorage.setItem("saved", JSON.stringify(saved));
-            kortDiv.remove();
+            
             message.textContent = "Dejten har tagits bort från dina sparade dejter.....";// lägg till en tid på meddelandet så att det inte visas hela tiden utan bara typ 3 sek
-            message.classList.add("message");
+            message.style.display = "flex";
+            console.log(message.style.display);
+
+            skapaKort();
+
+            setTimeout(() => {
+                message.style.display = "none";
+            }, 3000);
         });
 
         card.appendChild(kortDiv);
