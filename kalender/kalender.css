@@ -13,29 +13,37 @@
 
 #månad {
     font-size: 1.4em;
-    font-weight: 400;
+    font-weight: 600;
    margin-top: 20px;
+   text-align: center;
+   color: rgb(113, 15, 15);
 }
 
+.kalender {
+     background-color: rgba(207, 200, 193, 0.87);
+     margin: 20px 10px 0px 10px;
+    padding: 3px;
+    border-radius: 15px;
+}
 #kalender-struktur{
     display: grid;
     grid-template-columns: repeat(7,1fr);
     height: 400px;
-    margin-top: 20px;
+    margin-top: 20px;    
 }
 .day{
-    margin: 3px;
-    border: 1px solid rgb(173, 158, 141);
-    padding: 2px;
+    margin: auto;
+    border: 1px solid rgba(198, 189, 179, 0.812);
+    padding: 1.5px;
     width: 2.7em;
-    height: 4em;
-    background-color: rgb(255, 255, 255);
-    border-radius: 2px;
+    height: 4.3em;
+    background-color: rgba(255, 255, 255, 0.72);
+    border-radius: 12px;
 }
 .day h3 {
-    font-size: 13px;
-    margin-top: 1px;
-    margin-left: 1px;
+    font-size: 0.9em;
+    margin-top: 11px;
+    text-align: center;
 }
 
 #nästa{
@@ -50,9 +58,18 @@
 }
 
 #dejt-heart{
-    width: 40px;
-    height: 33px;
+    width: 27px;
+    height: 27px;
+    
 }
+.bookedDay {
+    background-color: rgba(137, 16, 16, 0.304);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgba(223, 43, 43, 0.203);
+}
+
 
 h3 {
     margin: 10px;
@@ -63,22 +80,26 @@ h3 {
 }
 
 .planerad-dejt {
-    background-color: rgb(221, 211, 199);
-    border: 1px solid rgb(133, 113, 92);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(224, 214, 203, 0.742);
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 1fr;
     grid-template-areas: "date name readMore remove";
     align-items: center;
-    padding: 2px;
+    padding: 6px;
     width: 94%;
+    height: 4em;
     margin: auto;
     margin-bottom: 10px;
+    border-radius: 15px;
 }
 
 .planerad-dejt p {
     grid-area: date;
     font-size: 0.9em;
     margin-left: 4px;
+    color: rgb(113, 15, 15);
+    font-weight: 650;
 }
 
 .planerad-dejt h3 {
@@ -88,7 +109,15 @@ h3 {
     font-weight: 600;
     margin: 0px;
 }
-
+.dates {
+      background-color: rgba(137, 16, 16, 0.304);
+      height: 3.2em;
+      margin: 0;
+      border-radius: 15px;
+      padding: 7px;
+      display: flex;
+      align-items: center;
+}
 .remove-btn {
      background-color: rgb(221, 211, 199);
     border: 1.5px solid rgb(221, 211, 199);
@@ -118,3 +147,25 @@ h3 {
     font-weight: 500;
     letter-spacing: 0.5px;
 }
+
+#pilar {
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+    margin: 20px 10px 0px 10px;
+}
+.tvåpilar {
+    background-color: rgb(220, 213, 209);
+    width: 110px;
+    border-radius: 15px;
+   height: 2.5em;
+}
+#förra,
+#nästa {
+    width: 63px;
+    align-items: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+

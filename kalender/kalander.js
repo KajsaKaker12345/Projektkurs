@@ -47,6 +47,7 @@ function kalenderKort(){
     if (planerad) {
         dagElem.innerHTML += `<img id="dejt-heart"src="../image/HjärtaFyllt.svg" alt="Hjärta">`;
         dagElem.title = planerad.name;
+        dagElem.classList.add("bookedDay");
     }
 
     struktur.append(dagElem);
@@ -61,7 +62,7 @@ function kortPlanerad(){
     const planen = document.createElement("div");
     planen.classList.add("planerad-dejt");
     planen.innerHTML = `
-    <p>${plan.date}</p><h3>${plan.name}</h3><button class="remove-btn"></button><button class="read-more"><a href="../detaljsida/detalj.html?id=${plan.id}">Läs mer</a></button>
+    <p class="dates">${plan.date}</p><h3>${plan.name}</h3><button class="remove-btn"></button><button class="read-more"><a href="../detaljsida/detalj.html?id=${plan.id}">Läs mer</a></button>
     `;
 
 
