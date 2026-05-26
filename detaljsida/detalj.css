@@ -45,6 +45,9 @@ body {
     padding: 10px 20px;
 }
 .dejt-box{
+    display: none;
+}
+.dejt-box.active{
     position: absolute;
     top: 350px;
     background-color: rgb(240, 234, 227);
@@ -55,9 +58,8 @@ body {
     gap: 1em;
     border: solid rgb(216, 202, 169) 3px;
 }
-.hidden{
-    display: none;
-}
+
+
 button:disabled{
     opacity: 0.5;
     cursor: not-allowed;
