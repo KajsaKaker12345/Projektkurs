@@ -111,6 +111,7 @@ header h1 {
     display: flex;
     align-items: center;
     border: solid black 1px;
+    border-radius: 6px;
     font-size: small;
     background-color: white;
     margin: 10px;

@@ -27,7 +27,10 @@ function filterList() {
     const placeValue = placeInput.value;
     const priceValue = priceInput.value;
     let filtered = data;
-    
+
+    if (priceValue == 0) {
+        priceSign.textContent = "Gratis";
+    }
     if (priceValue == 1) {
             priceSign.textContent = "$";
         }
@@ -44,15 +47,18 @@ function filterList() {
     }
     filtered = filtered.filter(d => {
 
+        if (priceValue == 0) {
+            return d.price === "gratis";
+        }
         if (priceValue == 1) {
-            return d.price === "låg";
+            return d.price === "gratis" || d.price === "låg";
         }
 
         if (priceValue == 2) {
-            return d.price === "låg" || d.price === "medel";
+            return d.price === "gratis" || d.price === "låg" || d.price === "medel";
         }
         if (priceValue == 3) {
-            return d.price === "låg" || d.price === "medel" || d.price === "hög";
+            return d.price === "gratis" || d.price === "låg" || d.price === "medel" || d.price === "hög";
         }
 
     });

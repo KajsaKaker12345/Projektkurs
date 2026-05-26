@@ -6,7 +6,7 @@
     "description": "En romantisk vandring i solnedgången, hand i hand, där ni kan njuta av naturens skönhet och varandras sällskap.",
     "type": "local",
     "filename": "vandring.json",
-    "price": "låg",
+    "price": "gratis",
     "image": "image/walk.jpg",
     "rating": "image/4stars.svg"
 },
@@ -70,7 +70,7 @@
     "in": "Utomhus",
     "description": "En magisk kväll med stjärnskådning, där ni kan ligga på en filt och titta upp på stjärnorna, dela drömmar och känna er små i det stora universumet tillsammans.",
     "type": "own",
-    "price": "låg",
+    "price": "gratis",
     "image": "image/stjarnskadning.jpg",
     "rating": "image/4stars.svg"
 },
@@ -193,7 +193,7 @@
     "in": "Utomhus",
     "description": "En romantisk cykelutflykt tillsammans, där ni kan utforska vackra platser, njuta av frisk luft och varandras sällskap, vilket ger er möjlighet att lära känna varandra på ett avslappnat och äventyrligt sätt.",
     "type": "own",
-    "price": "låg",
+    "price": "gratis",
     "image": "image/cykelutflykt.jpg",
     "rating": "image/3stars.svg"
 },
