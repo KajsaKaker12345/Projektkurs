@@ -8,7 +8,7 @@
 }
 .appLogo img{
     align-items: center;
-    width: 1.3em;
+    width: 80px;
 }
 
 #månad {
@@ -167,5 +167,25 @@ h3 {
     margin-top: 4px;
     margin-bottom: 4px;
 }
-
+@media(min-width: 500px){
+    .day{
+    width: 53px;
+    }
+}
+@media (min-width: 650px){
+    .day{
+        width: 63px;
+    }
+}
+@media (min-width: 730px){
+    .day{
+        width: 73px;
+    }
+}
+@media (min-width: 735px){
+    .kalender{
+        width: 709px;
+        margin: auto;
+    }
+}
 
