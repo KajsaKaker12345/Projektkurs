@@ -240,5 +240,8 @@ h3 {
         width: 1000px;
         margin: auto;
     }
+    .menu-icon, #logo {
+    width: 40px;
+}
 }
 
