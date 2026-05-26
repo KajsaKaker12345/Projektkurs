@@ -3,7 +3,7 @@
 
 html, body {
     margin: 0;
-    background-color: rgb(243, 240, 237);
+    background-color: rgba(218, 212, 204, 0.348);
     font-family: "Inter", sans-serif;
 }
 main {
@@ -153,13 +153,17 @@ h1{
 }
 
 header{
-    background-color: rgb(224, 216, 206);
+    background-color: rgba(255, 255, 255, 0.884);
     height: 51px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
     position: relative;
+    width: 92%;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 6px;
 }
 
 /*----------------  -----------------*/
