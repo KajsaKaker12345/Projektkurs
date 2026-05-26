@@ -59,7 +59,11 @@ function showNextDate() {
     nextDiv.classList.add("next-date");
 
     nextDiv.innerHTML = `
-    <h3>${date.name}</h3><button class="done"><img id="klar-img" src="../image/klar.svg" alt="klar med dejten"> Klar</button>
+    <div>
+    <img class="dateKlar" src="../${date.image}"</img>
+    <h3>${date.name}</h3>
+    </div>
+    <button class="done"><img id="klar-img" src="../image/klar.svg" alt="klar med dejten"> Klar</button>
     `;
 
 
@@ -70,12 +74,14 @@ function showNextDate() {
 
     if(done) {
 
-        nextDiv.classList.add("completed");
+        const completedDiv = document.createElement("div");
+        completedDiv.classList.add("completed");
 
-        nextDiv.innerHTML = `<div><img src="../${date.image}" alt="Bild på dejten"></img>
-        <h3>${date.name}</h3></div>`;
+        completedDiv.innerHTML = `<img id="bigImg" src="../${date.image}" alt="Bild på dejten"></img>
+        <img id="doneCirkel" src="../image/klar.svg" alt="klar med dejten">
+        <h3 id="onTopName">${date.name}</h3>`;
 
-        slutfördaContainer.append(nextDiv);
+        slutfördaContainer.append(completedDiv);
 
         klarBtn.style.display = "none";
 
@@ -148,6 +154,12 @@ function showNextDate() {
     });
 }
 }
+
+
+
+
+
+
 //localStorage.removeItem("doneDate")
 console.log(doneDate)
 showNextDate();
