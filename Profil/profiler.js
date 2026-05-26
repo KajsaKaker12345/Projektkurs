@@ -91,12 +91,20 @@ function showNextDate() {
 
     // klarknappen för att stänga pågående dejten
     klarBtn.addEventListener("click", () => {
+        nextDiv.innerHTML = "";
         message.classList.toggle("active");
 
         doneDate.push(date.name);
         localStorage.setItem("doneDate", JSON.stringify(doneDate));
 
-        slutfördaContainer.append(nextDiv);
+        const completedDiv = document.createElement("div");
+        completedDiv.classList.add("completed");
+
+         completedDiv.innerHTML = `<img id="bigImg" src="../${date.image}" alt="Bild på dejten"></img>
+        <img id="doneCirkel" src="../image/klar.svg" alt="klar med dejten">
+        <h3 id="onTopName">${date.name}</h3>`;
+
+        slutfördaContainer.append(completedDiv);//
         klarBtn.style.display = "none";
 
         imgNumber++;

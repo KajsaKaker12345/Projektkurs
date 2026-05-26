@@ -220,4 +220,25 @@ h3 {
     margin-top: 25px;
 }
 
+@media (min-width: 600px){
+    .completed{
+        width: 250px;
+    }
+    #slutförda{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px){
+    #dejt-status{
+        width: 250px;
+    }
+}
+@media (min-width: 1000px){
+    #slutförda{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 1000px;
+        margin: auto;
+    }
+}
 
