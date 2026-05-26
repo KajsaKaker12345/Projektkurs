@@ -187,5 +187,11 @@ h3 {
         width: 709px;
         margin: auto;
     }
+    .menu-icon{
+        width: 40px;
+    }
+    .appLogo{
+        width: 80px;
+    }
 }
 
