@@ -3,8 +3,10 @@
 
 html, body {
     margin: 0;
-    background-color: rgba(218, 212, 204, 0.348);
     font-family: "Inter", sans-serif;
+}
+html {
+    background-color: rgba(218, 212, 204, 0.348);
 }
 main {
     height: 100vh;
