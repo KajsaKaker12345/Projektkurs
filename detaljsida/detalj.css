@@ -497,7 +497,7 @@ select {
     margin: auto;
 }
 .dejt-box.active{
-    top: 400px;
+    top: 500px;
 }
 header{
      height: 70px;
@@ -511,7 +511,6 @@ main{
     margin: auto;
 
 }
-
 
 body{
     background-color: rgb(255, 255, 255);
