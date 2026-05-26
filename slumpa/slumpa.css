@@ -107,7 +107,26 @@ header h1 {
 #stillBild.active{
     display: none;
 }
+.card-information {
+    display: flex;
+    align-items: center;
+    border: solid black 1px;
+    font-size: small;
+    background-color: white;
+    margin: 10px;
+}
+#cardInformation {
+    text-align: center;
+}
+.informationen {
+    margin: 30px;
+}
+main {
+    padding-top: 60px;
+
+}
 #beskrivning{
+    margin: 0 30px 0 30px;
     font-size: 1.1em;
 
     text-align: center;

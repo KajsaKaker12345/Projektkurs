@@ -3,6 +3,7 @@ const nav = document.getElementById("hidden-nav");
 const startGIF = document.getElementById("startaGIF");
 const GIF = document.getElementById("gifen");
 const stilla = document.getElementById("stillBild");
+const cardDiv = document.getElementById("cardInformation");
 
 btn.forEach(menuBtn => {
      menuBtn.addEventListener("click", () => {
@@ -19,6 +20,8 @@ let previousDates = [];
 
 function randomizeDates(data) {
     cardContainer.innerHTML = "";
+    
+    cardDiv.innerHTML = "";
 
     const randomDates = [];
     const usedIndex = [];
@@ -69,10 +72,23 @@ function randomizeDates(data) {
     
     cardContainer.append(element);
     }
+    makeCard(randomDates);
     
 
 }
 
+function makeCard(data) {
+    const h3 = document.createElement("h3");
+    h3.textContent = "Mer info om de slumpade dejterna:"
+    cardDiv.append(h3);
+    for (const date of data) {
+    const div = document.createElement("div");
+    div.classList.add("card-information");
+
+    div.innerHTML = `<div class="card-image"><img src="../${date.image}" alt="Bild på slumpade dejt"></div><div class="informationen"><h3>${date.name}</h3><p>${date.description}</p></div>`;
+    cardDiv.append(div);
+    }
+}
 
 startGIF.addEventListener("click", ()=>{
 
