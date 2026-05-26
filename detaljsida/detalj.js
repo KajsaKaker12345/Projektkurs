@@ -118,6 +118,17 @@ async function createDetails(category) {
         console.log(doDate);
         message.textContent = "Du har startat en dejt, kolla i din kalender!";
         message.style.color = "green";
+        message.classList.add("show");
+            setTimeout(() => {
+                message.classList.remove("show");
+            }, 3000);
+         } else {
+            message.textContent = "Du har redan dejter sparad, kolla i din kalender!";
+            message.style.color = "red";
+            message.classList.add("show");
+                setTimeout(() => {
+                    message.classList.remove("show");
+                }, 3000);
          }
     });
 // lägg i kalender 
@@ -133,6 +144,10 @@ async function createDetails(category) {
             if (!dateInput.value) {
             message.textContent = "Välj ett datum";
             message.style.color = "red";
+            message.classList.add("show");
+                setTimeout(() => {
+                    message.classList.remove("show");
+                }, 3000);
                 return;
              }
 
@@ -142,6 +157,10 @@ async function createDetails(category) {
             
             message.textContent = "Dejten har lagts till i din kalender!";
             message.style.color = "green";
+            message.classList.add("show");
+            setTimeout(() => {
+                message.classList.remove("show");
+            }, 3000);
 
              let planeradDejt = JSON.parse(localStorage.getItem("planeradDejt")) || [];
              const finns = planeradDejt.find(item => item.id === category.id);
@@ -162,5 +181,8 @@ async function createDetails(category) {
     section.style.display = "block";
     }
     }
+}
+function showMessage(text) {
+
 }
 //github secrets 
