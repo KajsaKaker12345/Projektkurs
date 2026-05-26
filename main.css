@@ -8,9 +8,7 @@ html, body {
 html {
     background-color: rgba(218, 212, 204, 0.348);
 }
-main {
-    height: 100vh;
-}
+
 #hidden-nav{
     display: none;
 }
@@ -305,9 +303,25 @@ width: 170px;
     }
 
 }
+@media (min-width: 860px){
+      .popular-bild{
+        grid-template-columns: 3fr 3fr 1fr;
+        grid-row: auto;
+        grid-template-areas: 
+        "Pimg h3 ."
+        "Pimg place ."
+        "Pimg starsP saveP";
+        width: 300px;
+    }
+    #card-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 @media (min-width: 1200px){
-    .popular-bild{
-        
+  
+    .field{
+        width: 150px;
     }
 }
 
@@ -328,6 +342,9 @@ h2{
 }
 
 .menu-icon, #logo {
+    width: 40px;
+}
+#hidden-nav.active img{
     width: 40px;
 }
 body{
