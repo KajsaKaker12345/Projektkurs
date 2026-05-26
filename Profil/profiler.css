@@ -240,7 +240,10 @@ h3 {
         width: 1000px;
         margin: auto;
     }
-    .menu-icon, #logo {
+    .appLogo{
+        width: 80px;
+    }
+    .menu-icon {
     width: 40px;
 }
 }
