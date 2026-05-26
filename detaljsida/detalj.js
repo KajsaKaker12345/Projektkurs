@@ -50,19 +50,27 @@ async function createDetails(category) {
                 saveTheDate(d, message);
             }
     });
+    const today = new Date().toISOString().split("T")[0];
     
     const buttonsContainer = document.getElementById("vald-dejt");
 
     const dejtBox = document.createElement("div");
-    dejtBox.classList.add("dejt-box", "hidden");
+    dejtBox.classList.add("dejt-box");
 
     const dateInput = document.createElement("input");
     dateInput.type = "date";
+    dateInput.min = today;
 
     const confirmBtn = document.createElement("button");
     confirmBtn.textContent = "Bekräfta";
 
-    dejtBox.append(dateInput, confirmBtn);
+    const kryssBtn = document.createElement("button");
+    const kryssImg = document.createElement("img");
+    kryssImg.src = "../image/kryss.svg";
+
+    kryssBtn.append(kryssImg);
+
+    dejtBox.append(dateInput, confirmBtn, kryssBtn);
 
     const dateBtn = document.createElement("button");
     const calenderBtn = document.createElement("button");
@@ -134,7 +142,7 @@ async function createDetails(category) {
 // lägg i kalender 
     calenderBtn.addEventListener("click", () => {
 
-        dejtBox.classList.remove("hidden");
+        dejtBox.classList.add("active");
 
         dateBtn.disabled = true;
         calenderBtn.disabled = true;
@@ -144,14 +152,10 @@ async function createDetails(category) {
             if (!dateInput.value) {
             message.textContent = "Välj ett datum";
             message.style.color = "red";
-            message.classList.add("show");
-                setTimeout(() => {
-                    message.classList.remove("show");
-                }, 3000);
                 return;
              }
 
-            dejtBox.classList.add("hidden");
+            dejtBox.classList.remove("active");
             dateBtn.disabled = false;
             calenderBtn.disabled = false;
             
@@ -170,8 +174,12 @@ async function createDetails(category) {
                     localStorage.setItem("planeradDejt", JSON.stringify(planeradDejt));
                     console.log(planeradDejt);
                 }
-                dejtBox.remove();
             });
+    kryssBtn.addEventListener("click", () =>{
+        dejtBox.classList.remove("active");
+        dateBtn.disabled = false;
+        calenderBtn.disabled = false;
+    })
 
     if(category.slug){
     document.body.classList.add(category.slug);

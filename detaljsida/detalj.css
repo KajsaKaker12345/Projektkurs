@@ -24,6 +24,10 @@ body {
     margin: 20px;
 }
 #head {
+    background-color: rgba(255, 255, 255, 0.98);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,6 +49,9 @@ body {
     padding: 10px 20px;
 }
 .dejt-box{
+    display: none;
+}
+.dejt-box.active{
     position: absolute;
     top: 350px;
     background-color: rgb(240, 234, 227);
@@ -55,9 +62,8 @@ body {
     gap: 1em;
     border: solid rgb(216, 202, 169) 3px;
 }
-.hidden{
-    display: none;
-}
+
+
 button:disabled{
     opacity: 0.5;
     cursor: not-allowed;
@@ -485,3 +491,28 @@ select {
 
 
 /*---- LÄGG I KALENDER -----*/
+@media (min-width: 650px){
+#container {
+    width: 700px;
+    margin: auto;
+}
+.dejt-box.active{
+    top: 500px;
+}
+header{
+     height: 70px;
+}
+}
+
+@media (min-width: 1300px){
+
+main{
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+}
