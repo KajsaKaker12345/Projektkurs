@@ -114,10 +114,11 @@ header h1 {
     border-radius: 6px;
     font-size: 0.9rem;
     background-color: white;
-    margin: 10px;
+    margin: 30px auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    max-width: 600px;
 }
 #cardInformation {
     text-align: center;
@@ -128,6 +129,7 @@ header h1 {
 .informationen {
     margin: 18px;
     background-color: rgba(255, 255, 255, 0.857);
+    border-radius: 6px;
 }
 main {
     padding-top: 60px;
@@ -149,4 +151,8 @@ main {
 
 #startaGIF img{
     width: 50px;
+}
+@media (min-width: 650px) {
+    #cardInformation {
+    }
 }
