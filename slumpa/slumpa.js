@@ -84,8 +84,9 @@ function makeCard(data) {
     for (const date of data) {
     const div = document.createElement("div");
     div.classList.add("card-information");
+    div.style.backgroundImage = `url("../${date.image}")`;
 
-    div.innerHTML = `<div class="card-image"><img src="../${date.image}" alt="Bild på slumpade dejt"></div><div class="informationen"><h3>${date.name}</h3><p>${date.description}</p></div>`;
+    div.innerHTML = `<div class="informationen"><h3>${date.name}</h3><p>${date.description}</p></div>`;
     cardDiv.append(div);
     }
 }

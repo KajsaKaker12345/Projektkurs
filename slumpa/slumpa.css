@@ -112,15 +112,22 @@ header h1 {
     align-items: center;
     border: solid black 1px;
     border-radius: 6px;
-    font-size: small;
+    font-size: 0.9rem;
     background-color: white;
     margin: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #cardInformation {
     text-align: center;
 }
+.card-image {
+    height: 150px;
+}
 .informationen {
-    margin: 30px;
+    margin: 18px;
+    background-color: rgba(255, 255, 255, 0.857);
 }
 main {
     padding-top: 60px;
