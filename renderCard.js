@@ -10,7 +10,7 @@ export function createCards(establishments) {
     populärKort.innerHTML = 
     `<div class="popular-bild" id="16"><img src="image/sipandpaint.jpg" alt="" class="Pimg"><h3>Sip and Paint</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Hemma</p><img src="image/45stars.svg" alt="4,5 stjärnor" class="starsP"></div>
     
-    <div class="popular-bild" id="7"><img src="image/dinner.jpg" class="Pimg"><h3>Resturang</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Inomhus</p><img src="image/5stars.svg" alt="5 stjärnor" class="starsP"></div>
+    <div class="popular-bild" id="7"><img src="image/dinner.jpg" class="Pimg"><h3>Restaurang</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Inomhus</p><img src="image/5stars.svg" alt="5 stjärnor" class="starsP"></div>
     
     <div class="popular-bild" id="11"><img src="image/wii.jpg" class="Pimg"><h3>TV-spel</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Hemma</p><img src="image/45stars.svg" alt="4,5 stjärnor" class="starsP"></div>
     
