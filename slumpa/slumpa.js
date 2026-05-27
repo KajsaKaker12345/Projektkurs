@@ -63,7 +63,7 @@ function randomizeDates(data) {
     </div>
 
     <div class="card-back">
-    <img src="../${item.image}" alt="">
+    <img id="slump-bild" src="../${item.image}" alt="">
     <h3>${item.name}</h3>
     </div>
     

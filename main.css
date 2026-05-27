@@ -5,7 +5,7 @@ html, body {
     margin: 0;
     font-family: "Inter", sans-serif;
 }
-html {
+main{
     background-color: rgb(235, 229, 225);
 }
 #hidden-nav{
@@ -330,6 +330,7 @@ width: 170px;
     #card-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin: auto;
     }
 }
 @media (min-width: 1200px){
@@ -344,7 +345,8 @@ width: 170px;
 main{
     max-width: 1300px;
     margin: auto;
-    background-color: rgb(243, 240, 237);
+    background-color: rgb(235, 229, 225);
+    height: auto;
 }
 header{
     height: 70px;

@@ -14,7 +14,9 @@ header h1 {
     width: 50px;
     align-items: center;
 }
-
+main{
+    height: 100vh;
+}
 
 #card-container{
     display:grid;
@@ -157,6 +159,9 @@ main {
     background-color: rgb(217, 221, 218);
 }
 @media (min-width: 650px) {
-    #cardInformation {
+   
+    .slump-dejt.active, #slump-bild{
+        width: 150px;
+        height: 150px;
     }
 }

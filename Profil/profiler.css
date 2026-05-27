@@ -227,6 +227,13 @@ h3 {
     #slutförda{
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    #dejtdiv h2{
+        margin-top: 0;
+    }
+    #dejtdiv{
+        margin: 0;
+    }
 }
 
 @media (min-width: 900px){

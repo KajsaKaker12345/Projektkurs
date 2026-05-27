@@ -19,6 +19,22 @@
 
     z-index: 9999;
 }
+#läsMer{
+    background-color: rgb(221, 211, 199);
+    border: 1.5px solid rgb(221, 211, 199);
+    width: 5.6em;
+    height: 27px;
+    border-radius: 4px;
+    grid-area: readMore;
+
+}
+#läsMer a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.95em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
 
 
 .menu-icon{
@@ -51,8 +67,11 @@
 
 @media (min-width: 1300px){
 
-.menu-icon, #logo {
+.menu-icon {
     width: 40px;
+}
+#logo{
+    width: 80px;
 }
 
 }
