@@ -147,10 +147,14 @@ main {
     font-size: 1.1em;
     display: block;
     margin: 30px auto;
+    background-color: rgb(230, 224, 196);
 }
 
 #startaGIF img{
     width: 50px;
+}
+#startaGIF:disabled {
+    background-color: rgb(217, 221, 218);
 }
 @media (min-width: 650px) {
     #cardInformation {
