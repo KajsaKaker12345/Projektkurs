@@ -35,7 +35,9 @@
     font-weight: 500;
     letter-spacing: 0.5px;
 }
-
+main{
+    height: 500px;
+}
 
 .menu-icon{
     width: 29px;
@@ -81,7 +83,7 @@
     width: 250px;
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 300px;
     margin: auto;
     margin-top: 20px;
 }
@@ -98,6 +100,9 @@
 .delete{
     width: 25px;
     height: 35px;
+}
+main{
+    height: 1000px;
 }
 }
 @media (min-width: 985px){
