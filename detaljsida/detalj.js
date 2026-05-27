@@ -126,14 +126,14 @@ async function createDetails(category) {
 
         localStorage.setItem("doDate", JSON.stringify(doDate));
         console.log(doDate);
-        message.textContent = "Du har startat en dejt, kolla i din kalender!";
+        message.textContent = "Du har startat en dejt, kolla i din profilen!";
         message.style.color = "green";
         message.classList.add("show");
             setTimeout(() => {
                 message.classList.remove("show");
             }, 3000);
          } else {
-            message.textContent = "Du har redan dejter sparad, kolla i din kalender!";
+            message.textContent = "Du har redan dejter sparad, kolla i din profil!";
             message.style.color = "red";
             message.classList.add("show");
                 setTimeout(() => {
