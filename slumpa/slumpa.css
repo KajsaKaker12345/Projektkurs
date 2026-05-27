@@ -159,5 +159,10 @@ main {
     background-color: rgb(217, 221, 218);
 }
 @media (min-width: 650px) {
-   
+   main{
+    height: auto;
+   }
+   #logo{
+    width: 80px;
+   }
 }
