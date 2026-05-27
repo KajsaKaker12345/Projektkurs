@@ -355,7 +355,7 @@ h2{
    margin: 0;
 }
 
-.menu-icon, #logo {
+.menu-icon {
     width: 40px;
 }
 #hidden-nav.active img{
