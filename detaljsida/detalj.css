@@ -4,6 +4,12 @@
 body {
     margin: 0;
 }
+#kryssBtn{
+    width: 15px;
+}
+.kryssBtn{
+    width: 15px;
+}
 #stjärnor {
     margin: 10px;
 }

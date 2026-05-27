@@ -65,8 +65,10 @@ async function createDetails(category) {
     confirmBtn.textContent = "Bekräfta";
 
     const kryssBtn = document.createElement("button");
+    kryssBtn.classList.add("kryssBtn");
     const kryssImg = document.createElement("img");
     kryssImg.src = "../image/kryss.svg";
+    kryssImg.id = "kryssBtn"
 
     kryssBtn.append(kryssImg);
 
