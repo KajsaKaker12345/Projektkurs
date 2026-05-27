@@ -160,8 +160,4 @@ main {
 }
 @media (min-width: 650px) {
    
-    .slump-dejt.active, #slump-bild{
-        width: 150px;
-        height: 150px;
-    }
 }
