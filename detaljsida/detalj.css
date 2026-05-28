@@ -53,6 +53,7 @@ body {
 }
 #vald-dejt button {
     padding: 10px 20px;
+    color: black;
 }
 .dejt-box{
     display: none;
@@ -105,6 +106,11 @@ select {
 }
 .stars {
     width: 70px;
+}
+#form {
+    background-color: rgb(240, 234, 227);
+    padding: 10px;
+    border-radius: 15px;
 }
 #filters {
     margin: 18px;
