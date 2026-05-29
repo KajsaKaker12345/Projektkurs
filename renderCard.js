@@ -8,15 +8,15 @@ export function createCards(establishments) {
     const populärKort = document.createElement("div");
     populärKort.classList.add("p");
     populärKort.innerHTML = 
-    `<div class="popular-bild" id="16"><img src="image/sipandpaint.jpg" alt="" class="Pimg"><h3>Sip and Paint</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Hemma</p><img src="image/45stars.svg" alt="4,5 stjärnor" class="starsP"></div>
+    `<div class="popular-bild" id="16"><img src="image/sipandpaint.jpg" alt="Dejt sip n paint bild" class="Pimg"><h3>Sip and Paint</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Hemma</p><img src="image/45stars.svg" alt="4,5 stjärnor" class="starsP"></div>
     
-    <div class="popular-bild" id="7"><img src="image/dinner.jpg" class="Pimg"><h3>Restaurang</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Inomhus</p><img src="image/5stars.svg" alt="5 stjärnor" class="starsP"></div>
+    <div class="popular-bild" id="7"><img src="image/dinner.jpg" alt="Dejt Restaurang bild" class="Pimg"><h3>Restaurang</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Inomhus</p><img src="image/5stars.svg" alt="5 stjärnor" class="starsP"></div>
     
-    <div class="popular-bild" id="11"><img src="image/wii.jpg" class="Pimg"><h3>TV-spel</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Hemma</p><img src="image/45stars.svg" alt="4,5 stjärnor" class="starsP"></div>
+    <div class="popular-bild" id="11"><img src="image/wii.jpg" alt="Dejt tv-spel bild" class="Pimg"><h3>TV-spel</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Hemma</p><img src="image/45stars.svg" alt="4,5 stjärnor" class="starsP"></div>
     
-    <div class="popular-bild" id="12"><img src="image/hotel.png" class="Pimg"><h3>Hotell</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Inomhus</p><img src="image/5stars.svg" alt="5 stjärnor" class="starsP"></div>
+    <div class="popular-bild" id="12"><img src="image/hotel.png" alt="Dejt hotell bild" class="Pimg"><h3>Hotell</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Inomhus</p><img src="image/5stars.svg" alt="5 stjärnor" class="starsP"></div>
     
-    <div class="popular-bild" id="15"><img src="image/cook.jpg" class="Pimg"><h3>Matlagning</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Hemma</p><img src="image/5stars.svg" alt="5 stjärnor" class="starsP"></div>`;
+    <div class="popular-bild" id="15"><img src="image/cook.jpg" alt="Dejt matlagning bild" class="Pimg"><h3>Matlagning</h3><img src="image/spara.svg" alt="Spara" class="saveP"><p class="place">Hemma</p><img src="image/5stars.svg" alt="5 stjärnor" class="starsP"></div>`;
 
     populäraDejter.append(populärKort);
 
@@ -77,11 +77,11 @@ export function createCards(establishments) {
         const cardDiv = document.createElement("div");
         cardDiv.classList.add("card");
         cardDiv.innerHTML = `
-        <img class="kort-bild" src="${d.image}" alt="">
+        <img class="kort-bild" src="${d.image}" alt="Dejt ${d.name} bild">
         <h3>${d.name}</h3>
         <p class="place">${d.in}</p>
         <img src="${saveImage}" alt="Spara" class="${saveClass}">
-        <img class="rating" src="${d.rating}" alt=""> `;
+        <img class="rating" src="${d.rating}" alt="${d.rating} stjärnor"> `;
 
 
         const saveBtn = cardDiv.querySelector(".save");

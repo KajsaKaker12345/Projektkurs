@@ -59,11 +59,11 @@ function randomizeDates(data) {
     <div class="card-inner">
 
     <div class="card-header">
-    <img id="klöver-kort" src="../image/Slumpande.svg" alt="">
+    <img id="klöver-kort" src="../image/Slumpande.svg" alt="Kort med ett hjärta">
     </div>
 
     <div class="card-back">
-    <img id="slump-bild" src="../${item.image}" alt="">
+    <img id="slump-bild" src="../${item.image}" alt="Kort med slumpad ${item.name} dejten på">
     <h3>${item.name}</h3>
     </div>
     

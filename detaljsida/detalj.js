@@ -69,6 +69,7 @@ async function createDetails(category) {
     const kryssImg = document.createElement("img");
     kryssImg.src = "../image/kryss.svg";
     kryssImg.id = "kryssBtn"
+    kryssImg.alt = "Kryssa ned lägg i kalendern"
 
     kryssBtn.append(kryssImg);
 

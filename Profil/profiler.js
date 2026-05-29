@@ -60,7 +60,7 @@ function showNextDate() {
 
     nextDiv.innerHTML = `
     <div>
-    <img class="dateKlar" src="../${date.image}"</img>
+    <img class="dateKlar" src="../${date.image}" alt="Dejten ${date.name} bild"</img>
     <h3>${date.name}</h3>
     </div>
     <button class="done"><img id="klar-img" src="../image/klar.svg" alt="klar med dejten"> Klar</button>
@@ -100,7 +100,7 @@ function showNextDate() {
         const completedDiv = document.createElement("div");
         completedDiv.classList.add("completed");
 
-         completedDiv.innerHTML = `<img id="bigImg" src="../${date.image}" alt="Bild på dejten"></img>
+         completedDiv.innerHTML = `<img id="bigImg" src="../${date.image}" alt="Bild på ${date.name} dejten"></img>
         <img id="doneCirkel" src="../image/klar.svg" alt="klar med dejten">
         <h3 id="onTopName">${date.name}</h3>`;
 
