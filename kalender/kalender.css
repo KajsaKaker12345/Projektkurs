@@ -119,9 +119,8 @@ h3 {
       align-items: center;
 }
 .remove-btn {
-    background-color: rgb(140, 41, 41);
-    border: 0.5px solid rgb(76, 12, 12);
-    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    border: white solid 3px;
     padding: 2px;
      grid-area: remove;
      justify-content: right;
