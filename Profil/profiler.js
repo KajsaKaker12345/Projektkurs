@@ -91,7 +91,7 @@ function showNextDate() {
 
     // klarknappen för att stänga pågående dejten
     klarBtn.addEventListener("click", () => {
-        nextDiv.innerHTML = "";
+        nextDiv.remove();
         message.classList.toggle("active");
 
         doneDate.push(date.name);
