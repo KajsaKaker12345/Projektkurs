@@ -167,6 +167,14 @@ h1{
     margin: 0;
     font-weight: normal;
 }
+.pageName {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    margin: 0;
+    text-align: center;
+}
 
 header{
     background-color: rgba(255, 255, 255, 0.884);
